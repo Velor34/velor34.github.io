@@ -1,0 +1,455 @@
+extends layout.jade
+
+block content
+
+    .start-block
+        .backbone__inner
+            .lk
+                .input-lk
+                    .input-lk__item.input-lk__item--icon
+                    .input-lk__item.input-lk__item--text Личный кабинет
+            .menu
+                .menu__part.menu__part--link
+                    a(href="#").menu__item о проекте
+                    a(href="#").menu__item условия
+                    a(href="#").menu__item призы
+                    a(href="#").menu__item наставники
+                .menu__part.menu__part--logo
+                    a(href="").logo
+                .menu__part.menu__part--link
+                    a(href="#").menu__item стоимость
+                    a(href="#").menu__item Вопросы
+                    a(href="#").menu__item новости
+            .start-block__content
+                .start-block-content
+                    .start-block-content__season 3 сезон
+                    .start-block-content__data 21 ноября 2016
+                    .start-block-content__title Домашний фитнес<br> №1 в России
+                    .start-block-content__prize Главный приз
+                    .start-block-content__apartment Квартира в Москве
+                        .start-block-content__apartment_in + 3 автомобиля Mazda 3
+                    .start-block-content__price от 999 руб.
+                        .start-block-content__price_in  Продажи уже открыты!
+                    .start-block-content__button
+                        a(href="").button
+                            .button_inner Участвовать 
+                    .start-block-content__social
+                        .social
+                            a(href="").social__item.social__item--tw
+                            a(href="").social__item.social__item--vk
+                    .start-block__partners
+                        .start-block-partners
+                            .start-block-partners__item.start-block-partners__item--love
+                            .start-block-partners__item #PPO
+                                span.start-block-partners__item_in СУШКА
+            .start-block__footer
+    .video-block
+        .backbone__inner
+            .video-block__player
+                .player
+                    .player__img
+                    .player__video
+            .video-block__button
+                a(href="").button
+                    .button_inner Участвовать 
+    .project-description
+        .backbone__inner
+            .project-description__title Описание проекта
+            .project-description__slogan
+                .slogan 
+                    .slogan__text 
+                        span.slogan__text_black #Pro
+                        | Cушка — это новый взгляд на здоровый образ жизни
+            .project-description__text Это комплекс интерактивных мероприятий, который включает в себя несколько уровней:<br> домашний фитнес, индивидуальные занятия и соревнования, групповые тренировки,<br> индивидуальные программы по питанию, а также: розыгрыш ценных призов и подарков,<br> встречи участников. Проекты со звездами, СМИ и другими партнерами.
+            .project-description__items
+                .project-description-step
+                    .project-description-step__item
+                        .project-description-step__icon.project-description-step__icon--1
+                        .project-description-step__text 
+                            span.project-description-step__text_red #Pro
+                            | Сушка — проект создан командой специалистов из России и США в области спортивного и интернет-маркетинга. Является уникальным запатентованным по всему миру продуктом и услугой.
+                    .project-description-step__item
+                        .project-description-step__icon.project-description-step__icon--2
+                        .project-description-step__text 
+                            span.project-description-step__text_red #Pro
+                            | Сушка №1 в России по уровню привлеченных специалистов в области спортивных и IT-технологий, а также качеству и количеству гарантированных призов.
+                    .project-description-step__item
+                        .project-description-step__icon.project-description-step__icon--3
+                        .project-description-step__text 
+                            span.project-description-step__text_red #Pro
+                            | Сушка является также социальным проектом, цель которого вовлечь людей в активные занятия  физкультурой и спортом. Наша задача сделать активный образ жизни итнересным досугом, доступным каждому.
+            .project-description__button
+                a(href="").button.button--no-shadow
+                    .button_inner Участвовать
+    .slogan-block
+        .backbone__inner
+            .slogan-block__text 
+                span.slogan-block__text_first « 
+                |  Любая мечта станет реальностью<br> тогда, когда ты сделаешь к ней на<br> встречу первый шаг ».
+    .what-stops
+        .backbone__inner
+            .what-stops__title Что останавливает людей от занятий спортом в зале*
+            .what-stops__item-group
+                .what-stops__item
+                    .what-stops__img-wrap
+                        .what-stops__img.what-stops__img--1
+                    .what-stops__text Далеко от дома
+                .what-stops__item
+                    .what-stops__img-wrap
+                        .what-stops__img.what-stops__img--2
+                    .what-stops__text Неудобно парковаться
+                .what-stops__item
+                    .what-stops__img-wrap
+                        .what-stops__img.what-stops__img--3
+                    .what-stops__text Душно, посторонние запахи, грохот
+                .what-stops__item
+                    .what-stops__img-wrap
+                        .what-stops__img.what-stops__img--4
+                    .what-stops__text Неудобно носить с собой спорт-одежду
+                .what-stops__item
+                    .what-stops__img-wrap
+                        .what-stops__img.what-stops__img--5
+                    .what-stops__text Нужно быть «в форме», так как вокруг другие люди
+                .what-stops__item
+                    .what-stops__img-wrap
+                        .what-stops__img.what-stops__img--6
+                    .what-stops__text Непонятно, как тренироваться, чтобы был эффект
+                .what-stops__item
+                    .what-stops__img-wrap
+                        .what-stops__img.what-stops__img--7
+                    .what-stops__text Неудобные раздевалки, душевые 
+                .what-stops__item
+                    .what-stops__img-wrap
+                        .what-stops__img.what-stops__img--8
+                    .what-stops__text Дорого
+            .what-stops__start Начни с простого! 
+                .what-stops__start_small #ProСушка предлагает вам сделать спорт интересным досугом
+                .what-stops__start_small Домашний фитнес от 999 рублей
+            .what-stops__button
+                a(href="").button.button--no-shadow
+                    .button_inner Участвовать
+            .what-stops__note *Соцопрос в городах, жители +500 000 тыс.
+    .our-advantages
+        .backbone__inner
+            .our-advantages__title Наши преимущества
+            .our-advantages__inner
+                .our-advantages__content
+                    .our-advantages__item Звездный состав команды,чемпионы мира по бодифитнесу
+                    .our-advantages__item Профессиональные диетологи, психологи
+                    .our-advantages__item Удобные онлайн тренировки в любое время суток
+                    .our-advantages__item Сбалансированная эффективная система питания 
+                    .our-advantages__item Индивидуальные программы тренировок для спорт-залов
+                    .our-advantages__item Ежедневные онлайн консультации специалистов
+                    .our-advantages__item Открытые тренировки с чемпионами мира
+                    .our-advantages__item Встречи участников проекта с тренерами и звездами
+                    .our-advantages__item Еженедельный розыгрыш подарков
+                    .our-advantages__item Каждый сезон розыгрыш ценных супер-призов
+            .our-advantages__button
+                a(href="").button
+                        .button_inner Участвовать
+    .choose-your-rate
+        .backbone__inner
+            .lk
+                .input-lk
+                    .input-lk__item.input-lk__item--icon
+                    .input-lk__item.input-lk__item--text Личный кабинет
+            .menu
+                .menu__part.menu__part--link
+                    a(href="#").menu__item о проекте
+                    a(href="#").menu__item условия
+                    a(href="#").menu__item призы
+                    a(href="#").menu__item наставники
+                .menu__part.menu__part--logo
+                    a(href="").logo
+                .menu__part.menu__part--link
+                    a(href="#").menu__item стоимость
+                    a(href="#").menu__item Вопросы
+                    a(href="#").menu__item новости
+            .choose-your-rate__title Выбери свой тариф
+            .rates
+                .rates__inner
+                    .rates__row
+                        .rates__top.rates__top--transparent
+                        .rates__bottom
+                            .rates__item
+                                .rates__text Тренировки 8 программ
+                            .rates__item
+                                .rates__text Блок контроля калорий
+                            .rates__item
+                                .rates__text Прогресс
+                            .rates__item
+                                .rates__text Графики
+                            .rates__item
+                                .rates__text Новости
+                            .rates__item
+                                .rates__text Борьба за призы
+                            .rates__item
+                                .rates__text Чемпионаты
+                            .rates__item
+                                .rates__text Конкурсы
+                            .rates__item
+                                .rates__text Курсы и статьи в ЛК
+                            .rates__item
+                                .rates__text Меню питания (30 меню)
+                            .rates__item
+                                .rates__text Мобильный помощник
+                            .rates__item
+                                .rates__text Отчеты
+                            .rates__item
+                                .rates__text Общий чат
+                                    span.rates__text_icon.rates__text_icon_question
+                            .rates__item
+                                .rates__text Личные чаты
+                                    span.rates__text_icon.rates__text_icon_question
+                            .rates__item
+                                .rates__text Сушки в подарок
+                    .rates__row
+                        .rates__top
+                            .rates__title Pro Спорт
+                            .rates__number 1 участник
+                            .rates__img.rates__img--1
+                            .rates__icon-group
+                                .rates-icon
+                                    .rates-icon__item.rates-icon__item--1
+                                    .rates-icon__item.rates-icon__item--2.rates-icon__item--no
+                                    .rates-icon__item.rates-icon__item--3.rates-icon__item--no
+                                    .rates-icon__item.rates-icon__item--4.rates-icon__item--no
+                            .rates__price 999 руб.
+                            .rates__button
+                                .button.button--small
+                                    .button_inner Оформить
+                        .rates__bottom
+                            .rates__item
+                                .rates__icon.rates__icon--yes
+                            .rates__item
+                                .rates__icon.rates__icon--yes
+                            .rates__item
+                                .rates__icon.rates__icon--yes
+                            .rates__item
+                                .rates__icon.rates__icon--yes
+                            .rates__item
+                                .rates__icon.rates__icon--yes
+                            .rates__item
+                                .rates__icon.rates__icon--no
+                            .rates__item
+                                .rates__icon.rates__icon--no
+                            .rates__item
+                                .rates__icon.rates__icon--no
+                            .rates__item
+                                .rates__icon.rates__icon--no
+                            .rates__item
+                                .rates__icon.rates__icon--no
+                            .rates__item
+                                .rates__icon.rates__icon--no
+                            .rates__item
+                                .rates__icon.rates__icon--no
+                            .rates__item
+                                .rates__icon.rates__icon--no
+                            .rates__item
+                                .rates__icon.rates__icon--no
+                            .rates__item
+                                .rates__icon.rates__icon--no
+                            .rates__price 999 руб.
+                            .rates__button
+                                .button.button--small
+                                    .button_inner Оформить
+                    .rates__row
+                        .rates__top
+                            .rates__title Pro Стандарт
+                            .rates__number 1 участник
+                            .rates__img.rates__img--2
+                            .rates__icon-group
+                                .rates-icon
+                                    .rates-icon__item.rates-icon__item--1
+                                    .rates-icon__item.rates-icon__item--2
+                                    .rates-icon__item.rates-icon__item--3.rates-icon__item--no
+                                    .rates-icon__item.rates-icon__item--4
+                            .rates__price 2 500 руб.
+                            .rates__button
+                                .button.button--small
+                                    .button_inner Оформить
+                        .rates__bottom
+                            .rates__item
+                                .rates__icon.rates__icon--yes
+                            .rates__item
+                                .rates__icon.rates__icon--yes
+                            .rates__item
+                                .rates__icon.rates__icon--yes
+                            .rates__item
+                                .rates__icon.rates__icon--yes
+                            .rates__item
+                                .rates__icon.rates__icon--yes
+                            .rates__item
+                                .rates__icon.rates__icon--yes
+                            .rates__item
+                                .rates__icon.rates__icon--yes
+                            .rates__item
+                                .rates__icon.rates__icon--yes
+                            .rates__item
+                                .rates__icon.rates__icon--yes
+                            .rates__item
+                                .rates__icon.rates__icon--yes
+                            .rates__item
+                                .rates__icon.rates__icon--yes
+                            .rates__item
+                                .rates__icon.rates__icon--yes
+                            .rates__item
+                                .rates__icon.rates__icon--yes
+                            .rates__item
+                                .rates__icon.rates__icon--no
+                            .rates__item
+                                .rates__text.rates__text--green.rates__text--center 5
+                            .rates__price 2 500 руб.
+                            .rates__button
+                                .button.button--small
+                                    .button_inner Оформить
+                    .rates__row
+                        .rates__top
+                            .rates__title Pro Максимум
+                            .rates__number 1 участник
+                            .rates__img.rates__img--3
+                            .rates__icon-group
+                                .rates-icon
+                                    .rates-icon__item.rates-icon__item--1
+                                    .rates-icon__item.rates-icon__item--2
+                                    .rates-icon__item.rates-icon__item--3
+                                    .rates-icon__item.rates-icon__item--4
+                            .rates__price 5 000 руб.
+                            .rates__button
+                                .button.button--small
+                                    .button_inner Оформить
+                        .rates__bottom
+                            .rates__item
+                                .rates__icon.rates__icon--yes
+                            .rates__item
+                                .rates__icon.rates__icon--yes
+                            .rates__item
+                                .rates__icon.rates__icon--yes
+                            .rates__item
+                                .rates__icon.rates__icon--yes
+                            .rates__item
+                                .rates__icon.rates__icon--yes
+                            .rates__item
+                                .rates__icon.rates__icon--yes
+                            .rates__item
+                                .rates__icon.rates__icon--yes
+                            .rates__item
+                                .rates__icon.rates__icon--yes
+                            .rates__item
+                                .rates__icon.rates__icon--yes
+                            .rates__item
+                                .rates__icon.rates__icon--yes
+                            .rates__item
+                                .rates__icon.rates__icon--yes
+                            .rates__item
+                                .rates__icon.rates__icon--yes
+                            .rates__item
+                                .rates__icon.rates__icon--yes
+                            .rates__item
+                                .rates__icon.rates__icon--yes
+                            .rates__item
+                                .rates__text.rates__text--green.rates__text--center 10
+                            .rates__price 5 000 руб.
+                            .rates__button
+                                .button.button--small
+                                    .button_inner Оформить
+                    .rates__row
+                        .rates__top
+                            .rates__title Pro Дубль
+                            .rates__number 2 участника
+                            .rates__img.rates__img--4
+                            .rates__icon-group
+                                .rates-icon
+                                    .rates-icon__item.rates-icon__item--1
+                                    .rates-icon__item.rates-icon__item--2
+                                    .rates-icon__item.rates-icon__item--3.rates-icon__item--no
+                                    .rates-icon__item.rates-icon__item--4
+                            .rates__price 4 000 руб.
+                            .rates__button
+                                .button.button--small
+                                    .button_inner Оформить
+                        .rates__bottom
+                            .rates__item
+                                .rates__icon.rates__icon--yes
+                            .rates__item
+                                .rates__icon.rates__icon--yes
+                            .rates__item
+                                .rates__icon.rates__icon--yes
+                            .rates__item
+                                .rates__icon.rates__icon--yes
+                            .rates__item
+                                .rates__icon.rates__icon--yes
+                            .rates__item
+                                .rates__icon.rates__icon--yes
+                            .rates__item
+                                .rates__icon.rates__icon--yes
+                            .rates__item
+                                .rates__icon.rates__icon--yes
+                            .rates__item
+                                .rates__icon.rates__icon--yes
+                            .rates__item
+                                .rates__icon.rates__icon--yes
+                            .rates__item
+                                .rates__icon.rates__icon--yes
+                            .rates__item
+                                .rates__icon.rates__icon--yes
+                            .rates__item
+                                .rates__icon.rates__icon--yes
+                            .rates__item
+                                .rates__icon.rates__icon--no
+                            .rates__item
+                                .rates__text.rates__text--green.rates__text--center по 5
+                            .rates__price 4 000 руб.
+                            .rates__button
+                                .button.button--small
+                                    .button_inner Оформить
+                    .rates__row
+                        .rates__top
+                            .rates__title Pro Клуб
+                            .rates__number 5 участников
+                            .rates__img.rates__img--5
+                            .rates__icon-group
+                                .rates-icon
+                                    .rates-icon__item.rates-icon__item--1
+                                    .rates-icon__item.rates-icon__item--2
+                                    .rates-icon__item.rates-icon__item--3.rates-icon__item--no
+                                    .rates-icon__item.rates-icon__item--4
+                            .rates__price 9 000 руб.
+                            .rates__button
+                                .button.button--small
+                                    .button_inner Оформить
+                        .rates__bottom
+                            .rates__item
+                                .rates__icon.rates__icon--yes
+                            .rates__item
+                                .rates__icon.rates__icon--yes
+                            .rates__item
+                                .rates__icon.rates__icon--yes
+                            .rates__item
+                                .rates__icon.rates__icon--yes
+                            .rates__item
+                                .rates__icon.rates__icon--yes
+                            .rates__item
+                                .rates__icon.rates__icon--yes
+                            .rates__item
+                                .rates__icon.rates__icon--yes
+                            .rates__item
+                                .rates__icon.rates__icon--yes
+                            .rates__item
+                                .rates__icon.rates__icon--yes
+                            .rates__item
+                                .rates__icon.rates__icon--yes
+                            .rates__item
+                                .rates__icon.rates__icon--yes
+                            .rates__item
+                                .rates__icon.rates__icon--yes
+                            .rates__item
+                                .rates__icon.rates__icon--yes
+                            .rates__item
+                                .rates__icon.rates__icon--no
+                            .rates__item
+                                .rates__text.rates__text--green.rates__text--center по 5
+                            .rates__price 9 000 руб.
+                            .rates__button
+                                .button.button--small
+                                    .button_inner Оформить

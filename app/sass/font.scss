@@ -1,85 +1,61 @@
 $font-stack: '../font/';
 
 @font-face {
-  font-family: 'DINPro-Light';
-      src: url($font-stack + 'DINPro-Light.eot');
-      src: url($font-stack + 'DINPro-Light.woff2') format('woff2'),
-           url($font-stack + 'DINPro-Light.woff') format('woff'),
-           url($font-stack + 'DINPro-Light.ttf') format('truetype'),
-           url($font-stack + 'DINPro-Light.svg#DINPro-Light') format('svg'),
-           url($font-stack + 'DINPro-Light.eot?#iefix') format('embedded-opentype');
-      font-weight: normal;
-      font-style: normal;
-}
-
-@font-face {
-  font-family: 'DINPro-Medium';
-  src: url($font-stack + 'DINPro-Medium.eot');
-  src: url($font-stack + 'DINPro-Medium.woff2') format('woff2'),
-       url($font-stack + 'DINPro-Medium.woff') format('woff'),
-       url($font-stack + 'DINPro-Medium.ttf') format('truetype'),
-       url($font-stack + 'DINPro-Medium.svg#DINPro-Medium') format('svg'),
-       url($font-stack + 'DINPro-Medium.eot?#iefix') format('embedded-opentype');
+  font-family: 'roboto-bold';
+  src: url($font-stack + 'roboto-bold.eot');
+  src: url($font-stack + 'roboto-bold.woff2') format('woff2'),
+       url($font-stack + 'roboto-bold.woff') format('woff'),
+       url($font-stack + 'roboto-bold.ttf') format('truetype'),
+       url($font-stack + 'roboto-bold.svg#roboto-bold') format('svg'),
+       url($font-stack + 'roboto-bold.eot?#iefix') format('embedded-opentype');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'DINPro-Regular';
-  src: url($font-stack + 'DINPro-Regular.eot');
-  src: url($font-stack + 'DINPro-Regular.woff2') format('woff2'),
-       url($font-stack + 'DINPro-Regular.woff') format('woff'),
-       url($font-stack + 'DINPro-Regular.ttf') format('truetype'),
-       url($font-stack + 'DINPro-Regular.svg#DINPro-Regular') format('svg'),
-       url($font-stack + 'DINPro-Regular.eot?#iefix') format('embedded-opentype');
+  font-family: 'roboto-condensed-bold';
+  src: url($font-stack + 'roboto-condensed-bold.eot');
+  src: url($font-stack + 'roboto-condensed-bold.woff2') format('woff2'),
+       url($font-stack + 'roboto-condensed-bold.woff') format('woff'),
+       url($font-stack + 'roboto-condensed-bold.ttf') format('truetype'),
+       url($font-stack + 'roboto-condensed-bold.svg#roboto-condensed-bold') format('svg'),
+       url($font-stack + 'roboto-condensed-bold.eot?#iefix') format('embedded-opentype');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'HouschkaPro-Medium';
-  src: url($font-stack + 'HouschkaPro-Medium.eot');
-  src: url($font-stack + 'HouschkaPro-Medium.woff2') format('woff2'),
-       url($font-stack + 'HouschkaPro-Medium.woff') format('woff'),
-       url($font-stack + 'HouschkaPro-Medium.ttf') format('truetype'),
-       url($font-stack + 'HouschkaPro-Medium.svg#HouschkaPro-Medium') format('svg'),
-       url($font-stack + 'HouschkaPro-Medium.eot?#iefix') format('embedded-opentype');
+  font-family: 'roboto-condensed-light';
+  src: url($font-stack + 'roboto-condensed-light.eot');
+  src: url($font-stack + 'roboto-condensed-light.woff2') format('woff2'),
+       url($font-stack + 'roboto-condensed-light.woff') format('woff'),
+       url($font-stack + 'roboto-condensed-light.ttf') format('truetype'),
+       url($font-stack + 'roboto-condensed-light.svg#roboto-condensed-light') format('svg'),
+       url($font-stack + 'roboto-condensed-light.eot?#iefix') format('embedded-opentype');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'HouschkaPro-ExtraBold';
-  src: url($font-stack + 'HouschkaPro-ExtraBold.eot');
-  src: url($font-stack + 'HouschkaPro-ExtraBold.woff2') format('woff2'),
-       url($font-stack + 'HouschkaPro-ExtraBold.woff') format('woff'),
-       url($font-stack + 'HouschkaPro-ExtraBold.ttf') format('truetype'),
-       url($font-stack + 'HouschkaPro-ExtraBold.svg#HouschkaPro-ExtraBold') format('svg'),
-       url($font-stack + 'HouschkaPro-ExtraBold.eot?#iefix') format('embedded-opentype');
+  font-family: 'roboto-condensed-regular';
+  src: url($font-stack + 'roboto-condensed-regular.eot');
+  src: url($font-stack + 'roboto-condensed-regular.woff2') format('woff2'),
+       url($font-stack + 'roboto-condensed-regular.woff') format('woff'),
+       url($font-stack + 'roboto-condensed-regular.ttf') format('truetype'),
+       url($font-stack + 'roboto-condensed-regular.svg#roboto-condensed-regular') format('svg'),
+       url($font-stack + 'roboto-condensed-regular.eot?#iefix') format('embedded-opentype');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'HouschkaPro-DemiBold';
-  src: url($font-stack + 'HouschkaPro-DemiBold.eot');
-  src: url($font-stack + 'HouschkaPro-DemiBold.woff2') format('woff2'),
-       url($font-stack + 'HouschkaPro-DemiBold.woff') format('woff'),
-       url($font-stack + 'HouschkaPro-DemiBold.ttf') format('truetype'),
-       url($font-stack + 'HouschkaPro-DemiBold.svg#HouschkaPro-DemiBold') format('svg'),
-       url($font-stack + 'HouschkaPro-DemiBold.eot?#iefix') format('embedded-opentype');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'HouschkaPro-Bold';
-  src: url($font-stack + 'HouschkaPro-Bold.eot');
-  src: url($font-stack + 'HouschkaPro-Bold.woff2') format('woff2'),
-       url($font-stack + 'HouschkaPro-Bold.woff') format('woff'),
-       url($font-stack + 'HouschkaPro-Bold.ttf') format('truetype'),
-       url($font-stack + 'HouschkaPro-Bold.svg#HouschkaPro-Bold') format('svg'),
-       url($font-stack + 'HouschkaPro-Bold.eot?#iefix') format('embedded-opentype');
+  font-family: 'noteworthy-light';
+  src: url($font-stack + 'noteworthy-light.eot');
+  src: url($font-stack + 'noteworthy-light.woff2') format('woff2'),
+       url($font-stack + 'noteworthy-light.woff') format('woff'),
+       url($font-stack + 'noteworthy-light.ttf') format('truetype'),
+       url($font-stack + 'noteworthy-light.svg#noteworthy-light') format('svg'),
+       url($font-stack + 'noteworthy-light.eot?#iefix') format('embedded-opentype');
   font-weight: normal;
   font-style: normal;
 }
