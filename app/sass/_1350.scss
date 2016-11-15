@@ -1,0 +1,378 @@
+@media only screen and (max-width: 1284px){
+    .plug__logo{
+        width: 241px;
+        height: 241px;
+    }
+    .plug__text{
+        font-size: 1.8rem;
+        margin: 30px 0;
+    }
+    .plug__button{
+        font-size: 1.8rem;
+        width: 320px;
+        border-top-width: 2px;
+        padding: 22px 0 24px 0;
+    }
+    .timer{
+        margin: 0 -20px;
+        .countdown-section{
+            margin: 0 20px;
+        }
+        .countdown-amount{
+            font-size: 4.8rem;
+            &:after{
+                right: -22px;
+            }
+        }
+    }
+
+    .backbone__inner{
+        background-size: 1440px;
+    }
+    .section__start{
+        height: 640px;
+    }
+    .section__tell-friends{
+        height: 490px;
+    }
+    .section__ritual-feast{
+        height: 630px;
+    }
+    .section__how-make{
+        height: 700px;
+    }
+    .section__teach{
+        height: 650px;
+        .teach-card{
+            height: 606px;
+        }
+    }
+    .section__tell-final{
+        height: 660px;
+    }
+    .section__where-buy{
+        margin-top: 118px;
+    }
+    .start__inner{
+        width: 710px;
+    }
+    .menu__item{
+        font-size: 1.6rem;
+    }
+    .logo{
+        width: 235px;
+        height: 235px;
+    }
+    .title{
+        font-size: 32px;
+    }
+    .title--small{
+        font-size: 1.8rem;
+    }
+    .text{
+        font-size: 1.2rem;
+    }
+    .button{
+        font-size: 1.4rem;
+        width: 176px;
+        padding: 16px 0;
+    }
+    .start__button{
+        padding: 16px 0 16px 20px;
+        width: 226px;
+        &:after{
+            top: 16px;
+            left: 16px;
+            width: 14px;
+            height: 20px;
+        }
+    }
+
+    .number-of-shared{
+        .ya-share2__counter:before{
+            background: none;
+        }
+        .ya-share2__container_size_m .ya-share2__counter{
+            font-family: 'HouschkaPro-Bold';
+            font-size: 1.8rem;
+            text-align: center;
+            color: #fff;
+        }
+        .ya-share2__list_direction_horizontal > .ya-share2__item{
+            margin-left: 90px;
+            &:first-child{
+                margin-left: 0;
+            }
+        }
+        .ya-share2__container_size_m .ya-share2__icon{
+            width: auto;
+            transform: scale(1);
+            transition: transform 0.2s linear;
+            &:hover{
+                transform: scale(0.8);
+                transition: transform 0.2s linear;
+            }
+        }
+        .ya-share2__item_service_facebook .ya-share2__badge{
+            background: none;
+        }
+        .ya-share2__container_size_m .ya-share2__item_service_facebook .ya-share2__icon{
+            height: 130px;
+            background: none;
+            display: block;
+            &:after{
+                display: block;
+                content: '';
+                @include sprite($s-number-of-shared-fb-350);
+            }
+        }
+        .ya-share2__item_service_vkontakte .ya-share2__badge{
+            background: none;
+        }
+        .ya-share2__container_size_m .ya-share2__item_service_vkontakte .ya-share2__icon{
+            height: 130px;
+            background: none;
+            display: block;
+            &:after{
+                display: block;
+                content: '';
+                @include sprite($s-number-of-shared-vk-350);
+            }
+        }
+        .ya-share2__item_service_odnoklassniki .ya-share2__badge{
+            background: none;
+        }
+        .ya-share2__container_size_m .ya-share2__item_service_odnoklassniki .ya-share2__icon{
+            height: 130px;
+            background: none;
+            display: block;
+            &:after{
+                display: block;
+                content: '';
+                @include sprite($s-number-of-shared-ok-350);
+            }
+        }
+    }
+    .number-of-shared__icon{
+        height: 130px;
+    }
+    .number-of-shared__icon--fb{
+        &:after{
+            @include sprite($s-number-of-shared-fb-350);
+        }
+    }
+    .number-of-shared__icon--vk{
+        &:after{
+            margin-top: 6px;
+            @include sprite($s-number-of-shared-vk-350);
+        }
+    }
+    .number-of-shared__icon--ok{
+        &:after{
+            margin-top: 14px;
+            @include sprite($s-number-of-shared-ok-350);
+        }
+    }
+    .number-of-shared__count{
+        font-size: 1.8rem;
+    }
+    .ritual-feast__cell:first-child{
+        height: 230px;
+    }
+    .ritual-feast__inner{
+        max-width: 775px;
+    }
+    .ritual-feast__cell:last-child{
+        padding-right: 80px;
+    }
+    .how-make__img--1{
+        &:after{
+            @include sprite($s-how-make-1-350);
+        }
+    }
+    .how-make__img--2{
+        &:after{
+            margin-top: 32px;
+            @include sprite($s-how-make-2-350);
+        }
+    }
+    .how-make__img--3{
+        &:after{
+            margin-top: 26px;
+            @include sprite($s-how-make-3-350);
+        }
+    }
+    .how-make__img{
+        height: 112px;
+    }
+    .how-make__text{
+        font-size: 1.8rem;
+    }
+    .how-make__item{
+        margin-left: 42px;
+    }
+    .how-make__dott--1{
+        display: none;
+    }
+    .how-make__dott--2{
+        display: none;
+    }
+    .how-make__dott--3{
+        top: 75px;
+        left: 187px;
+    }
+    .how-make__dott--4{
+        top: 82px;
+        left: 232px;
+    }
+    .how-make__dott--5{
+        top: 79px;
+        left: 288px;
+    }
+    .how-make__dott--6{
+        display: none;
+    }
+    .how-make__dott--7{
+        display: none;
+    }
+    .how-make__dott--8{
+        top: 82px;
+        left: 462px;
+    }
+    .how-make__dott--9{
+        top: 98px;
+        left: 506px;
+    }
+    .how-make__dott--10{
+        top: 90px;
+        left: 550px;
+    }
+    .how-make__dott--11{
+        display: none;
+    }
+    .how-make__dott--12{
+        display: none;
+    }
+    .how-make__dott--13{
+        display: none;
+    }
+    .teach-card__item{
+        width: 135px;
+        height: 149px;
+    }
+    .teach-card__img{
+        height: 96px;
+    }
+    .teach-card__i{
+        max-width: 80%;
+        max-height: 80%;
+    }
+    .teach-card--inline{
+        .teach-card__i{
+            max-width: 100%;
+            max-height: 100%;
+        }
+    }
+    .teach-card__name{
+        margin-top: 10px;
+    }
+    .teach__cell:first-child{
+        margin-right: 26px;
+    }
+    .teach-card__item:nth-child(2){
+        top: 66px;
+        left: 196px;
+    }
+    .teach-card__item:nth-child(3){
+        top: 194px;
+        left: 0;
+    }
+    .teach-card__item:nth-child(4){
+        top: 254px;
+        left: 186px;
+    }
+    .teach-card__item:nth-child(5){
+        top: 400px;
+    }
+    .teach-card__item:nth-child(6){
+        top: 450px;
+        left: 186px;
+    }
+    .tell-final__inner{
+        padding-left: 160px;
+    }
+    .tell-final__inner{
+        width: 717px;
+        height: 166px;
+    }
+    .tell-final__item{
+        margin-left: 22px;
+        margin-top: 45px;
+    }
+    .tell-final__item--fb{
+        @include sprite($s-tell-final-1-350);
+    }
+    .tell-final__item--in{
+        @include sprite($s-tell-final-2-350);
+    }
+    .tell-final__item--vk{
+        @include sprite($s-tell-final-3-350);
+    }
+    .tell-final__item--ok{
+        @include sprite($s-tell-final-4-350);
+    }
+    .city{
+        width: 325px;
+    }
+    .city__body{
+        top: 60px;
+    }
+    .city__item{
+        font-size: 1.8rem;
+    }
+    .city__head:after{
+        top: 16px;
+    }
+    .tab__item{
+        font-size: 1.8rem;
+    }
+    .where-buy__list{
+        max-width: 775px;
+    }
+    .where-buy-list__title{
+        font-size: 1.3rem;
+    }
+    .where-buy-list__text{
+        font-size: 1.1rem;
+    }
+    .where-buy-list__price{
+        font-size: 1.4rem;
+    }
+    .teach-card--inline{
+        .teach-card__item{
+            top: 0;
+            left: 0;
+            margin: 0 68px;
+        }
+    }
+    .teach-card-text__item{
+        font-size: 1.2rem;
+        width: 240px;
+        margin: 20px 12px 0;
+    }
+    .plug__copy{
+        right: -22px;
+    }
+    #fp-nav.right{
+        right: 56px;
+    }
+    .slider{
+        max-width: 775px;
+    }
+    .slider__title{
+        font-size: 3.2rem;
+    }
+    .slider__text{
+        font-size: 1.2rem;
+    }
+}
