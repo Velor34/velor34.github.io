@@ -13,6 +13,18 @@ $font-stack: '../font/';
 }
 
 @font-face {
+  font-family: 'roboto-regular';
+  src: url($font-stack + 'roboto-regular.eot');
+  src: url($font-stack + 'roboto-regular.woff2') format('woff2'),
+       url($font-stack + 'Roboto-Regular.woff') format('woff'),
+       url($font-stack + 'Roboto-Regular.ttf') format('truetype'),
+       url($font-stack + 'Roboto-Regular.svg#Roboto-Regular') format('svg'),
+       url($font-stack + 'roboto-regular.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
   font-family: 'roboto-condensed-bold';
   src: url($font-stack + 'roboto-condensed-bold.eot');
   src: url($font-stack + 'roboto-condensed-bold.woff2') format('woff2'),

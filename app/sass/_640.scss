@@ -1,0 +1,18 @@
+@media screen and (max-width: 940px){
+	.backbone__inner{
+		width: auto;
+		padding: 0 10px;
+	}
+	.lk{
+		display: none;
+	}
+	.menu{
+		padding-top: 20px;
+	}
+	.menu__part--link{
+		display: none;
+	}
+	.logo{
+		@include sprite($s-logo-mobile);
+	}
+}	

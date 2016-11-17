@@ -4,7 +4,7 @@ block content
     .menu-fixed.js-menu-fixed
         .backbone__inner
             .lk
-                .input-lk
+                a(href="#").input-lk
                     .input-lk__item.input-lk__item--icon
                     .input-lk__item.input-lk__item--text Личный кабинет
             .menu
@@ -22,7 +22,7 @@ block content
     .start-block
         .backbone__inner
             .lk
-                .input-lk
+                a(href="#").input-lk
                     .input-lk__item.input-lk__item--icon
                     .input-lk__item.input-lk__item--text Личный кабинет
             .menu
@@ -268,16 +268,64 @@ block content
                                                         .button_inner Оформить
                         .test-yourself-box__item
                             .yourself-box-lk.swiper-container.js-yourself-box-lk
+                                .yourself-box-lk__over
                                 .yourself-box-lk__inner.swiper-wrapper
-                                    .yourself-box-lk__over
                                     img(src="../content/yourself-box-lk/yourself-box-lk-1.jpg").yourself-box-lk__item.swiper-slide
                                     img(src="../content/yourself-box-lk/yourself-box-lk-2.jpg").yourself-box-lk__item.swiper-slide
                                     img(src="../content/yourself-box-lk/yourself-box-lk-3.jpg").yourself-box-lk__item.swiper-slide
                                     img(src="../content/yourself-box-lk/yourself-box-lk-4.jpg").yourself-box-lk__item.swiper-slide
                                     img(src="../content/yourself-box-lk/yourself-box-lk-5.jpg").yourself-box-lk__item.swiper-slide
+                                .swiper-button-next
+                                .swiper-button-prev
                         .test-yourself-box__item
+                            .yourself-box-training.swiper-container.js-yourself-box-training
+                                .yourself-box-training__over
+                                .yourself-box-training__inner.swiper-wrapper
+                                    .yourself-box-training__item.swiper-slide
+                                        a(href="#").yourself-box-training__link
+                                            img(src="../content/yourself-box-training/yourself-box-training-1.png").yourself-box-training__img
+                                    .yourself-box-training__item.swiper-slide
+                                        a(href="#").yourself-box-training__link
+                                            img(src="../content/yourself-box-training/yourself-box-training-1.png").yourself-box-training__img
+                                    .yourself-box-training__item.swiper-slide
+                                        a(href="#").yourself-box-training__link
+                                            img(src="../content/yourself-box-training/yourself-box-training-1.png").yourself-box-training__img
+                                .swiper-button-next
+                                .swiper-button-prev
                         .test-yourself-box__item
+                            .yourself-box-three.swiper-container.js-yourself-box-proper-nutrition
+                                .yourself-box-three__title Рацион проекта:
+                                .yourself-box-three__over
+                                .yourself-box-three__inner.swiper-wrapper
+                                    .yourself-box-three__item.swiper-slide
+                                        img(src="../content/yourself-box-proper-nutrition/yourself-box-proper-nutrition-1.jpg").yourself-box-three__img
+                                        .yourself-box-three__text Фрукты и ягоды
+                                    .yourself-box-three__item.swiper-slide
+                                        img(src="../content/yourself-box-proper-nutrition/yourself-box-proper-nutrition-2.jpg").yourself-box-three__img
+                                        .yourself-box-three__text Свежевыжатые соки
+                                    .yourself-box-three__item.swiper-slide
+                                        img(src="../content/yourself-box-proper-nutrition/yourself-box-proper-nutrition-3.jpg").yourself-box-three__img
+                                        .yourself-box-three__text Мясо
+                                .swiper-button-next
+                                .swiper-button-prev
+                                .swiper-pagination
                         .test-yourself-box__item
+                            .yourself-box-three.swiper-container.js-yourself-box-participants-project
+                                .yourself-box-three__title Участники проекта ProСушка:
+                                .yourself-box-three__over
+                                .yourself-box-three__inner.swiper-wrapper
+                                    .yourself-box-three__item.swiper-slide
+                                        img(src="../content/yourself-box-proper-nutrition/yourself-box-proper-nutrition-4.jpg").yourself-box-three__img
+                                        .yourself-box-three__text Юлия
+                                    .yourself-box-three__item.swiper-slide
+                                        img(src="../content/yourself-box-proper-nutrition/yourself-box-proper-nutrition-5.jpg").yourself-box-three__img
+                                        .yourself-box-three__text Евгения
+                                    .yourself-box-three__item.swiper-slide
+                                        img(src="../content/yourself-box-proper-nutrition/yourself-box-proper-nutrition-6.jpg").yourself-box-three__img
+                                        .yourself-box-three__text Иннокентий
+                                .swiper-button-next
+                                .swiper-button-prev
+                                .swiper-pagination
             .test-yourself__button
                 a(href="").button.button--no-shadow
                     .button_inner Участвовать
@@ -363,6 +411,17 @@ block content
     .personal-account-block
         .backbone__inner
             .personal-account-block__title Личный кабинет
+            .personal-account-block__content
+                .personal-account-block-slider.js-personal-account-block-slider
+                    .personal-account-block-slider__inner.swiper-wrapper
+                        img(src="../content/landing-lk/landing-lk-1.jpg").personal-account-block-slider__item.swiper-slide
+                        img(src="../content/landing-lk/landing-lk-2.jpg").personal-account-block-slider__item.swiper-slide
+                        img(src="../content/landing-lk/landing-lk-3.jpg").personal-account-block-slider__item.swiper-slide
+                        img(src="../content/landing-lk/landing-lk-4.jpg").personal-account-block-slider__item.swiper-slide
+                        img(src="../content/landing-lk/landing-lk-5.jpg").personal-account-block-slider__item.swiper-slide
+                    .swiper-button-next
+                    .swiper-button-prev
+                    .swiper-pagination
     .all-star-team
         .backbone__inner
             .all-star-team__title Звездная команда ждет тебя!
@@ -382,29 +441,14 @@ block content
                     .all-star-team__name Юрий Спасокукоцкий
                     .all-star-team__post Ведущий тренер и наставник
                     .all-star-team__text Первый российский фитнес-блогер/<br> чемпион мира
-            .all-star-team__question Только в этом сезоне!
-            .all-star-team__description Приз зрительских симпатий и специальный приз от членов жюри
+            .all-star-team__question А кто войдет в звездный состав нового сезона? Может быть ты?
+            .all-star-team__description Участвуй и следи за нашими новостями!
+
             .all-star-team__button
                 a(href="").button
                     .button_inner Участвовать
     .choose-your-rate
         .backbone__inner
-            .lk
-                .input-lk
-                    .input-lk__item.input-lk__item--icon
-                    .input-lk__item.input-lk__item--text Личный кабинет
-            .menu
-                .menu__part.menu__part--link
-                    a(href="#").menu__item о проекте
-                    a(href="#").menu__item условия
-                    a(href="#").menu__item призы
-                    a(href="#").menu__item наставники
-                .menu__part.menu__part--logo
-                    a(href="").logo
-                .menu__part.menu__part--link
-                    a(href="#").menu__item стоимость
-                    a(href="#").menu__item Вопросы
-                    a(href="#").menu__item новости
             .choose-your-rate__title Выбери свой тариф
             .rates
                 .rates__inner
@@ -718,43 +762,43 @@ block content
                             .questions-and-answers-answer__row
                                 .questions-and-answers-answer__item
                                     .questions-and-answers-answer__question
-                                        .questions-and-answers-answer__question_red 01. 
+                                        span.questions-and-answers-answer__question_red 01. 
                                         | Когда стартует проект?
                                     .questions-and-answers-answer__answer 21 ноября
                                 .questions-and-answers-answer__item
                                     .questions-and-answers-answer__question
-                                        .questions-and-answers-answer__question_red 02. 
+                                        span.questions-and-answers-answer__question_red 02. 
                                         | Я никогда не занимался спортом, у меня получится?
                                     .questions-and-answers-answer__answer Конечно. Твоя программа тренировок будет построена с учетом твоего уровня подготовки.
                                 .questions-and-answers-answer__item
                                     .questions-and-answers-answer__question
-                                        .questions-and-answers-answer__question_red 03. 
+                                        span.questions-and-answers-answer__question_red 03. 
                                         | Что такое «Личный кабинет»?
                                     .questions-and-answers-answer__answer Набор инструментов, который позволит тебе оперативно загружать данные и следить за результатами.
                                 .questions-and-answers-answer__item
                                     .questions-and-answers-answer__question
-                                        .questions-and-answers-answer__question_red 04. 
+                                        span.questions-and-answers-answer__question_red 04. 
                                         | Мне нужно создавать свой YouTube-канал?
                                     .questions-and-answers-answer__answer Нет, все проще. Видео загружается в личном кабинете, никакие ссылки не нужны. Там будет все необходимое для участия.
                                 .questions-and-answers-answer__item
                                     .questions-and-answers-answer__question
-                                        .questions-and-answers-answer__question_red 05. 
+                                        span.questions-and-answers-answer__question_red 05. 
                                         | У меня нет Контакта и Инстаграмма, Я могу участвовать?
                                     .questions-and-answers-answer__answer Аккаунт в соц. сетях может повлиять на твою победу в финальном голосовании, в котором могут участвовать все твои друзья и любой желающий. В этих соц.сетях еженедельно будут проходить бесплатные конкурсы, где ты сможешь выиграть один из призов: велосипед, гироскутер, смартфон или планшет.
                                 .questions-and-answers-answer__item
                                     .questions-and-answers-answer__question
-                                        .questions-and-answers-answer__question_red 06. 
+                                        span.questions-and-answers-answer__question_red 06. 
                                         | Я НЕ хочу худеть, стоит ли мне участвовать?
                                     .questions-and-answers-answer__answer Обязательно! Наша программа нацелена не на снижение веса, а на улучшение параметров тела. Следуя программе ты сможешь сохранить мышцы и подчеркнуть рельеф. Так же, между делом, ты сможешь выиграть красненькую машинку.
                             .questions-and-answers-answer__row
                                 .questions-and-answers-answer__item
                                     .questions-and-answers-answer__question
-                                        .questions-and-answers-answer__question_red 07. 
+                                        span.questions-and-answers-answer__question_red 07. 
                                         | Я спортсменка, мне стоит участвовать?
                                     .questions-and-answers-answer__answer Конечно, даже мировые звезды спорта имеют личного тренера и персональную программу питания, а у нас есть еще Личный кабинет в котором ты сможешь фиксировать все достижения. Про призы тоже не забывайте :)
                                 .questions-and-answers-answer__item
                                     .questions-and-answers-answer__question
-                                        .questions-and-answers-answer__question_red 08. 
+                                        span.questions-and-answers-answer__question_red 08. 
                                         | Что такое 3 группы участников?
                                     .questions-and-answers-answer__answer Это ради справедливости и объективности! 
                                         br
@@ -772,17 +816,17 @@ block content
                                         | Одинаковые комплекты ценных призов предусмотрены для каждой группы.
                                 .questions-and-answers-answer__item
                                     .questions-and-answers-answer__question
-                                        .questions-and-answers-answer__question_red 09. 
+                                        span.questions-and-answers-answer__question_red 09. 
                                         | И все же, почему не одна группа?
                                     .questions-and-answers-answer__answer Группы или категории есть во многих спортивных соревнованиях. Такой подход мы считаем более справедливым.
                                 .questions-and-answers-answer__item
                                     .questions-and-answers-answer__question
-                                        .questions-and-answers-answer__question_red 10. 
+                                        span.questions-and-answers-answer__question_red 10. 
                                         | А у вас есть иммунитеты?
                                     .questions-and-answers-answer__answer Конечно, как и в любой игре. Но мы уверены, что ты пришел на проект не только за машиной или деньгами. Следуй всем нашим инструкциям и иммунитет тебе не понадобится!
                                 .questions-and-answers-answer__item
                                     .questions-and-answers-answer__question
-                                        .questions-and-answers-answer__question_red 11. 
+                                        span.questions-and-answers-answer__question_red 11. 
                                         | Я гражданин другой страны, могу ли я принять участие?
                                     .questions-and-answers-answer__answer Да, принимать участие в проекте могут все, имеющие доступ к интернету и сайту, вне зависимости от города и страны проживания.
     .latest-news

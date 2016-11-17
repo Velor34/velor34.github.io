@@ -22,22 +22,80 @@ serviceInformation = {
 sliders = {
 	settings: {
 		sliderBoxLk: {
-			grabCursor: true,
 			centeredSlides: true,
 			slidesPerView: 'auto',
-			spaceBetween: 30,
-			loop: true
+			spaceBetween: 12,
+			//loop: true,
+			nextButton: '.swiper-button-next',
+			prevButton: '.swiper-button-prev'
+		},
+		sliderTraining: {
+			centeredSlides: true,
+			slidesPerView: 'auto',
+			spaceBetween: 14,
+			//loop: true,
+			nextButton: '.swiper-button-next',
+			prevButton: '.swiper-button-prev'
+		},
+		sliderProperNutrition: {
+			centeredSlides: true,
+			slidesPerView: 'auto',
+			spaceBetween: 36,
+			//loop: true,
+			pagination: '.swiper-pagination',
+			paginationClickable: true,
+			nextButton: '.swiper-button-next',
+			prevButton: '.swiper-button-prev'
+		},
+		sliderParticipantsProject: {
+			centeredSlides: true,
+			slidesPerView: 'auto',
+			spaceBetween: 36,
+			initialSlide: 1,
+			//loop: true,
+			pagination: '.swiper-pagination',
+			paginationClickable: true,
+			nextButton: '.swiper-button-next',
+			prevButton: '.swiper-button-prev'
+		},
+		sliderPersonalAccountBlockSlider: {
+			centeredSlides: true,
+			spaceBetween: 0,
+			pagination: '.swiper-pagination',
+			paginationClickable: true,
+			nextButton: '.swiper-button-next',
+			prevButton: '.swiper-button-prev'
 		}
 	},
 	slider: {
-		sliderBoxLk: null
+		sliderBoxLk: null,
+		sliderTraining: null,
+		sliderProperNutrition: null,
+		sliderParticipantsProject: null,
+		sliderPersonalAccountBlockSlider: null
 	},
 	call: {
 		sliderBoxLk: function(){
 			sliders.slider.sliderBoxLk = new Swiper('.js-yourself-box-lk', sliders.settings.sliderBoxLk);
 		},
+		sliderTraining: function(){
+			sliders.slider.sliderTraining = new Swiper('.js-yourself-box-training', sliders.settings.sliderTraining);
+		},
+		sliderProperNutrition: function(){
+			sliders.slider.sliderProperNutrition = new Swiper('.js-yourself-box-proper-nutrition', sliders.settings.sliderProperNutrition);
+		},
+		sliderParticipantsProject: function(){
+			sliders.slider.sliderParticipantsProject = new Swiper('.js-yourself-box-participants-project', sliders.settings.sliderParticipantsProject);
+		},
+		sliderPersonalAccountBlockSlider: function(){
+			sliders.slider.sliderPersonalAccountBlockSlider = new Swiper('.js-personal-account-block-slider', sliders.settings.sliderPersonalAccountBlockSlider);
+		},
 		init: function(){
 			this.sliderBoxLk();
+			this.sliderTraining();
+			this.sliderProperNutrition();
+			this.sliderParticipantsProject();
+			this.sliderPersonalAccountBlockSlider();
 		}
 	},
 	init: function(){
