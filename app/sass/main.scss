@@ -695,6 +695,7 @@ a {
 		font-family: 'roboto-condensed-regular';
 		font-size: 1.4rem;
 		text-align: left;
+		white-space: nowrap;
 	}
 	.rates__text--green{
 		color: #458804;
@@ -1246,4 +1247,228 @@ a {
 	}
 	.all-star-team__button{
 		margin-top: 36px;
+	}
+
+.questions-and-answers{
+	padding: 54px 0 50px 0;
+}
+	.questions-and-answers__title{
+		margin-bottom: 32px;
+		font-size: 3rem;
+		color: #000;
+		font-family: 'roboto-condensed-bold';
+	}
+	.questions-and-answers__inner{
+
+	}
+
+.questions-and-answers-switch{
+
+}
+	.questions-and-answers-switch__control{
+		margin-bottom: 34px;
+	}
+	.questions-and-answers-switch__body{
+
+	}
+
+.questions-and-answers-control{
+	padding: 24px 70px;
+	border-top: 1px solid #e6e7e8;
+	border-bottom: 1px solid #e6e7e8;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+	.questions-and-answers-control__item{
+		font-family: 'roboto-condensed-bold';
+		cursor: pointer;
+		font-size: 1.8rem;
+		color: #000;
+		border-bottom: 1px dotted #000;
+		position: relative;
+		&.is-active{
+			color: #ff0000;
+			border-bottom-color: transparent;
+			&:after{
+				content: '';
+				position: absolute;
+				bottom: -26px;
+				left: -18px;
+				height: 3px;
+				width: calc(100% + 18px * 2);
+				background: #ff0000;
+			}
+		}
+	}
+
+.questions-and-answers-answer{
+	font-size: 0;
+}
+	.questions-and-answers-answer__row{
+		display: inline-block;
+		vertical-align: top;
+		width: 462px;
+		&:last-child{
+			margin-left: 16px;
+		}
+	}
+	.questions-and-answers-answer__item{
+		margin-bottom: 24px;
+	}
+	.questions-and-answers-answer__question{
+		font-size: 1.8rem;
+		color: #000;
+		margin-bottom: 6px;
+		font-family: 'roboto-condensed-bold';
+	}
+	.questions-and-answers-answer__question_red{
+		color: #ff0000;
+	}
+	.questions-and-answers-answer__answer{
+		font-size: 1.6rem;
+		color: #000;
+		font-family: 'roboto-condensed-regular';
+		line-height: 1.2;
+	}
+	.questions-and-answers-answer__answer_bold{
+		font-family: 'roboto-condensed-bold';
+	}
+
+.latest-news{
+	height: 520px;
+	background: url(../i/latest-news-bg.jpg) no-repeat center top;
+	text-align: center;
+	padding-top: 54px;
+}
+	.latest-news__title{
+		margin-bottom: 56px;
+		font-size: 3rem;
+		color: #fff;
+		font-family: 'roboto-condensed-bold';
+	}
+	.latest-news__news{
+
+	}
+	.latest-news__link{
+		margin-top: 52px;
+		color: #ff0000;
+		font-size: 1.8rem;
+		text-decoration: underline;
+		font-family: 'roboto-condensed-regular';
+		display: block;
+	}
+
+.news-list{
+	font-size: 0;
+}
+	.news-list__inner{
+		margin: 0 -10px;
+	}
+	.news-list__item{
+		width: 300px;
+		margin: 0 10px;
+		display: inline-block;
+		vertical-align: top;
+		text-align: left;
+	}
+	.news-list__img{
+		vertical-align: top;
+	}
+	.news-list__date{
+		margin-top: 24px;
+		color: #fff;
+		font-size: 1.6rem;
+		font-family: 'roboto-condensed-regular';
+	}
+	.news-list__name{
+		margin-top: 6px;
+		color: #fff;
+		font-size: 2rem;
+		font-family: 'roboto-condensed-bold';
+	}
+
+.pro-drying{
+	padding: 100px 0 22px 0;
+	text-align: center;
+}
+	.pro-drying__title{
+		font-size: 17rem;
+		color: #000;
+		font-family: 'roboto-condensed-bold';
+		margin-bottom: 30px;
+	}
+	.pro-drying__title_red{
+		color: #ff0000;
+	}
+	.pro-drying__slogan{
+		margin-bottom: 62px;
+	}
+	.pro-drying__group{
+		font-size: 0;
+	}
+	.pro-drying__item{
+		display: inline-block;
+		vertical-align: top;
+		margin: 0 26px;
+	}
+	.pro-drying__img{
+		margin: 0 auto;
+	}
+	.pro-drying__img--1{
+		@include sprite($s-pro-drying-img-1);
+	}
+	.pro-drying__img--2{
+		@include sprite($s-pro-drying-img-2);
+	}
+	.pro-drying__img--3{
+		@include sprite($s-pro-drying-img-3);
+	}
+	.pro-drying__text{
+		font-family: 'roboto-condensed-regular';
+		font-size: 1.6rem;
+		color: #000;
+		line-height: 1.2;
+		margin-top: 10px;
+	}
+	.pro-drying__button{
+		margin: 48px 0 72px 0;
+	}
+
+.tell-your-friends{
+	padding: 38px 0 22px 0;
+	border-top: 1px solid #e5e5e5;
+	text-align: center;
+}
+	.tell-your-friends__title{
+		font-size: 2rem;
+		font-family: 'roboto-condensed-bold';
+		margin-bottom: 26px;
+	}
+
+.love-radio{
+	background: #ff0000;
+	padding: 28px 0;
+	text-align: center;
+}
+	.love-radio__item{
+		display: inline-block;
+		vertical-align: middle;
+		text-align: left;
+		&:first-child{
+			margin-right: 52px;
+		}
+	}
+	.love-radio__icon{
+		@include sprite($s-love-radio-icon);
+	}
+	.love-radio__text{
+		color: #fff;
+		font-family: 'roboto-condensed-regular';
+		font-size: 1.6rem;
+	}
+	.love-radio__text--big{
+		font-family: 'roboto-condensed-bold';
+		margin-top: 8px;
+		font-size: 2rem;
 	}
