@@ -1,7 +1,24 @@
 extends layout.jade
 
 block content
-
+    .menu-fixed.js-menu-fixed
+        .backbone__inner
+            .lk
+                .input-lk
+                    .input-lk__item.input-lk__item--icon
+                    .input-lk__item.input-lk__item--text Личный кабинет
+            .menu
+                .menu__part.menu__part--link
+                    .menu__item(data-scroll="project-description") о проекте
+                    a(href="#" data-scroll="").menu__item условия
+                    a(href="#" data-scroll="").menu__item призы
+                    a(href="#" data-scroll="").menu__item наставники
+                .menu__part.menu__part--logo
+                    a(href="").logo
+                .menu__part.menu__part--link
+                    a(href="#" data-scroll="").menu__item стоимость
+                    a(href="#" data-scroll="").menu__item Вопросы
+                    a(href="#" data-scroll="").menu__item новости
     .start-block
         .backbone__inner
             .lk
@@ -52,7 +69,7 @@ block content
             .video-block__button
                 a(href="").button
                     .button_inner Участвовать 
-    .project-description
+    .project-description(data-scroll-to="project-description")
         .backbone__inner
             .project-description__title Описание проекта
             .project-description__slogan
@@ -427,255 +444,260 @@ block content
                             .rates__item
                                 .rates__text Сушки в подарок
                     .rates__row
-                        .rates__top
-                            .rates__title Pro Спорт
-                            .rates__number 1 участник
-                            .rates__img.rates__img--1
-                            .rates__icon-group
-                                .rates-icon
-                                    .rates-icon__item.rates-icon__item--1
-                                    .rates-icon__item.rates-icon__item--2.rates-icon__item--no
-                                    .rates-icon__item.rates-icon__item--3.rates-icon__item--no
-                                    .rates-icon__item.rates-icon__item--4.rates-icon__item--no
-                            .rates__price 999 руб.
-                            .rates__button
-                                .button.button--small
-                                    .button_inner Оформить
-                        .rates__bottom
-                            .rates__item
-                                .rates__icon.rates__icon--yes
-                            .rates__item
-                                .rates__icon.rates__icon--yes
-                            .rates__item
-                                .rates__icon.rates__icon--yes
-                            .rates__item
-                                .rates__icon.rates__icon--yes
-                            .rates__item
-                                .rates__icon.rates__icon--yes
-                            .rates__item
-                                .rates__icon.rates__icon--no
-                            .rates__item
-                                .rates__icon.rates__icon--no
-                            .rates__item
-                                .rates__icon.rates__icon--no
-                            .rates__item
-                                .rates__icon.rates__icon--no
-                            .rates__item
-                                .rates__icon.rates__icon--no
-                            .rates__item
-                                .rates__icon.rates__icon--no
-                            .rates__item
-                                .rates__icon.rates__icon--no
-                            .rates__item
-                                .rates__icon.rates__icon--no
-                            .rates__item
-                                .rates__icon.rates__icon--no
-                            .rates__item
-                                .rates__icon.rates__icon--no
-                            .rates__price 999 руб.
-                            .rates__button
-                                .button.button--small
-                                    .button_inner Оформить
+                        .rates__hover
+                            .rates__top
+                                .rates__title Pro Спорт
+                                .rates__number 1 участник
+                                .rates__img.rates__img--1
+                                .rates__icon-group
+                                    .rates-icon
+                                        .rates-icon__item.rates-icon__item--1
+                                        .rates-icon__item.rates-icon__item--2.rates-icon__item--no
+                                        .rates-icon__item.rates-icon__item--3.rates-icon__item--no
+                                        .rates-icon__item.rates-icon__item--4.rates-icon__item--no
+                                .rates__price 999 руб.
+                                .rates__button
+                                    .button.button--small
+                                        .button_inner Оформить
+                            .rates__bottom
+                                .rates__item
+                                    .rates__icon.rates__icon--yes
+                                .rates__item
+                                    .rates__icon.rates__icon--yes
+                                .rates__item
+                                    .rates__icon.rates__icon--yes
+                                .rates__item
+                                    .rates__icon.rates__icon--yes
+                                .rates__item
+                                    .rates__icon.rates__icon--yes
+                                .rates__item
+                                    .rates__icon.rates__icon--no
+                                .rates__item
+                                    .rates__icon.rates__icon--no
+                                .rates__item
+                                    .rates__icon.rates__icon--no
+                                .rates__item
+                                    .rates__icon.rates__icon--no
+                                .rates__item
+                                    .rates__icon.rates__icon--no
+                                .rates__item
+                                    .rates__icon.rates__icon--no
+                                .rates__item
+                                    .rates__icon.rates__icon--no
+                                .rates__item
+                                    .rates__icon.rates__icon--no
+                                .rates__item
+                                    .rates__icon.rates__icon--no
+                                .rates__item
+                                    .rates__icon.rates__icon--no
+                        .rates__price 999 руб.
+                        .rates__button
+                            .button.button--small
+                                .button_inner Оформить
                     .rates__row
-                        .rates__top
-                            .rates__title Pro Стандарт
-                            .rates__number 1 участник
-                            .rates__img.rates__img--2
-                            .rates__icon-group
-                                .rates-icon
-                                    .rates-icon__item.rates-icon__item--1
-                                    .rates-icon__item.rates-icon__item--2
-                                    .rates-icon__item.rates-icon__item--3.rates-icon__item--no
-                                    .rates-icon__item.rates-icon__item--4
-                            .rates__price 2 500 руб.
-                            .rates__button
-                                .button.button--small
-                                    .button_inner Оформить
-                        .rates__bottom
-                            .rates__item
-                                .rates__icon.rates__icon--yes
-                            .rates__item
-                                .rates__icon.rates__icon--yes
-                            .rates__item
-                                .rates__icon.rates__icon--yes
-                            .rates__item
-                                .rates__icon.rates__icon--yes
-                            .rates__item
-                                .rates__icon.rates__icon--yes
-                            .rates__item
-                                .rates__icon.rates__icon--yes
-                            .rates__item
-                                .rates__icon.rates__icon--yes
-                            .rates__item
-                                .rates__icon.rates__icon--yes
-                            .rates__item
-                                .rates__icon.rates__icon--yes
-                            .rates__item
-                                .rates__icon.rates__icon--yes
-                            .rates__item
-                                .rates__icon.rates__icon--yes
-                            .rates__item
-                                .rates__icon.rates__icon--yes
-                            .rates__item
-                                .rates__icon.rates__icon--yes
-                            .rates__item
-                                .rates__icon.rates__icon--no
-                            .rates__item
-                                .rates__text.rates__text--green.rates__text--center 5
-                            .rates__price 2 500 руб.
-                            .rates__button
-                                .button.button--small
-                                    .button_inner Оформить
+                        .rates__hover
+                            .rates__top
+                                .rates__title Pro Стандарт
+                                .rates__number 1 участник
+                                .rates__img.rates__img--2
+                                .rates__icon-group
+                                    .rates-icon
+                                        .rates-icon__item.rates-icon__item--1
+                                        .rates-icon__item.rates-icon__item--2
+                                        .rates-icon__item.rates-icon__item--3.rates-icon__item--no
+                                        .rates-icon__item.rates-icon__item--4
+                                .rates__price 2 500 руб.
+                                .rates__button
+                                    .button.button--small
+                                        .button_inner Оформить
+                            .rates__bottom
+                                .rates__item
+                                    .rates__icon.rates__icon--yes
+                                .rates__item
+                                    .rates__icon.rates__icon--yes
+                                .rates__item
+                                    .rates__icon.rates__icon--yes
+                                .rates__item
+                                    .rates__icon.rates__icon--yes
+                                .rates__item
+                                    .rates__icon.rates__icon--yes
+                                .rates__item
+                                    .rates__icon.rates__icon--yes
+                                .rates__item
+                                    .rates__icon.rates__icon--yes
+                                .rates__item
+                                    .rates__icon.rates__icon--yes
+                                .rates__item
+                                    .rates__icon.rates__icon--yes
+                                .rates__item
+                                    .rates__icon.rates__icon--yes
+                                .rates__item
+                                    .rates__icon.rates__icon--yes
+                                .rates__item
+                                    .rates__icon.rates__icon--yes
+                                .rates__item
+                                    .rates__icon.rates__icon--yes
+                                .rates__item
+                                    .rates__icon.rates__icon--no
+                                .rates__item
+                                    .rates__text.rates__text--green.rates__text--center 5
+                        .rates__price 2 500 руб.
+                        .rates__button
+                            .button.button--small
+                                .button_inner Оформить
                     .rates__row
-                        .rates__top
-                            .rates__title Pro Максимум
-                            .rates__number 1 участник
-                            .rates__img.rates__img--3
-                            .rates__icon-group
-                                .rates-icon
-                                    .rates-icon__item.rates-icon__item--1
-                                    .rates-icon__item.rates-icon__item--2
-                                    .rates-icon__item.rates-icon__item--3
-                                    .rates-icon__item.rates-icon__item--4
-                            .rates__price 5 000 руб.
-                            .rates__button
-                                .button.button--small
-                                    .button_inner Оформить
-                        .rates__bottom
-                            .rates__item
-                                .rates__icon.rates__icon--yes
-                            .rates__item
-                                .rates__icon.rates__icon--yes
-                            .rates__item
-                                .rates__icon.rates__icon--yes
-                            .rates__item
-                                .rates__icon.rates__icon--yes
-                            .rates__item
-                                .rates__icon.rates__icon--yes
-                            .rates__item
-                                .rates__icon.rates__icon--yes
-                            .rates__item
-                                .rates__icon.rates__icon--yes
-                            .rates__item
-                                .rates__icon.rates__icon--yes
-                            .rates__item
-                                .rates__icon.rates__icon--yes
-                            .rates__item
-                                .rates__icon.rates__icon--yes
-                            .rates__item
-                                .rates__icon.rates__icon--yes
-                            .rates__item
-                                .rates__icon.rates__icon--yes
-                            .rates__item
-                                .rates__icon.rates__icon--yes
-                            .rates__item
-                                .rates__icon.rates__icon--yes
-                            .rates__item
-                                .rates__text.rates__text--green.rates__text--center 10
-                            .rates__price 5 000 руб.
-                            .rates__button
-                                .button.button--small
-                                    .button_inner Оформить
+                        .rates__hover
+                            .rates__top
+                                .rates__title Pro Максимум
+                                .rates__number 1 участник
+                                .rates__img.rates__img--3
+                                .rates__icon-group
+                                    .rates-icon
+                                        .rates-icon__item.rates-icon__item--1
+                                        .rates-icon__item.rates-icon__item--2
+                                        .rates-icon__item.rates-icon__item--3
+                                        .rates-icon__item.rates-icon__item--4
+                                .rates__price 5 000 руб.
+                                .rates__button
+                                    .button.button--small
+                                        .button_inner Оформить
+                            .rates__bottom
+                                .rates__item
+                                    .rates__icon.rates__icon--yes
+                                .rates__item
+                                    .rates__icon.rates__icon--yes
+                                .rates__item
+                                    .rates__icon.rates__icon--yes
+                                .rates__item
+                                    .rates__icon.rates__icon--yes
+                                .rates__item
+                                    .rates__icon.rates__icon--yes
+                                .rates__item
+                                    .rates__icon.rates__icon--yes
+                                .rates__item
+                                    .rates__icon.rates__icon--yes
+                                .rates__item
+                                    .rates__icon.rates__icon--yes
+                                .rates__item
+                                    .rates__icon.rates__icon--yes
+                                .rates__item
+                                    .rates__icon.rates__icon--yes
+                                .rates__item
+                                    .rates__icon.rates__icon--yes
+                                .rates__item
+                                    .rates__icon.rates__icon--yes
+                                .rates__item
+                                    .rates__icon.rates__icon--yes
+                                .rates__item
+                                    .rates__icon.rates__icon--yes
+                                .rates__item
+                                    .rates__text.rates__text--green.rates__text--center 10
+                        .rates__price 5 000 руб.
+                        .rates__button
+                            .button.button--small
+                                .button_inner Оформить
                     .rates__row
-                        .rates__top
-                            .rates__title Pro Дубль
-                            .rates__number 2 участника
-                            .rates__img.rates__img--4
-                            .rates__icon-group
-                                .rates-icon
-                                    .rates-icon__item.rates-icon__item--1
-                                    .rates-icon__item.rates-icon__item--2
-                                    .rates-icon__item.rates-icon__item--3.rates-icon__item--no
-                                    .rates-icon__item.rates-icon__item--4
-                            .rates__price 4 000 руб.
-                            .rates__button
-                                .button.button--small
-                                    .button_inner Оформить
-                        .rates__bottom
-                            .rates__item
-                                .rates__icon.rates__icon--yes
-                            .rates__item
-                                .rates__icon.rates__icon--yes
-                            .rates__item
-                                .rates__icon.rates__icon--yes
-                            .rates__item
-                                .rates__icon.rates__icon--yes
-                            .rates__item
-                                .rates__icon.rates__icon--yes
-                            .rates__item
-                                .rates__icon.rates__icon--yes
-                            .rates__item
-                                .rates__icon.rates__icon--yes
-                            .rates__item
-                                .rates__icon.rates__icon--yes
-                            .rates__item
-                                .rates__icon.rates__icon--yes
-                            .rates__item
-                                .rates__icon.rates__icon--yes
-                            .rates__item
-                                .rates__icon.rates__icon--yes
-                            .rates__item
-                                .rates__icon.rates__icon--yes
-                            .rates__item
-                                .rates__icon.rates__icon--yes
-                            .rates__item
-                                .rates__icon.rates__icon--no
-                            .rates__item
-                                .rates__text.rates__text--green.rates__text--center по 5
-                            .rates__price 4 000 руб.
-                            .rates__button
-                                .button.button--small
-                                    .button_inner Оформить
+                        .rates__hover
+                            .rates__top
+                                .rates__title Pro Дубль
+                                .rates__number 2 участника
+                                .rates__img.rates__img--4
+                                .rates__icon-group
+                                    .rates-icon
+                                        .rates-icon__item.rates-icon__item--1
+                                        .rates-icon__item.rates-icon__item--2
+                                        .rates-icon__item.rates-icon__item--3.rates-icon__item--no
+                                        .rates-icon__item.rates-icon__item--4
+                                .rates__price 4 000 руб.
+                                .rates__button
+                                    .button.button--small
+                                        .button_inner Оформить
+                            .rates__bottom
+                                .rates__item
+                                    .rates__icon.rates__icon--yes
+                                .rates__item
+                                    .rates__icon.rates__icon--yes
+                                .rates__item
+                                    .rates__icon.rates__icon--yes
+                                .rates__item
+                                    .rates__icon.rates__icon--yes
+                                .rates__item
+                                    .rates__icon.rates__icon--yes
+                                .rates__item
+                                    .rates__icon.rates__icon--yes
+                                .rates__item
+                                    .rates__icon.rates__icon--yes
+                                .rates__item
+                                    .rates__icon.rates__icon--yes
+                                .rates__item
+                                    .rates__icon.rates__icon--yes
+                                .rates__item
+                                    .rates__icon.rates__icon--yes
+                                .rates__item
+                                    .rates__icon.rates__icon--yes
+                                .rates__item
+                                    .rates__icon.rates__icon--yes
+                                .rates__item
+                                    .rates__icon.rates__icon--yes
+                                .rates__item
+                                    .rates__icon.rates__icon--no
+                                .rates__item
+                                    .rates__text.rates__text--green.rates__text--center по 5
+                        .rates__price 4 000 руб.
+                        .rates__button
+                            .button.button--small
+                                .button_inner Оформить
                     .rates__row
-                        .rates__top
-                            .rates__title Pro Клуб
-                            .rates__number 5 участников
-                            .rates__img.rates__img--5
-                            .rates__icon-group
-                                .rates-icon
-                                    .rates-icon__item.rates-icon__item--1
-                                    .rates-icon__item.rates-icon__item--2
-                                    .rates-icon__item.rates-icon__item--3.rates-icon__item--no
-                                    .rates-icon__item.rates-icon__item--4
-                            .rates__price 9 000 руб.
-                            .rates__button
-                                .button.button--small
-                                    .button_inner Оформить
-                        .rates__bottom
-                            .rates__item
-                                .rates__icon.rates__icon--yes
-                            .rates__item
-                                .rates__icon.rates__icon--yes
-                            .rates__item
-                                .rates__icon.rates__icon--yes
-                            .rates__item
-                                .rates__icon.rates__icon--yes
-                            .rates__item
-                                .rates__icon.rates__icon--yes
-                            .rates__item
-                                .rates__icon.rates__icon--yes
-                            .rates__item
-                                .rates__icon.rates__icon--yes
-                            .rates__item
-                                .rates__icon.rates__icon--yes
-                            .rates__item
-                                .rates__icon.rates__icon--yes
-                            .rates__item
-                                .rates__icon.rates__icon--yes
-                            .rates__item
-                                .rates__icon.rates__icon--yes
-                            .rates__item
-                                .rates__icon.rates__icon--yes
-                            .rates__item
-                                .rates__icon.rates__icon--yes
-                            .rates__item
-                                .rates__icon.rates__icon--no
-                            .rates__item
-                                .rates__text.rates__text--green.rates__text--center по 5
-                            .rates__price 9 000 руб.
-                            .rates__button
-                                .button.button--small
-                                    .button_inner Оформить
+                        .rates__hover
+                            .rates__top
+                                .rates__title Pro Клуб
+                                .rates__number 5 участников
+                                .rates__img.rates__img--5
+                                .rates__icon-group
+                                    .rates-icon
+                                        .rates-icon__item.rates-icon__item--1
+                                        .rates-icon__item.rates-icon__item--2
+                                        .rates-icon__item.rates-icon__item--3.rates-icon__item--no
+                                        .rates-icon__item.rates-icon__item--4
+                                .rates__price 9 000 руб.
+                                .rates__button
+                                    .button.button--small
+                                        .button_inner Оформить
+                            .rates__bottom
+                                .rates__item
+                                    .rates__icon.rates__icon--yes
+                                .rates__item
+                                    .rates__icon.rates__icon--yes
+                                .rates__item
+                                    .rates__icon.rates__icon--yes
+                                .rates__item
+                                    .rates__icon.rates__icon--yes
+                                .rates__item
+                                    .rates__icon.rates__icon--yes
+                                .rates__item
+                                    .rates__icon.rates__icon--yes
+                                .rates__item
+                                    .rates__icon.rates__icon--yes
+                                .rates__item
+                                    .rates__icon.rates__icon--yes
+                                .rates__item
+                                    .rates__icon.rates__icon--yes
+                                .rates__item
+                                    .rates__icon.rates__icon--yes
+                                .rates__item
+                                    .rates__icon.rates__icon--yes
+                                .rates__item
+                                    .rates__icon.rates__icon--yes
+                                .rates__item
+                                    .rates__icon.rates__icon--yes
+                                .rates__item
+                                    .rates__icon.rates__icon--no
+                                .rates__item
+                                    .rates__text.rates__text--green.rates__text--center по 5
+                        .rates__price 9 000 руб.
+                        .rates__button
+                            .button.button--small
+                                .button_inner Оформить
     .questions-and-answers
         .backbone__inner
             .questions-and-answers__title Вопросы и ответы
@@ -801,7 +823,7 @@ block content
                     .pro-drying__img.pro-drying__img--3
                     .pro-drying__text Cотрудничество с ведущими<br> блогерами и СМИ
             .pro-drying__button
-                a(href="").button
+                a(href="").button.button--no-shadow
                     .button_inner Участвовать
             .tell-your-friends
                 .tell-your-friends__title Расскажите друзьям
@@ -822,12 +844,30 @@ block content
                 a(href="").footer-payment__item.footer-payment__item--3
                 a(href="").footer-payment__item.footer-payment__item--4
             .footer-content
-                .footer-content__row
+                .footer-content__cell
                     .footer-address
                         .footer-address__logo
                         .footer-address__content
                             .footer-address__text ООО «ПроСушка»<br> ИНН: 4703145046, КПП: 470301001<br> Адрес: 188644 г. Всеволожск<br> пер. Олениных дом 2 к.1 пом. 24
-                            a(href="#").footer-address__link Договор оферты
-                            a(href="#").footer-address__link Правила
-                .footer-content__row
-                .footer-content__row
+                            .footer-address__link-wrap
+                                a(href="#").footer-address__link Договор оферты
+                                a(href="#").footer-address__link Правила
+                .footer-content__cell
+                    .footer-link
+                        .footer-link__title Контактная информация:
+                        a(href="#").footer-link__item
+                            .footer-link__cell.footer-link__cell--icon-1
+                            .footer-link__cell.footer-link__cell--text +7 (499) 322-89-41
+                        a(href="#").footer-link__item
+                            .footer-link__cell.footer-link__cell--icon-2
+                            .footer-link__cell.footer-link__cell--text info@prosushka.pro
+                .footer-content__cell
+                    .footer-link
+                        .footer-link__title Присоединяйтесь:
+                        a(href="#").footer-link__item
+                            .footer-link__cell.footer-link__cell--icon-3
+                            .footer-link__cell.footer-link__cell--text Instagram.com/prosushka
+                        a(href="#").footer-link__item
+                            .footer-link__cell.footer-link__cell--icon-4
+                            .footer-link__cell.footer-link__cell--text vk.com/prosushka
+            .footer__copy ©ProСушка 2016

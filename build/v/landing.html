@@ -9,6 +9,23 @@
   </head>
   <body>
     <div class="backbone">
+      <div class="menu-fixed js-menu-fixed">
+        <div class="backbone__inner">
+          <div class="lk">
+            <div class="input-lk">
+              <div class="input-lk__item input-lk__item--icon"></div>
+              <div class="input-lk__item input-lk__item--text">Личный кабинет</div>
+            </div>
+          </div>
+          <div class="menu">
+            <div class="menu__part menu__part--link">
+              <div data-scroll="project-description" class="menu__item">о проекте</div><a href="#" data-scroll="" class="menu__item">условия</a><a href="#" data-scroll="" class="menu__item">призы</a><a href="#" data-scroll="" class="menu__item">наставники</a>
+            </div>
+            <div class="menu__part menu__part--logo"><a href="" class="logo"></a></div>
+            <div class="menu__part menu__part--link"><a href="#" data-scroll="" class="menu__item">стоимость</a><a href="#" data-scroll="" class="menu__item">Вопросы</a><a href="#" data-scroll="" class="menu__item">новости</a></div>
+          </div>
+        </div>
+      </div>
       <div class="start-block">
         <div class="backbone__inner">
           <div class="lk">
@@ -62,7 +79,7 @@
               <div class="button_inner">Участвовать </div></a></div>
         </div>
       </div>
-      <div class="project-description">
+      <div data-scroll-to="project-description" class="project-description">
         <div class="backbone__inner">
           <div class="project-description__title">Описание проекта</div>
           <div class="project-description__slogan">
@@ -538,372 +555,382 @@
                 </div>
               </div>
               <div class="rates__row">
-                <div class="rates__top">
-                  <div class="rates__title">Pro Спорт</div>
-                  <div class="rates__number">1 участник</div>
-                  <div class="rates__img rates__img--1"></div>
-                  <div class="rates__icon-group">
-                    <div class="rates-icon">
-                      <div class="rates-icon__item rates-icon__item--1"></div>
-                      <div class="rates-icon__item rates-icon__item--2 rates-icon__item--no"></div>
-                      <div class="rates-icon__item rates-icon__item--3 rates-icon__item--no"></div>
-                      <div class="rates-icon__item rates-icon__item--4 rates-icon__item--no"></div>
+                <div class="rates__hover">
+                  <div class="rates__top">
+                    <div class="rates__title">Pro Спорт</div>
+                    <div class="rates__number">1 участник</div>
+                    <div class="rates__img rates__img--1"></div>
+                    <div class="rates__icon-group">
+                      <div class="rates-icon">
+                        <div class="rates-icon__item rates-icon__item--1"></div>
+                        <div class="rates-icon__item rates-icon__item--2 rates-icon__item--no"></div>
+                        <div class="rates-icon__item rates-icon__item--3 rates-icon__item--no"></div>
+                        <div class="rates-icon__item rates-icon__item--4 rates-icon__item--no"></div>
+                      </div>
+                    </div>
+                    <div class="rates__price">999 руб.</div>
+                    <div class="rates__button">
+                      <div class="button button--small">
+                        <div class="button_inner">Оформить</div>
+                      </div>
                     </div>
                   </div>
-                  <div class="rates__price">999 руб.</div>
-                  <div class="rates__button">
-                    <div class="button button--small">
-                      <div class="button_inner">Оформить</div>
+                  <div class="rates__bottom">
+                    <div class="rates__item">
+                      <div class="rates__icon rates__icon--yes"></div>
                     </div>
-                  </div>
-                </div>
-                <div class="rates__bottom">
-                  <div class="rates__item">
-                    <div class="rates__icon rates__icon--yes"></div>
-                  </div>
-                  <div class="rates__item">
-                    <div class="rates__icon rates__icon--yes"></div>
-                  </div>
-                  <div class="rates__item">
-                    <div class="rates__icon rates__icon--yes"></div>
-                  </div>
-                  <div class="rates__item">
-                    <div class="rates__icon rates__icon--yes"></div>
-                  </div>
-                  <div class="rates__item">
-                    <div class="rates__icon rates__icon--yes"></div>
-                  </div>
-                  <div class="rates__item">
-                    <div class="rates__icon rates__icon--no"></div>
-                  </div>
-                  <div class="rates__item">
-                    <div class="rates__icon rates__icon--no"></div>
-                  </div>
-                  <div class="rates__item">
-                    <div class="rates__icon rates__icon--no"></div>
-                  </div>
-                  <div class="rates__item">
-                    <div class="rates__icon rates__icon--no"></div>
-                  </div>
-                  <div class="rates__item">
-                    <div class="rates__icon rates__icon--no"></div>
-                  </div>
-                  <div class="rates__item">
-                    <div class="rates__icon rates__icon--no"></div>
-                  </div>
-                  <div class="rates__item">
-                    <div class="rates__icon rates__icon--no"></div>
-                  </div>
-                  <div class="rates__item">
-                    <div class="rates__icon rates__icon--no"></div>
-                  </div>
-                  <div class="rates__item">
-                    <div class="rates__icon rates__icon--no"></div>
-                  </div>
-                  <div class="rates__item">
-                    <div class="rates__icon rates__icon--no"></div>
-                  </div>
-                  <div class="rates__price">999 руб.</div>
-                  <div class="rates__button">
-                    <div class="button button--small">
-                      <div class="button_inner">Оформить</div>
+                    <div class="rates__item">
+                      <div class="rates__icon rates__icon--yes"></div>
+                    </div>
+                    <div class="rates__item">
+                      <div class="rates__icon rates__icon--yes"></div>
+                    </div>
+                    <div class="rates__item">
+                      <div class="rates__icon rates__icon--yes"></div>
+                    </div>
+                    <div class="rates__item">
+                      <div class="rates__icon rates__icon--yes"></div>
+                    </div>
+                    <div class="rates__item">
+                      <div class="rates__icon rates__icon--no"></div>
+                    </div>
+                    <div class="rates__item">
+                      <div class="rates__icon rates__icon--no"></div>
+                    </div>
+                    <div class="rates__item">
+                      <div class="rates__icon rates__icon--no"></div>
+                    </div>
+                    <div class="rates__item">
+                      <div class="rates__icon rates__icon--no"></div>
+                    </div>
+                    <div class="rates__item">
+                      <div class="rates__icon rates__icon--no"></div>
+                    </div>
+                    <div class="rates__item">
+                      <div class="rates__icon rates__icon--no"></div>
+                    </div>
+                    <div class="rates__item">
+                      <div class="rates__icon rates__icon--no"></div>
+                    </div>
+                    <div class="rates__item">
+                      <div class="rates__icon rates__icon--no"></div>
+                    </div>
+                    <div class="rates__item">
+                      <div class="rates__icon rates__icon--no"></div>
+                    </div>
+                    <div class="rates__item">
+                      <div class="rates__icon rates__icon--no"></div>
                     </div>
                   </div>
                 </div>
-              </div>
-              <div class="rates__row">
-                <div class="rates__top">
-                  <div class="rates__title">Pro Стандарт</div>
-                  <div class="rates__number">1 участник</div>
-                  <div class="rates__img rates__img--2"></div>
-                  <div class="rates__icon-group">
-                    <div class="rates-icon">
-                      <div class="rates-icon__item rates-icon__item--1"></div>
-                      <div class="rates-icon__item rates-icon__item--2"></div>
-                      <div class="rates-icon__item rates-icon__item--3 rates-icon__item--no"></div>
-                      <div class="rates-icon__item rates-icon__item--4"></div>
-                    </div>
-                  </div>
-                  <div class="rates__price">2 500 руб.</div>
-                  <div class="rates__button">
-                    <div class="button button--small">
-                      <div class="button_inner">Оформить</div>
-                    </div>
-                  </div>
-                </div>
-                <div class="rates__bottom">
-                  <div class="rates__item">
-                    <div class="rates__icon rates__icon--yes"></div>
-                  </div>
-                  <div class="rates__item">
-                    <div class="rates__icon rates__icon--yes"></div>
-                  </div>
-                  <div class="rates__item">
-                    <div class="rates__icon rates__icon--yes"></div>
-                  </div>
-                  <div class="rates__item">
-                    <div class="rates__icon rates__icon--yes"></div>
-                  </div>
-                  <div class="rates__item">
-                    <div class="rates__icon rates__icon--yes"></div>
-                  </div>
-                  <div class="rates__item">
-                    <div class="rates__icon rates__icon--yes"></div>
-                  </div>
-                  <div class="rates__item">
-                    <div class="rates__icon rates__icon--yes"></div>
-                  </div>
-                  <div class="rates__item">
-                    <div class="rates__icon rates__icon--yes"></div>
-                  </div>
-                  <div class="rates__item">
-                    <div class="rates__icon rates__icon--yes"></div>
-                  </div>
-                  <div class="rates__item">
-                    <div class="rates__icon rates__icon--yes"></div>
-                  </div>
-                  <div class="rates__item">
-                    <div class="rates__icon rates__icon--yes"></div>
-                  </div>
-                  <div class="rates__item">
-                    <div class="rates__icon rates__icon--yes"></div>
-                  </div>
-                  <div class="rates__item">
-                    <div class="rates__icon rates__icon--yes"></div>
-                  </div>
-                  <div class="rates__item">
-                    <div class="rates__icon rates__icon--no"></div>
-                  </div>
-                  <div class="rates__item">
-                    <div class="rates__text rates__text--green rates__text--center">5</div>
-                  </div>
-                  <div class="rates__price">2 500 руб.</div>
-                  <div class="rates__button">
-                    <div class="button button--small">
-                      <div class="button_inner">Оформить</div>
-                    </div>
+                <div class="rates__price">999 руб.</div>
+                <div class="rates__button">
+                  <div class="button button--small">
+                    <div class="button_inner">Оформить</div>
                   </div>
                 </div>
               </div>
               <div class="rates__row">
-                <div class="rates__top">
-                  <div class="rates__title">Pro Максимум</div>
-                  <div class="rates__number">1 участник</div>
-                  <div class="rates__img rates__img--3"></div>
-                  <div class="rates__icon-group">
-                    <div class="rates-icon">
-                      <div class="rates-icon__item rates-icon__item--1"></div>
-                      <div class="rates-icon__item rates-icon__item--2"></div>
-                      <div class="rates-icon__item rates-icon__item--3"></div>
-                      <div class="rates-icon__item rates-icon__item--4"></div>
+                <div class="rates__hover">
+                  <div class="rates__top">
+                    <div class="rates__title">Pro Стандарт</div>
+                    <div class="rates__number">1 участник</div>
+                    <div class="rates__img rates__img--2"></div>
+                    <div class="rates__icon-group">
+                      <div class="rates-icon">
+                        <div class="rates-icon__item rates-icon__item--1"></div>
+                        <div class="rates-icon__item rates-icon__item--2"></div>
+                        <div class="rates-icon__item rates-icon__item--3 rates-icon__item--no"></div>
+                        <div class="rates-icon__item rates-icon__item--4"></div>
+                      </div>
+                    </div>
+                    <div class="rates__price">2 500 руб.</div>
+                    <div class="rates__button">
+                      <div class="button button--small">
+                        <div class="button_inner">Оформить</div>
+                      </div>
                     </div>
                   </div>
-                  <div class="rates__price">5 000 руб.</div>
-                  <div class="rates__button">
-                    <div class="button button--small">
-                      <div class="button_inner">Оформить</div>
+                  <div class="rates__bottom">
+                    <div class="rates__item">
+                      <div class="rates__icon rates__icon--yes"></div>
                     </div>
-                  </div>
-                </div>
-                <div class="rates__bottom">
-                  <div class="rates__item">
-                    <div class="rates__icon rates__icon--yes"></div>
-                  </div>
-                  <div class="rates__item">
-                    <div class="rates__icon rates__icon--yes"></div>
-                  </div>
-                  <div class="rates__item">
-                    <div class="rates__icon rates__icon--yes"></div>
-                  </div>
-                  <div class="rates__item">
-                    <div class="rates__icon rates__icon--yes"></div>
-                  </div>
-                  <div class="rates__item">
-                    <div class="rates__icon rates__icon--yes"></div>
-                  </div>
-                  <div class="rates__item">
-                    <div class="rates__icon rates__icon--yes"></div>
-                  </div>
-                  <div class="rates__item">
-                    <div class="rates__icon rates__icon--yes"></div>
-                  </div>
-                  <div class="rates__item">
-                    <div class="rates__icon rates__icon--yes"></div>
-                  </div>
-                  <div class="rates__item">
-                    <div class="rates__icon rates__icon--yes"></div>
-                  </div>
-                  <div class="rates__item">
-                    <div class="rates__icon rates__icon--yes"></div>
-                  </div>
-                  <div class="rates__item">
-                    <div class="rates__icon rates__icon--yes"></div>
-                  </div>
-                  <div class="rates__item">
-                    <div class="rates__icon rates__icon--yes"></div>
-                  </div>
-                  <div class="rates__item">
-                    <div class="rates__icon rates__icon--yes"></div>
-                  </div>
-                  <div class="rates__item">
-                    <div class="rates__icon rates__icon--yes"></div>
-                  </div>
-                  <div class="rates__item">
-                    <div class="rates__text rates__text--green rates__text--center">10</div>
-                  </div>
-                  <div class="rates__price">5 000 руб.</div>
-                  <div class="rates__button">
-                    <div class="button button--small">
-                      <div class="button_inner">Оформить</div>
+                    <div class="rates__item">
+                      <div class="rates__icon rates__icon--yes"></div>
+                    </div>
+                    <div class="rates__item">
+                      <div class="rates__icon rates__icon--yes"></div>
+                    </div>
+                    <div class="rates__item">
+                      <div class="rates__icon rates__icon--yes"></div>
+                    </div>
+                    <div class="rates__item">
+                      <div class="rates__icon rates__icon--yes"></div>
+                    </div>
+                    <div class="rates__item">
+                      <div class="rates__icon rates__icon--yes"></div>
+                    </div>
+                    <div class="rates__item">
+                      <div class="rates__icon rates__icon--yes"></div>
+                    </div>
+                    <div class="rates__item">
+                      <div class="rates__icon rates__icon--yes"></div>
+                    </div>
+                    <div class="rates__item">
+                      <div class="rates__icon rates__icon--yes"></div>
+                    </div>
+                    <div class="rates__item">
+                      <div class="rates__icon rates__icon--yes"></div>
+                    </div>
+                    <div class="rates__item">
+                      <div class="rates__icon rates__icon--yes"></div>
+                    </div>
+                    <div class="rates__item">
+                      <div class="rates__icon rates__icon--yes"></div>
+                    </div>
+                    <div class="rates__item">
+                      <div class="rates__icon rates__icon--yes"></div>
+                    </div>
+                    <div class="rates__item">
+                      <div class="rates__icon rates__icon--no"></div>
+                    </div>
+                    <div class="rates__item">
+                      <div class="rates__text rates__text--green rates__text--center">5</div>
                     </div>
                   </div>
                 </div>
-              </div>
-              <div class="rates__row">
-                <div class="rates__top">
-                  <div class="rates__title">Pro Дубль</div>
-                  <div class="rates__number">2 участника</div>
-                  <div class="rates__img rates__img--4"></div>
-                  <div class="rates__icon-group">
-                    <div class="rates-icon">
-                      <div class="rates-icon__item rates-icon__item--1"></div>
-                      <div class="rates-icon__item rates-icon__item--2"></div>
-                      <div class="rates-icon__item rates-icon__item--3 rates-icon__item--no"></div>
-                      <div class="rates-icon__item rates-icon__item--4"></div>
-                    </div>
-                  </div>
-                  <div class="rates__price">4 000 руб.</div>
-                  <div class="rates__button">
-                    <div class="button button--small">
-                      <div class="button_inner">Оформить</div>
-                    </div>
-                  </div>
-                </div>
-                <div class="rates__bottom">
-                  <div class="rates__item">
-                    <div class="rates__icon rates__icon--yes"></div>
-                  </div>
-                  <div class="rates__item">
-                    <div class="rates__icon rates__icon--yes"></div>
-                  </div>
-                  <div class="rates__item">
-                    <div class="rates__icon rates__icon--yes"></div>
-                  </div>
-                  <div class="rates__item">
-                    <div class="rates__icon rates__icon--yes"></div>
-                  </div>
-                  <div class="rates__item">
-                    <div class="rates__icon rates__icon--yes"></div>
-                  </div>
-                  <div class="rates__item">
-                    <div class="rates__icon rates__icon--yes"></div>
-                  </div>
-                  <div class="rates__item">
-                    <div class="rates__icon rates__icon--yes"></div>
-                  </div>
-                  <div class="rates__item">
-                    <div class="rates__icon rates__icon--yes"></div>
-                  </div>
-                  <div class="rates__item">
-                    <div class="rates__icon rates__icon--yes"></div>
-                  </div>
-                  <div class="rates__item">
-                    <div class="rates__icon rates__icon--yes"></div>
-                  </div>
-                  <div class="rates__item">
-                    <div class="rates__icon rates__icon--yes"></div>
-                  </div>
-                  <div class="rates__item">
-                    <div class="rates__icon rates__icon--yes"></div>
-                  </div>
-                  <div class="rates__item">
-                    <div class="rates__icon rates__icon--yes"></div>
-                  </div>
-                  <div class="rates__item">
-                    <div class="rates__icon rates__icon--no"></div>
-                  </div>
-                  <div class="rates__item">
-                    <div class="rates__text rates__text--green rates__text--center">по 5</div>
-                  </div>
-                  <div class="rates__price">4 000 руб.</div>
-                  <div class="rates__button">
-                    <div class="button button--small">
-                      <div class="button_inner">Оформить</div>
-                    </div>
+                <div class="rates__price">2 500 руб.</div>
+                <div class="rates__button">
+                  <div class="button button--small">
+                    <div class="button_inner">Оформить</div>
                   </div>
                 </div>
               </div>
               <div class="rates__row">
-                <div class="rates__top">
-                  <div class="rates__title">Pro Клуб</div>
-                  <div class="rates__number">5 участников</div>
-                  <div class="rates__img rates__img--5"></div>
-                  <div class="rates__icon-group">
-                    <div class="rates-icon">
-                      <div class="rates-icon__item rates-icon__item--1"></div>
-                      <div class="rates-icon__item rates-icon__item--2"></div>
-                      <div class="rates-icon__item rates-icon__item--3 rates-icon__item--no"></div>
-                      <div class="rates-icon__item rates-icon__item--4"></div>
+                <div class="rates__hover">
+                  <div class="rates__top">
+                    <div class="rates__title">Pro Максимум</div>
+                    <div class="rates__number">1 участник</div>
+                    <div class="rates__img rates__img--3"></div>
+                    <div class="rates__icon-group">
+                      <div class="rates-icon">
+                        <div class="rates-icon__item rates-icon__item--1"></div>
+                        <div class="rates-icon__item rates-icon__item--2"></div>
+                        <div class="rates-icon__item rates-icon__item--3"></div>
+                        <div class="rates-icon__item rates-icon__item--4"></div>
+                      </div>
+                    </div>
+                    <div class="rates__price">5 000 руб.</div>
+                    <div class="rates__button">
+                      <div class="button button--small">
+                        <div class="button_inner">Оформить</div>
+                      </div>
                     </div>
                   </div>
-                  <div class="rates__price">9 000 руб.</div>
-                  <div class="rates__button">
-                    <div class="button button--small">
-                      <div class="button_inner">Оформить</div>
+                  <div class="rates__bottom">
+                    <div class="rates__item">
+                      <div class="rates__icon rates__icon--yes"></div>
+                    </div>
+                    <div class="rates__item">
+                      <div class="rates__icon rates__icon--yes"></div>
+                    </div>
+                    <div class="rates__item">
+                      <div class="rates__icon rates__icon--yes"></div>
+                    </div>
+                    <div class="rates__item">
+                      <div class="rates__icon rates__icon--yes"></div>
+                    </div>
+                    <div class="rates__item">
+                      <div class="rates__icon rates__icon--yes"></div>
+                    </div>
+                    <div class="rates__item">
+                      <div class="rates__icon rates__icon--yes"></div>
+                    </div>
+                    <div class="rates__item">
+                      <div class="rates__icon rates__icon--yes"></div>
+                    </div>
+                    <div class="rates__item">
+                      <div class="rates__icon rates__icon--yes"></div>
+                    </div>
+                    <div class="rates__item">
+                      <div class="rates__icon rates__icon--yes"></div>
+                    </div>
+                    <div class="rates__item">
+                      <div class="rates__icon rates__icon--yes"></div>
+                    </div>
+                    <div class="rates__item">
+                      <div class="rates__icon rates__icon--yes"></div>
+                    </div>
+                    <div class="rates__item">
+                      <div class="rates__icon rates__icon--yes"></div>
+                    </div>
+                    <div class="rates__item">
+                      <div class="rates__icon rates__icon--yes"></div>
+                    </div>
+                    <div class="rates__item">
+                      <div class="rates__icon rates__icon--yes"></div>
+                    </div>
+                    <div class="rates__item">
+                      <div class="rates__text rates__text--green rates__text--center">10</div>
                     </div>
                   </div>
                 </div>
-                <div class="rates__bottom">
-                  <div class="rates__item">
-                    <div class="rates__icon rates__icon--yes"></div>
+                <div class="rates__price">5 000 руб.</div>
+                <div class="rates__button">
+                  <div class="button button--small">
+                    <div class="button_inner">Оформить</div>
                   </div>
-                  <div class="rates__item">
-                    <div class="rates__icon rates__icon--yes"></div>
-                  </div>
-                  <div class="rates__item">
-                    <div class="rates__icon rates__icon--yes"></div>
-                  </div>
-                  <div class="rates__item">
-                    <div class="rates__icon rates__icon--yes"></div>
-                  </div>
-                  <div class="rates__item">
-                    <div class="rates__icon rates__icon--yes"></div>
-                  </div>
-                  <div class="rates__item">
-                    <div class="rates__icon rates__icon--yes"></div>
-                  </div>
-                  <div class="rates__item">
-                    <div class="rates__icon rates__icon--yes"></div>
-                  </div>
-                  <div class="rates__item">
-                    <div class="rates__icon rates__icon--yes"></div>
-                  </div>
-                  <div class="rates__item">
-                    <div class="rates__icon rates__icon--yes"></div>
-                  </div>
-                  <div class="rates__item">
-                    <div class="rates__icon rates__icon--yes"></div>
-                  </div>
-                  <div class="rates__item">
-                    <div class="rates__icon rates__icon--yes"></div>
-                  </div>
-                  <div class="rates__item">
-                    <div class="rates__icon rates__icon--yes"></div>
-                  </div>
-                  <div class="rates__item">
-                    <div class="rates__icon rates__icon--yes"></div>
-                  </div>
-                  <div class="rates__item">
-                    <div class="rates__icon rates__icon--no"></div>
-                  </div>
-                  <div class="rates__item">
-                    <div class="rates__text rates__text--green rates__text--center">по 5</div>
-                  </div>
-                  <div class="rates__price">9 000 руб.</div>
-                  <div class="rates__button">
-                    <div class="button button--small">
-                      <div class="button_inner">Оформить</div>
+                </div>
+              </div>
+              <div class="rates__row">
+                <div class="rates__hover">
+                  <div class="rates__top">
+                    <div class="rates__title">Pro Дубль</div>
+                    <div class="rates__number">2 участника</div>
+                    <div class="rates__img rates__img--4"></div>
+                    <div class="rates__icon-group">
+                      <div class="rates-icon">
+                        <div class="rates-icon__item rates-icon__item--1"></div>
+                        <div class="rates-icon__item rates-icon__item--2"></div>
+                        <div class="rates-icon__item rates-icon__item--3 rates-icon__item--no"></div>
+                        <div class="rates-icon__item rates-icon__item--4"></div>
+                      </div>
                     </div>
+                    <div class="rates__price">4 000 руб.</div>
+                    <div class="rates__button">
+                      <div class="button button--small">
+                        <div class="button_inner">Оформить</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="rates__bottom">
+                    <div class="rates__item">
+                      <div class="rates__icon rates__icon--yes"></div>
+                    </div>
+                    <div class="rates__item">
+                      <div class="rates__icon rates__icon--yes"></div>
+                    </div>
+                    <div class="rates__item">
+                      <div class="rates__icon rates__icon--yes"></div>
+                    </div>
+                    <div class="rates__item">
+                      <div class="rates__icon rates__icon--yes"></div>
+                    </div>
+                    <div class="rates__item">
+                      <div class="rates__icon rates__icon--yes"></div>
+                    </div>
+                    <div class="rates__item">
+                      <div class="rates__icon rates__icon--yes"></div>
+                    </div>
+                    <div class="rates__item">
+                      <div class="rates__icon rates__icon--yes"></div>
+                    </div>
+                    <div class="rates__item">
+                      <div class="rates__icon rates__icon--yes"></div>
+                    </div>
+                    <div class="rates__item">
+                      <div class="rates__icon rates__icon--yes"></div>
+                    </div>
+                    <div class="rates__item">
+                      <div class="rates__icon rates__icon--yes"></div>
+                    </div>
+                    <div class="rates__item">
+                      <div class="rates__icon rates__icon--yes"></div>
+                    </div>
+                    <div class="rates__item">
+                      <div class="rates__icon rates__icon--yes"></div>
+                    </div>
+                    <div class="rates__item">
+                      <div class="rates__icon rates__icon--yes"></div>
+                    </div>
+                    <div class="rates__item">
+                      <div class="rates__icon rates__icon--no"></div>
+                    </div>
+                    <div class="rates__item">
+                      <div class="rates__text rates__text--green rates__text--center">по 5</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="rates__price">4 000 руб.</div>
+                <div class="rates__button">
+                  <div class="button button--small">
+                    <div class="button_inner">Оформить</div>
+                  </div>
+                </div>
+              </div>
+              <div class="rates__row">
+                <div class="rates__hover">
+                  <div class="rates__top">
+                    <div class="rates__title">Pro Клуб</div>
+                    <div class="rates__number">5 участников</div>
+                    <div class="rates__img rates__img--5"></div>
+                    <div class="rates__icon-group">
+                      <div class="rates-icon">
+                        <div class="rates-icon__item rates-icon__item--1"></div>
+                        <div class="rates-icon__item rates-icon__item--2"></div>
+                        <div class="rates-icon__item rates-icon__item--3 rates-icon__item--no"></div>
+                        <div class="rates-icon__item rates-icon__item--4"></div>
+                      </div>
+                    </div>
+                    <div class="rates__price">9 000 руб.</div>
+                    <div class="rates__button">
+                      <div class="button button--small">
+                        <div class="button_inner">Оформить</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="rates__bottom">
+                    <div class="rates__item">
+                      <div class="rates__icon rates__icon--yes"></div>
+                    </div>
+                    <div class="rates__item">
+                      <div class="rates__icon rates__icon--yes"></div>
+                    </div>
+                    <div class="rates__item">
+                      <div class="rates__icon rates__icon--yes"></div>
+                    </div>
+                    <div class="rates__item">
+                      <div class="rates__icon rates__icon--yes"></div>
+                    </div>
+                    <div class="rates__item">
+                      <div class="rates__icon rates__icon--yes"></div>
+                    </div>
+                    <div class="rates__item">
+                      <div class="rates__icon rates__icon--yes"></div>
+                    </div>
+                    <div class="rates__item">
+                      <div class="rates__icon rates__icon--yes"></div>
+                    </div>
+                    <div class="rates__item">
+                      <div class="rates__icon rates__icon--yes"></div>
+                    </div>
+                    <div class="rates__item">
+                      <div class="rates__icon rates__icon--yes"></div>
+                    </div>
+                    <div class="rates__item">
+                      <div class="rates__icon rates__icon--yes"></div>
+                    </div>
+                    <div class="rates__item">
+                      <div class="rates__icon rates__icon--yes"></div>
+                    </div>
+                    <div class="rates__item">
+                      <div class="rates__icon rates__icon--yes"></div>
+                    </div>
+                    <div class="rates__item">
+                      <div class="rates__icon rates__icon--yes"></div>
+                    </div>
+                    <div class="rates__item">
+                      <div class="rates__icon rates__icon--no"></div>
+                    </div>
+                    <div class="rates__item">
+                      <div class="rates__text rates__text--green rates__text--center">по 5</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="rates__price">9 000 руб.</div>
+                <div class="rates__button">
+                  <div class="button button--small">
+                    <div class="button_inner">Оформить</div>
                   </div>
                 </div>
               </div>
@@ -1044,7 +1071,7 @@
               <div class="pro-drying__text">Cотрудничество с ведущими<br> блогерами и СМИ</div>
             </div>
           </div>
-          <div class="pro-drying__button"><a href="" class="button">
+          <div class="pro-drying__button"><a href="" class="button button--no-shadow">
               <div class="button_inner">Участвовать</div></a></div>
           <div class="tell-your-friends">
             <div class="tell-your-friends__title">Расскажите друзьям</div>
@@ -1067,17 +1094,35 @@
         <div class="backbone__inner">
           <div class="footer-payment"><a href="" class="footer-payment__item footer-payment__item--1"></a><a href="" class="footer-payment__item footer-payment__item--2"></a><a href="" class="footer-payment__item footer-payment__item--3"></a><a href="" class="footer-payment__item footer-payment__item--4"></a></div>
           <div class="footer-content">
-            <div class="footer-content__row">
+            <div class="footer-content__cell">
               <div class="footer-address">
                 <div class="footer-address__logo"></div>
                 <div class="footer-address__content">
-                  <div class="footer-address__text">ООО «ПроСушка»<br> ИНН: 4703145046, КПП: 470301001<br> Адрес: 188644 г. Всеволожск<br> пер. Олениных дом 2 к.1 пом. 24</div><a href="#" class="footer-address__link">Договор оферты</a><a href="#" class="footer-address__link">Правила</a>
+                  <div class="footer-address__text">ООО «ПроСушка»<br> ИНН: 4703145046, КПП: 470301001<br> Адрес: 188644 г. Всеволожск<br> пер. Олениных дом 2 к.1 пом. 24</div>
+                  <div class="footer-address__link-wrap"><a href="#" class="footer-address__link">Договор оферты</a><a href="#" class="footer-address__link">Правила</a></div>
                 </div>
               </div>
             </div>
-            <div class="footer-content__row"></div>
-            <div class="footer-content__row"></div>
+            <div class="footer-content__cell">
+              <div class="footer-link">
+                <div class="footer-link__title">Контактная информация:</div><a href="#" class="footer-link__item">
+                  <div class="footer-link__cell footer-link__cell--icon-1"></div>
+                  <div class="footer-link__cell footer-link__cell--text">+7 (499) 322-89-41</div></a><a href="#" class="footer-link__item">
+                  <div class="footer-link__cell footer-link__cell--icon-2"></div>
+                  <div class="footer-link__cell footer-link__cell--text">info@prosushka.pro</div></a>
+              </div>
+            </div>
+            <div class="footer-content__cell">
+              <div class="footer-link">
+                <div class="footer-link__title">Присоединяйтесь:</div><a href="#" class="footer-link__item">
+                  <div class="footer-link__cell footer-link__cell--icon-3"></div>
+                  <div class="footer-link__cell footer-link__cell--text">Instagram.com/prosushka</div></a><a href="#" class="footer-link__item">
+                  <div class="footer-link__cell footer-link__cell--icon-4"></div>
+                  <div class="footer-link__cell footer-link__cell--text">vk.com/prosushka</div></a>
+              </div>
+            </div>
           </div>
+          <div class="footer__copy">©ProСушка 2016</div>
         </div>
       </div>
     </div>

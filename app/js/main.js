@@ -1,6 +1,7 @@
 var serviceInformation = null;
 var wind = $(window);
 var sliders = null;
+var allEvents = null;
 
 function echo(){
 	console.log.apply(console, arguments);
@@ -21,20 +22,11 @@ serviceInformation = {
 sliders = {
 	settings: {
 		sliderBoxLk: {
-			//effect: 'coverflow',
 			grabCursor: true,
 			centeredSlides: true,
 			slidesPerView: 'auto',
-			//slidesPerView: 5,
 			spaceBetween: 30,
-			loop: true,
-			// coverflow: {
-			// 	rotate: 50,
-			// 	stretch: 0,
-			// 	depth: 100,
-			// 	modifier: 1,
-			// 	slideShadows : true
-			// }
+			loop: true
 		}
 	},
 	slider: {
@@ -53,6 +45,34 @@ sliders = {
 	}
 }
 
+allEvents = {
+	handler: function(){
+		$('[data-scroll]').on('click', allEvents.scrooTo);
+	},
+	scrooTo: function(){
+		var self = $(this);
+		var sData = self.data('scroll');
+		var topTo = $('[data-scroll-to=' + sData + ']').offset().top;
+		$('html, body').animate({
+			scrollTop: topTo
+		});
+	},
+	menuFixed: function(){
+		$(window).scroll(function(){
+			if($(window).scrollTop() > serviceInformation.getWindowHeight() / 2){
+				$('.js-menu-fixed').addClass('is-active');
+			}else{
+				$('.js-menu-fixed').removeClass('is-active');
+			}
+		});
+	},
+	init: function(){
+		this.handler();
+		this.menuFixed();
+	}
+}
+
 $(function(){
 	sliders.init();
+	allEvents.init();
 });
