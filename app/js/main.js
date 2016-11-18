@@ -25,6 +25,7 @@ sliders = {
 			centeredSlides: true,
 			slidesPerView: 'auto',
 			spaceBetween: 12,
+			initialSlide: 2,
 			//loop: true,
 			nextButton: '.swiper-button-next',
 			prevButton: '.swiper-button-prev'
@@ -33,6 +34,7 @@ sliders = {
 			centeredSlides: true,
 			slidesPerView: 'auto',
 			spaceBetween: 14,
+			initialSlide: 1,
 			//loop: true,
 			nextButton: '.swiper-button-next',
 			prevButton: '.swiper-button-prev'
@@ -41,6 +43,7 @@ sliders = {
 			centeredSlides: true,
 			slidesPerView: 'auto',
 			spaceBetween: 36,
+			initialSlide: 1,
 			//loop: true,
 			pagination: '.swiper-pagination',
 			paginationClickable: true,
@@ -59,20 +62,35 @@ sliders = {
 			prevButton: '.swiper-button-prev'
 		},
 		sliderPersonalAccountBlockSlider: {
-			centeredSlides: true,
 			spaceBetween: 0,
 			pagination: '.swiper-pagination',
 			paginationClickable: true,
 			nextButton: '.swiper-button-next',
+			prevButton: '.swiper-button-prev',
+			onSlideChangeEnd: function(swiper){
+				var activeIndex = swiper.activeIndex;
+				$('.personal-account-block-content__item').removeClass('is-active');
+				$('.personal-account-block-content__item').eq(activeIndex).addClass('is-active');
+			}
+		},
+		sliderBoxBuy: {
+			centeredSlides: true,
+			slidesPerView: 'auto',
+			spaceBetween: 14,
+			initialSlide: 2,
+			simulateTouch: false,
+			//loop: true,
+			nextButton: '.swiper-button-next',
 			prevButton: '.swiper-button-prev'
-		}
+		},
 	},
 	slider: {
 		sliderBoxLk: null,
 		sliderTraining: null,
 		sliderProperNutrition: null,
 		sliderParticipantsProject: null,
-		sliderPersonalAccountBlockSlider: null
+		sliderPersonalAccountBlockSlider: null,
+		sliderBoxBuy: null
 	},
 	call: {
 		sliderBoxLk: function(){
@@ -90,12 +108,16 @@ sliders = {
 		sliderPersonalAccountBlockSlider: function(){
 			sliders.slider.sliderPersonalAccountBlockSlider = new Swiper('.js-personal-account-block-slider', sliders.settings.sliderPersonalAccountBlockSlider);
 		},
+		sliderBoxBuy: function(){
+			sliders.slider.sliderBoxBuy = new Swiper('.js-yourself-box-buy', sliders.settings.sliderBoxBuy);
+		},
 		init: function(){
 			this.sliderBoxLk();
 			this.sliderTraining();
 			this.sliderProperNutrition();
 			this.sliderParticipantsProject();
 			this.sliderPersonalAccountBlockSlider();
+			this.sliderBoxBuy();
 		}
 	},
 	init: function(){
@@ -106,6 +128,7 @@ sliders = {
 allEvents = {
 	handler: function(){
 		$('[data-scroll]').on('click', allEvents.scrooTo);
+		$('[data-switch]').on('click', allEvents.switcher)
 	},
 	scrooTo: function(){
 		var self = $(this);
@@ -123,6 +146,21 @@ allEvents = {
 				$('.js-menu-fixed').removeClass('is-active');
 			}
 		});
+	},
+	addRemoveClass: function(remove, add, name){
+		remove.removeClass(name);
+		add.addClass(name);
+	},
+	switcher: function(){
+		var self = $(this);
+		var sData = self.data('switch');
+		allEvents.addRemoveClass($('[data-switch-to]'), $('[data-switch-to=' + sData + ']'), 'is-active');
+		allEvents.addRemoveClass($('[data-switch]'), self, 'is-active');
+
+		// $('[data-switch]').removeClass('is-active');
+		// $('[data-switch-to=' + sData + ']').addClass('is-active');
+		// $('[data-switch]').removeClass('is-active');
+		// self.addClass('is-active');
 	},
 	init: function(){
 		this.handler();

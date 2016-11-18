@@ -170,28 +170,34 @@ block content
             .test-yourself__content
                 .test-yourself__top
                     .test-yourself-control
-                        .test-yourself-control__item.is-active
-                            .test-yourself-control__img.test-yourself-control__img--1
+                        .test-yourself-control__item.is-active(data-switch="test-yourself-1")
+                            .test-yourself-control__img.test-yourself-control__img--1 1
                             .test-yourself-control__text Покупай
-                        .test-yourself-control__item
-                            .test-yourself-control__img.test-yourself-control__img--2
+                        .test-yourself-control__item(data-switch="test-yourself-2")
+                            .test-yourself-control__img.test-yourself-control__img--2 2
                             .test-yourself-control__text Получи свой личный кабинет
-                        .test-yourself-control__item
-                            .test-yourself-control__img.test-yourself-control__img--3
+                        .test-yourself-control__item(data-switch="test-yourself-3")
+                            .test-yourself-control__img.test-yourself-control__img--3 3
                             .test-yourself-control__text Тренируйся вместе<br> с нами
-                        .test-yourself-control__item
-                            .test-yourself-control__img.test-yourself-control__img--4
+                        .test-yourself-control__item(data-switch="test-yourself-4")
+                            .test-yourself-control__img.test-yourself-control__img--4 4
                             .test-yourself-control__text Питайся вкусно<br> и правильно 
-                        .test-yourself-control__item
-                            .test-yourself-control__img.test-yourself-control__img--5
+                        .test-yourself-control__item(data-switch="test-yourself-5")
+                            .test-yourself-control__img.test-yourself-control__img--5 5
                             .test-yourself-control__text Добейся<br> результата
+                        .test-yourself-control__mobile
+                            .test-yourself-control__text.is-active(data-switch-to="test-yourself-1") Покупай
+                            .test-yourself-control__text(data-switch-to="test-yourself-2") Получи свой личный кабинет
+                            .test-yourself-control__text(data-switch-to="test-yourself-3") Тренируйся вместе с нами
+                            .test-yourself-control__text(data-switch-to="test-yourself-4") Питайся вкусно и правильно 
+                            .test-yourself-control__text(data-switch-to="test-yourself-5") Добейся результата
                 .test-yourself__bottom
                     .test-yourself-box
-                        .test-yourself-box__item.is-active
+                        .test-yourself-box__item.is-active(data-switch-to="test-yourself-1")
                             .yourself-box-buy
-                                .rates
-                                    .rates__inner
-                                        .rates__row
+                                .rates.swiper-container.js-yourself-box-buy
+                                    .rates__inner.swiper-wrapper
+                                        .rates__row.swiper-slide
                                             .rates__top
                                                 .rates__title Pro Спорт
                                                 .rates__number 1 участник
@@ -206,7 +212,7 @@ block content
                                                 .rates__button
                                                     .button.button--small
                                                         .button_inner Оформить
-                                        .rates__row
+                                        .rates__row.swiper-slide
                                             .rates__top
                                                 .rates__title Pro Стандарт
                                                 .rates__number 1 участник
@@ -221,7 +227,7 @@ block content
                                                 .rates__button
                                                     .button.button--small
                                                         .button_inner Оформить
-                                        .rates__row
+                                        .rates__row.swiper-slide
                                             .rates__top
                                                 .rates__title Pro Максимум
                                                 .rates__number 1 участник
@@ -236,7 +242,7 @@ block content
                                                 .rates__button
                                                     .button.button--small
                                                         .button_inner Оформить
-                                        .rates__row
+                                        .rates__row.swiper-slide
                                             .rates__top
                                                 .rates__title Pro Дубль
                                                 .rates__number 2 участника
@@ -251,7 +257,7 @@ block content
                                                 .rates__button
                                                     .button.button--small
                                                         .button_inner Оформить
-                                        .rates__row
+                                        .rates__row.swiper-slide
                                             .rates__top
                                                 .rates__title Pro Клуб
                                                 .rates__number 5 участников
@@ -266,10 +272,10 @@ block content
                                                 .rates__button
                                                     .button.button--small
                                                         .button_inner Оформить
-                        .test-yourself-box__item
+                        .test-yourself-box__item(data-switch-to="test-yourself-2")
                             .yourself-box-lk.swiper-container.js-yourself-box-lk
-                                .yourself-box-lk__over
                                 .yourself-box-lk__inner.swiper-wrapper
+                                    .yourself-box-lk__over
                                     img(src="../content/yourself-box-lk/yourself-box-lk-1.jpg").yourself-box-lk__item.swiper-slide
                                     img(src="../content/yourself-box-lk/yourself-box-lk-2.jpg").yourself-box-lk__item.swiper-slide
                                     img(src="../content/yourself-box-lk/yourself-box-lk-3.jpg").yourself-box-lk__item.swiper-slide
@@ -277,7 +283,7 @@ block content
                                     img(src="../content/yourself-box-lk/yourself-box-lk-5.jpg").yourself-box-lk__item.swiper-slide
                                 .swiper-button-next
                                 .swiper-button-prev
-                        .test-yourself-box__item
+                        .test-yourself-box__item(data-switch-to="test-yourself-3")
                             .yourself-box-training.swiper-container.js-yourself-box-training
                                 .yourself-box-training__over
                                 .yourself-box-training__inner.swiper-wrapper
@@ -292,7 +298,7 @@ block content
                                             img(src="../content/yourself-box-training/yourself-box-training-1.png").yourself-box-training__img
                                 .swiper-button-next
                                 .swiper-button-prev
-                        .test-yourself-box__item
+                        .test-yourself-box__item(data-switch-to="test-yourself-4")
                             .yourself-box-three.swiper-container.js-yourself-box-proper-nutrition
                                 .yourself-box-three__title Рацион проекта:
                                 .yourself-box-three__over
@@ -309,7 +315,7 @@ block content
                                 .swiper-button-next
                                 .swiper-button-prev
                                 .swiper-pagination
-                        .test-yourself-box__item
+                        .test-yourself-box__item(data-switch-to="test-yourself-5")
                             .yourself-box-three.swiper-container.js-yourself-box-participants-project
                                 .yourself-box-three__title Участники проекта ProСушка:
                                 .yourself-box-three__over
@@ -348,6 +354,22 @@ block content
                     .three-groups__img.three-groups__img--3
                     .three-groups__number 2 группа
                     .three-groups__name Женщины от 65 кг
+            .three-groups__content.is-mobile
+                .three-groups__item
+                    .three-groups__img.three-groups__img--1
+                    .three-groups__item-content
+                        .three-groups__number 1 группа
+                        .three-groups__name Женщины до 65 кг
+                .three-groups__item
+                    .three-groups__img.three-groups__img--2
+                    .three-groups__item-content
+                        .three-groups__number 2 группа
+                        .three-groups__name Женщины от 65 кг
+                .three-groups__item
+                    .three-groups__img.three-groups__img--3
+                    .three-groups__item-content
+                        .three-groups__number 3 группа
+                        .three-groups__name Все мужчины
             .three-groups__button
                 a(href="").button
                     .button_inner Участвовать
@@ -391,6 +413,16 @@ block content
                     .additional-prizes-places__item
                         .additional-prizes-places__number 300 000 руб.
                         .additional-prizes-places__count 2 место
+                .additional-prizes-places.is-mobile
+                    .additional-prizes-places__item
+                        .additional-prizes-places__count 2 место
+                        .additional-prizes-places__number 300 000 руб.
+                    .additional-prizes-places__item
+                        .additional-prizes-places__count 3 место
+                        .additional-prizes-places__number 200 000 руб.
+                    .additional-prizes-places__item
+                        .additional-prizes-places__count 4 место
+                        .additional-prizes-places__number 100 000 руб.
             .additional-prizes__prizes
                 .additional-prizes-prizes
                     .additional-prizes-prizes__title Только в этом сезоне!
@@ -412,35 +444,59 @@ block content
         .backbone__inner
             .personal-account-block__title Личный кабинет
             .personal-account-block__content
-                .personal-account-block-slider.js-personal-account-block-slider
+                .personal-account-block-slider.swiper-container.js-personal-account-block-slider
                     .personal-account-block-slider__inner.swiper-wrapper
                         img(src="../content/landing-lk/landing-lk-1.jpg").personal-account-block-slider__item.swiper-slide
                         img(src="../content/landing-lk/landing-lk-2.jpg").personal-account-block-slider__item.swiper-slide
                         img(src="../content/landing-lk/landing-lk-3.jpg").personal-account-block-slider__item.swiper-slide
                         img(src="../content/landing-lk/landing-lk-4.jpg").personal-account-block-slider__item.swiper-slide
                         img(src="../content/landing-lk/landing-lk-5.jpg").personal-account-block-slider__item.swiper-slide
-                    .swiper-button-next
-                    .swiper-button-prev
                     .swiper-pagination
+                //- .swiper-button-next
+                //- .swiper-button-prev
+                .personal-account-block-content
+                    .personal-account-block-content__item.is-active
+                        .personal-account-block-content__img.personal-account-block-content__img--1
+                        .personal-account-block-content__title Упражнения с видео и описаниями
+                        .personal-account-block-content__text Только правильно сделанное упражнение приносит пользу. Потому мы объясняем технику, указываем на возможные ошибки.
+                    .personal-account-block-content__item
+                        .personal-account-block-content__img.personal-account-block-content__img--2
+                        .personal-account-block-content__title Голосование
+                        .personal-account-block-content__text Без лишней скромности заявляем, что это лучшая система голосования среди подобных проектов. Накрутки и хитрости невозможны.
+                    .personal-account-block-content__item
+                        .personal-account-block-content__img.personal-account-block-content__img--3
+                        .personal-account-block-content__title Питание
+                        .personal-account-block-content__text Могучий, по-настоящему серьезный калькулятор калорий. То что нужно для соблюдения рациона!
+                    .personal-account-block-content__item
+                        .personal-account-block-content__img.personal-account-block-content__img--4
+                        .personal-account-block-content__title Чат с психологом
+                        .personal-account-block-content__text Когда решите сорваться он сделает все, чтобы вы дошли до конца. Без него в этом деле никуда.
+                    .personal-account-block-content__item
+                        .personal-account-block-content__img.personal-account-block-content__img--5
+                        .personal-account-block-content__title Маски на фото
+                        .personal-account-block-content__text 150 спосов изменить себя до неузнаваемости. Ни знакомая с работы, ни соседи ни за что не узнают!
     .all-star-team
         .backbone__inner
             .all-star-team__title Звездная команда ждет тебя!
             .all-star-team__content
                 .all-star-team__item
                     img(src="../content/all-star-team-img-1.png").all-star-team__img
-                    .all-star-team__name Юлия Ушакова
-                    .all-star-team__post Тренер и наставник
-                    .all-star-team__text Заслуженный мастер спорта<br> 2-х кратная чемпионка мира<br> 5-ти кратная чемпионка России
+                    .all-star-team__inner
+                        .all-star-team__name Юлия Ушакова
+                        .all-star-team__post Тренер и наставник
+                        .all-star-team__text Заслуженный мастер спорта<br> 2-х кратная чемпионка мира<br> 5-ти кратная чемпионка России
                 .all-star-team__item
                     img(src="../content/all-star-team-img-2.png").all-star-team__img
-                    .all-star-team__name Виктория Боня
-                    .all-star-team__post Ведущая 3-го сезона
-                    .all-star-team__text Телеведущая, актриса, модель
+                    .all-star-team__inner
+                        .all-star-team__name Виктория Боня
+                        .all-star-team__post Ведущая 3-го сезона
+                        .all-star-team__text Телеведущая, актриса, модель
                 .all-star-team__item
                     img(src="../content/all-star-team-img-3.png").all-star-team__img
-                    .all-star-team__name Юрий Спасокукоцкий
-                    .all-star-team__post Ведущий тренер и наставник
-                    .all-star-team__text Первый российский фитнес-блогер/<br> чемпион мира
+                    .all-star-team__inner
+                        .all-star-team__name Юрий Спасокукоцкий
+                        .all-star-team__post Ведущий тренер и наставник
+                        .all-star-team__text Первый российский фитнес-блогер/<br> чемпион мира
             .all-star-team__question А кто войдет в звездный состав нового сезона? Может быть ты?
             .all-star-team__description Участвуй и следи за нашими новостями!
 
@@ -742,6 +798,193 @@ block content
                         .rates__button
                             .button.button--small
                                 .button_inner Оформить
+            .rates.rates--mobile.is-mobile
+                .rates__inner
+                    .rates__row
+                        .rates__hover
+                            .rates__top
+                                .rates__title Pro Спорт
+                                .rates__number 1 участник
+                                .rates__img.rates__img--1
+                                .rates__content
+                                    .rates__icon-group
+                                        .rates-icon
+                                            .rates-icon__item.rates-icon__item--1
+                                            .rates-icon__item.rates-icon__item--2.rates-icon__item--no
+                                            .rates-icon__item.rates-icon__item--3.rates-icon__item--no
+                                            .rates-icon__item.rates-icon__item--4.rates-icon__item--no
+                                    .rates__price 999 руб.
+                                    .rates__button
+                                        .button.button--small
+                                            .button_inner Оформить
+                            .rates__bottom
+                                .rates__bottom_cell
+                                    .rates__item
+                                        .rates__text Тренировки 8 программ
+                                    .rates__item
+                                        .rates__text Блок контроля калорий
+                                    .rates__item
+                                        .rates__text Прогресс
+                                    .rates__item
+                                        .rates__text Графики
+                                .rates__bottom_cell
+                                    .rates__item
+                                        .rates__icon.rates__icon--yes
+                                    .rates__item
+                                        .rates__icon.rates__icon--yes
+                                    .rates__item
+                                        .rates__icon.rates__icon--yes
+                                    .rates__item
+                                        .rates__icon.rates__icon--yes
+                            .rates__more Подробнее о тарифе
+                    .rates__row
+                        .rates__hover
+                            .rates__top
+                                .rates__title Pro Стандарт
+                                .rates__number 1 участник
+                                .rates__img.rates__img--2
+                                .rates__content
+                                    .rates__icon-group
+                                        .rates-icon
+                                            .rates-icon__item.rates-icon__item--1
+                                            .rates-icon__item.rates-icon__item--2
+                                            .rates-icon__item.rates-icon__item--3.rates-icon__item--no
+                                            .rates-icon__item.rates-icon__item--4
+                                    .rates__price 2 500 руб.
+                                    .rates__button
+                                        .button.button--small
+                                            .button_inner Оформить
+                            .rates__bottom
+                                .rates__bottom_cell
+                                    .rates__item
+                                        .rates__text Тренировки 8 программ
+                                    .rates__item
+                                        .rates__text Блок контроля калорий
+                                    .rates__item
+                                        .rates__text Прогресс
+                                    .rates__item
+                                        .rates__text Графики
+                                .rates__bottom_cell
+                                    .rates__item
+                                        .rates__icon.rates__icon--yes
+                                    .rates__item
+                                        .rates__icon.rates__icon--yes
+                                    .rates__item
+                                        .rates__icon.rates__icon--yes
+                                    .rates__item
+                                        .rates__icon.rates__icon--yes
+                            .rates__more Подробнее о тарифе
+                    .rates__row
+                        .rates__hover
+                            .rates__top
+                                .rates__title Pro Максимум
+                                .rates__number 1 участник
+                                .rates__img.rates__img--3
+                                .rates__content
+                                    .rates__icon-group
+                                        .rates-icon
+                                            .rates-icon__item.rates-icon__item--1
+                                            .rates-icon__item.rates-icon__item--2
+                                            .rates-icon__item.rates-icon__item--3
+                                            .rates-icon__item.rates-icon__item--4
+                                    .rates__price 5 000 руб.
+                                    .rates__button
+                                        .button.button--small
+                                            .button_inner Оформить
+                            .rates__bottom
+                                .rates__bottom_cell
+                                    .rates__item
+                                        .rates__text Тренировки 8 программ
+                                    .rates__item
+                                        .rates__text Блок контроля калорий
+                                    .rates__item
+                                        .rates__text Прогресс
+                                    .rates__item
+                                        .rates__text Графики
+                                .rates__bottom_cell
+                                    .rates__item
+                                        .rates__icon.rates__icon--yes
+                                    .rates__item
+                                        .rates__icon.rates__icon--yes
+                                    .rates__item
+                                        .rates__icon.rates__icon--yes
+                                    .rates__item
+                                        .rates__icon.rates__icon--yes
+                            .rates__more Подробнее о тарифе
+                    .rates__row
+                        .rates__hover
+                            .rates__top
+                                .rates__title Pro Дубль
+                                .rates__number 2 участника
+                                .rates__img.rates__img--4
+                                .rates__content
+                                    .rates__icon-group
+                                        .rates-icon
+                                            .rates-icon__item.rates-icon__item--1
+                                            .rates-icon__item.rates-icon__item--2
+                                            .rates-icon__item.rates-icon__item--3.rates-icon__item--no
+                                            .rates-icon__item.rates-icon__item--4
+                                    .rates__price 4 000 руб.
+                                    .rates__button
+                                        .button.button--small
+                                            .button_inner Оформить
+                            .rates__bottom
+                                .rates__bottom_cell
+                                    .rates__item
+                                        .rates__text Тренировки 8 программ
+                                    .rates__item
+                                        .rates__text Блок контроля калорий
+                                    .rates__item
+                                        .rates__text Прогресс
+                                    .rates__item
+                                        .rates__text Графики
+                                .rates__bottom_cell
+                                    .rates__item
+                                        .rates__icon.rates__icon--yes
+                                    .rates__item
+                                        .rates__icon.rates__icon--yes
+                                    .rates__item
+                                        .rates__icon.rates__icon--yes
+                                    .rates__item
+                                        .rates__icon.rates__icon--yes
+                            .rates__more Подробнее о тарифе
+                    .rates__row
+                        .rates__hover
+                            .rates__top
+                                .rates__title Pro Клуб
+                                .rates__number 5 участников
+                                .rates__img.rates__img--5
+                                .rates__content
+                                    .rates__icon-group
+                                        .rates-icon
+                                            .rates-icon__item.rates-icon__item--1
+                                            .rates-icon__item.rates-icon__item--2
+                                            .rates-icon__item.rates-icon__item--3.rates-icon__item--no
+                                            .rates-icon__item.rates-icon__item--4
+                                    .rates__price 9 000 руб.
+                                    .rates__button
+                                        .button.button--small
+                                            .button_inner Оформить
+                            .rates__bottom
+                                .rates__bottom_cell
+                                    .rates__item
+                                        .rates__text Тренировки 8 программ
+                                    .rates__item
+                                        .rates__text Блок контроля калорий
+                                    .rates__item
+                                        .rates__text Прогресс
+                                    .rates__item
+                                        .rates__text Графики
+                                .rates__bottom_cell
+                                    .rates__item
+                                        .rates__icon.rates__icon--yes
+                                    .rates__item
+                                        .rates__icon.rates__icon--yes
+                                    .rates__item
+                                        .rates__icon.rates__icon--yes
+                                    .rates__item
+                                        .rates__icon.rates__icon--yes
+                            .rates__more Подробнее о тарифе
     .questions-and-answers
         .backbone__inner
             .questions-and-answers__title Вопросы и ответы
@@ -881,37 +1124,36 @@ block content
                 .love-radio__text Наш информационный партнер Love Radio
                 .love-radio__text.love-radio__text--big Розыгрыши призов и подарков утром и вечером в прямом эфире!
     .footer
-        .backbone__inner
-            .footer-payment
-                a(href="").footer-payment__item.footer-payment__item--1
-                a(href="").footer-payment__item.footer-payment__item--2
-                a(href="").footer-payment__item.footer-payment__item--3
-                a(href="").footer-payment__item.footer-payment__item--4
-            .footer-content
-                .footer-content__cell
-                    .footer-address
-                        .footer-address__logo
-                        .footer-address__content
-                            .footer-address__text ООО «ПроСушка»<br> ИНН: 4703145046, КПП: 470301001<br> Адрес: 188644 г. Всеволожск<br> пер. Олениных дом 2 к.1 пом. 24
-                            .footer-address__link-wrap
-                                a(href="#").footer-address__link Договор оферты
-                                a(href="#").footer-address__link Правила
-                .footer-content__cell
-                    .footer-link
-                        .footer-link__title Контактная информация:
-                        a(href="#").footer-link__item
-                            .footer-link__cell.footer-link__cell--icon-1
-                            .footer-link__cell.footer-link__cell--text +7 (499) 322-89-41
-                        a(href="#").footer-link__item
-                            .footer-link__cell.footer-link__cell--icon-2
-                            .footer-link__cell.footer-link__cell--text info@prosushka.pro
-                .footer-content__cell
-                    .footer-link
-                        .footer-link__title Присоединяйтесь:
-                        a(href="#").footer-link__item
-                            .footer-link__cell.footer-link__cell--icon-3
-                            .footer-link__cell.footer-link__cell--text Instagram.com/prosushka
-                        a(href="#").footer-link__item
-                            .footer-link__cell.footer-link__cell--icon-4
-                            .footer-link__cell.footer-link__cell--text vk.com/prosushka
-            .footer__copy ©ProСушка 2016
+        .footer-payment
+            a(href="").footer-payment__item.footer-payment__item--1
+            a(href="").footer-payment__item.footer-payment__item--2
+            a(href="").footer-payment__item.footer-payment__item--3
+            a(href="").footer-payment__item.footer-payment__item--4
+        .footer-content
+            .footer-content__cell
+                .footer-address
+                    .footer-address__logo
+                    .footer-address__content
+                        .footer-address__text ООО «ПроСушка»<br> ИНН: 4703145046, КПП: 470301001<br> Адрес: 188644 г. Всеволожск<br> пер. Олениных дом 2 к.1 пом. 24
+                        .footer-address__link-wrap
+                            a(href="#").footer-address__link Договор оферты
+                            a(href="#").footer-address__link Правила
+            .footer-content__cell
+                .footer-link
+                    .footer-link__title Контактная информация:
+                    a(href="#").footer-link__item
+                        .footer-link__cell.footer-link__cell--icon-1
+                        .footer-link__cell.footer-link__cell--text +7 (499) 322-89-41
+                    a(href="#").footer-link__item
+                        .footer-link__cell.footer-link__cell--icon-2
+                        .footer-link__cell.footer-link__cell--text info@prosushka.pro
+            .footer-content__cell
+                .footer-link
+                    .footer-link__title Присоединяйтесь:
+                    a(href="#").footer-link__item
+                        .footer-link__cell.footer-link__cell--icon-3
+                        .footer-link__cell.footer-link__cell--text Instagram.com/prosushka
+                    a(href="#").footer-link__item
+                        .footer-link__cell.footer-link__cell--icon-4
+                        .footer-link__cell.footer-link__cell--text vk.com/prosushka
+        .footer__copy ©ProСушка 2016

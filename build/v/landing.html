@@ -196,35 +196,42 @@
           <div class="test-yourself__content">
             <div class="test-yourself__top">
               <div class="test-yourself-control">
-                <div class="test-yourself-control__item is-active">
-                  <div class="test-yourself-control__img test-yourself-control__img--1"></div>
+                <div data-switch="test-yourself-1" class="test-yourself-control__item is-active">
+                  <div class="test-yourself-control__img test-yourself-control__img--1">1</div>
                   <div class="test-yourself-control__text">Покупай</div>
                 </div>
-                <div class="test-yourself-control__item">
-                  <div class="test-yourself-control__img test-yourself-control__img--2"></div>
+                <div data-switch="test-yourself-2" class="test-yourself-control__item">
+                  <div class="test-yourself-control__img test-yourself-control__img--2">2</div>
                   <div class="test-yourself-control__text">Получи свой личный кабинет</div>
                 </div>
-                <div class="test-yourself-control__item">
-                  <div class="test-yourself-control__img test-yourself-control__img--3"></div>
+                <div data-switch="test-yourself-3" class="test-yourself-control__item">
+                  <div class="test-yourself-control__img test-yourself-control__img--3">3</div>
                   <div class="test-yourself-control__text">Тренируйся вместе<br> с нами</div>
                 </div>
-                <div class="test-yourself-control__item">
-                  <div class="test-yourself-control__img test-yourself-control__img--4"></div>
+                <div data-switch="test-yourself-4" class="test-yourself-control__item">
+                  <div class="test-yourself-control__img test-yourself-control__img--4">4</div>
                   <div class="test-yourself-control__text">Питайся вкусно<br> и правильно </div>
                 </div>
-                <div class="test-yourself-control__item">
-                  <div class="test-yourself-control__img test-yourself-control__img--5"></div>
+                <div data-switch="test-yourself-5" class="test-yourself-control__item">
+                  <div class="test-yourself-control__img test-yourself-control__img--5">5</div>
                   <div class="test-yourself-control__text">Добейся<br> результата</div>
+                </div>
+                <div class="test-yourself-control__mobile">
+                  <div data-switch-to="test-yourself-1" class="test-yourself-control__text is-active">Покупай</div>
+                  <div data-switch-to="test-yourself-2" class="test-yourself-control__text">Получи свой личный кабинет</div>
+                  <div data-switch-to="test-yourself-3" class="test-yourself-control__text">Тренируйся вместе с нами</div>
+                  <div data-switch-to="test-yourself-4" class="test-yourself-control__text">Питайся вкусно и правильно </div>
+                  <div data-switch-to="test-yourself-5" class="test-yourself-control__text">Добейся результата</div>
                 </div>
               </div>
             </div>
             <div class="test-yourself__bottom">
               <div class="test-yourself-box">
-                <div class="test-yourself-box__item is-active">
+                <div data-switch-to="test-yourself-1" class="test-yourself-box__item is-active">
                   <div class="yourself-box-buy">
-                    <div class="rates">
-                      <div class="rates__inner">
-                        <div class="rates__row">
+                    <div class="rates swiper-container js-yourself-box-buy">
+                      <div class="rates__inner swiper-wrapper">
+                        <div class="rates__row swiper-slide">
                           <div class="rates__top">
                             <div class="rates__title">Pro Спорт</div>
                             <div class="rates__number">1 участник</div>
@@ -245,7 +252,7 @@
                             </div>
                           </div>
                         </div>
-                        <div class="rates__row">
+                        <div class="rates__row swiper-slide">
                           <div class="rates__top">
                             <div class="rates__title">Pro Стандарт</div>
                             <div class="rates__number">1 участник</div>
@@ -266,7 +273,7 @@
                             </div>
                           </div>
                         </div>
-                        <div class="rates__row">
+                        <div class="rates__row swiper-slide">
                           <div class="rates__top">
                             <div class="rates__title">Pro Максимум</div>
                             <div class="rates__number">1 участник</div>
@@ -287,7 +294,7 @@
                             </div>
                           </div>
                         </div>
-                        <div class="rates__row">
+                        <div class="rates__row swiper-slide">
                           <div class="rates__top">
                             <div class="rates__title">Pro Дубль</div>
                             <div class="rates__number">2 участника</div>
@@ -308,7 +315,7 @@
                             </div>
                           </div>
                         </div>
-                        <div class="rates__row">
+                        <div class="rates__row swiper-slide">
                           <div class="rates__top">
                             <div class="rates__title">Pro Клуб</div>
                             <div class="rates__number">5 участников</div>
@@ -333,15 +340,16 @@
                     </div>
                   </div>
                 </div>
-                <div class="test-yourself-box__item">
+                <div data-switch-to="test-yourself-2" class="test-yourself-box__item">
                   <div class="yourself-box-lk swiper-container js-yourself-box-lk">
-                    <div class="yourself-box-lk__over"></div>
-                    <div class="yourself-box-lk__inner swiper-wrapper"><img src="../content/yourself-box-lk/yourself-box-lk-1.jpg" class="yourself-box-lk__item swiper-slide"><img src="../content/yourself-box-lk/yourself-box-lk-2.jpg" class="yourself-box-lk__item swiper-slide"><img src="../content/yourself-box-lk/yourself-box-lk-3.jpg" class="yourself-box-lk__item swiper-slide"><img src="../content/yourself-box-lk/yourself-box-lk-4.jpg" class="yourself-box-lk__item swiper-slide"><img src="../content/yourself-box-lk/yourself-box-lk-5.jpg" class="yourself-box-lk__item swiper-slide"></div>
+                    <div class="yourself-box-lk__inner swiper-wrapper">
+                      <div class="yourself-box-lk__over"></div><img src="../content/yourself-box-lk/yourself-box-lk-1.jpg" class="yourself-box-lk__item swiper-slide"><img src="../content/yourself-box-lk/yourself-box-lk-2.jpg" class="yourself-box-lk__item swiper-slide"><img src="../content/yourself-box-lk/yourself-box-lk-3.jpg" class="yourself-box-lk__item swiper-slide"><img src="../content/yourself-box-lk/yourself-box-lk-4.jpg" class="yourself-box-lk__item swiper-slide"><img src="../content/yourself-box-lk/yourself-box-lk-5.jpg" class="yourself-box-lk__item swiper-slide">
+                    </div>
                     <div class="swiper-button-next"></div>
                     <div class="swiper-button-prev"></div>
                   </div>
                 </div>
-                <div class="test-yourself-box__item">
+                <div data-switch-to="test-yourself-3" class="test-yourself-box__item">
                   <div class="yourself-box-training swiper-container js-yourself-box-training">
                     <div class="yourself-box-training__over"></div>
                     <div class="yourself-box-training__inner swiper-wrapper">
@@ -353,7 +361,7 @@
                     <div class="swiper-button-prev"></div>
                   </div>
                 </div>
-                <div class="test-yourself-box__item">
+                <div data-switch-to="test-yourself-4" class="test-yourself-box__item">
                   <div class="yourself-box-three swiper-container js-yourself-box-proper-nutrition">
                     <div class="yourself-box-three__title">Рацион проекта:</div>
                     <div class="yourself-box-three__over"></div>
@@ -373,7 +381,7 @@
                     <div class="swiper-pagination"></div>
                   </div>
                 </div>
-                <div class="test-yourself-box__item">
+                <div data-switch-to="test-yourself-5" class="test-yourself-box__item">
                   <div class="yourself-box-three swiper-container js-yourself-box-participants-project">
                     <div class="yourself-box-three__title">Участники проекта ProСушка:</div>
                     <div class="yourself-box-three__over"></div>
@@ -423,6 +431,29 @@
               <div class="three-groups__img three-groups__img--3"></div>
               <div class="three-groups__number">2 группа</div>
               <div class="three-groups__name">Женщины от 65 кг</div>
+            </div>
+          </div>
+          <div class="three-groups__content is-mobile">
+            <div class="three-groups__item">
+              <div class="three-groups__img three-groups__img--1"></div>
+              <div class="three-groups__item-content">
+                <div class="three-groups__number">1 группа</div>
+                <div class="three-groups__name">Женщины до 65 кг</div>
+              </div>
+            </div>
+            <div class="three-groups__item">
+              <div class="three-groups__img three-groups__img--2"></div>
+              <div class="three-groups__item-content">
+                <div class="three-groups__number">2 группа</div>
+                <div class="three-groups__name">Женщины от 65 кг</div>
+              </div>
+            </div>
+            <div class="three-groups__item">
+              <div class="three-groups__img three-groups__img--3"></div>
+              <div class="three-groups__item-content">
+                <div class="three-groups__number">3 группа</div>
+                <div class="three-groups__name">Все мужчины</div>
+              </div>
             </div>
           </div>
           <div class="three-groups__button"><a href="" class="button">
@@ -476,6 +507,20 @@
                 <div class="additional-prizes-places__count">2 место</div>
               </div>
             </div>
+            <div class="additional-prizes-places is-mobile">
+              <div class="additional-prizes-places__item">
+                <div class="additional-prizes-places__count">2 место</div>
+                <div class="additional-prizes-places__number">300 000 руб.</div>
+              </div>
+              <div class="additional-prizes-places__item">
+                <div class="additional-prizes-places__count">3 место</div>
+                <div class="additional-prizes-places__number">200 000 руб.</div>
+              </div>
+              <div class="additional-prizes-places__item">
+                <div class="additional-prizes-places__count">4 место</div>
+                <div class="additional-prizes-places__number">100 000 руб.</div>
+              </div>
+            </div>
           </div>
           <div class="additional-prizes__prizes">
             <div class="additional-prizes-prizes">
@@ -505,11 +550,36 @@
         <div class="backbone__inner">
           <div class="personal-account-block__title">Личный кабинет</div>
           <div class="personal-account-block__content">
-            <div class="personal-account-block-slider js-personal-account-block-slider">
+            <div class="personal-account-block-slider swiper-container js-personal-account-block-slider">
               <div class="personal-account-block-slider__inner swiper-wrapper"><img src="../content/landing-lk/landing-lk-1.jpg" class="personal-account-block-slider__item swiper-slide"><img src="../content/landing-lk/landing-lk-2.jpg" class="personal-account-block-slider__item swiper-slide"><img src="../content/landing-lk/landing-lk-3.jpg" class="personal-account-block-slider__item swiper-slide"><img src="../content/landing-lk/landing-lk-4.jpg" class="personal-account-block-slider__item swiper-slide"><img src="../content/landing-lk/landing-lk-5.jpg" class="personal-account-block-slider__item swiper-slide"></div>
-              <div class="swiper-button-next"></div>
-              <div class="swiper-button-prev"></div>
               <div class="swiper-pagination"></div>
+            </div>
+            <div class="personal-account-block-content">
+              <div class="personal-account-block-content__item is-active">
+                <div class="personal-account-block-content__img personal-account-block-content__img--1"></div>
+                <div class="personal-account-block-content__title">Упражнения с видео и описаниями</div>
+                <div class="personal-account-block-content__text">Только правильно сделанное упражнение приносит пользу. Потому мы объясняем технику, указываем на возможные ошибки.</div>
+              </div>
+              <div class="personal-account-block-content__item">
+                <div class="personal-account-block-content__img personal-account-block-content__img--2"></div>
+                <div class="personal-account-block-content__title">Голосование</div>
+                <div class="personal-account-block-content__text">Без лишней скромности заявляем, что это лучшая система голосования среди подобных проектов. Накрутки и хитрости невозможны.</div>
+              </div>
+              <div class="personal-account-block-content__item">
+                <div class="personal-account-block-content__img personal-account-block-content__img--3"></div>
+                <div class="personal-account-block-content__title">Питание</div>
+                <div class="personal-account-block-content__text">Могучий, по-настоящему серьезный калькулятор калорий. То что нужно для соблюдения рациона!</div>
+              </div>
+              <div class="personal-account-block-content__item">
+                <div class="personal-account-block-content__img personal-account-block-content__img--4"></div>
+                <div class="personal-account-block-content__title">Чат с психологом</div>
+                <div class="personal-account-block-content__text">Когда решите сорваться он сделает все, чтобы вы дошли до конца. Без него в этом деле никуда.</div>
+              </div>
+              <div class="personal-account-block-content__item">
+                <div class="personal-account-block-content__img personal-account-block-content__img--5"></div>
+                <div class="personal-account-block-content__title">Маски на фото</div>
+                <div class="personal-account-block-content__text">150 спосов изменить себя до неузнаваемости. Ни знакомая с работы, ни соседи ни за что не узнают!</div>
+              </div>
             </div>
           </div>
         </div>
@@ -519,19 +589,25 @@
           <div class="all-star-team__title">Звездная команда ждет тебя!</div>
           <div class="all-star-team__content">
             <div class="all-star-team__item"><img src="../content/all-star-team-img-1.png" class="all-star-team__img">
-              <div class="all-star-team__name">Юлия Ушакова</div>
-              <div class="all-star-team__post">Тренер и наставник</div>
-              <div class="all-star-team__text">Заслуженный мастер спорта<br> 2-х кратная чемпионка мира<br> 5-ти кратная чемпионка России</div>
+              <div class="all-star-team__inner">
+                <div class="all-star-team__name">Юлия Ушакова</div>
+                <div class="all-star-team__post">Тренер и наставник</div>
+                <div class="all-star-team__text">Заслуженный мастер спорта<br> 2-х кратная чемпионка мира<br> 5-ти кратная чемпионка России</div>
+              </div>
             </div>
             <div class="all-star-team__item"><img src="../content/all-star-team-img-2.png" class="all-star-team__img">
-              <div class="all-star-team__name">Виктория Боня</div>
-              <div class="all-star-team__post">Ведущая 3-го сезона</div>
-              <div class="all-star-team__text">Телеведущая, актриса, модель</div>
+              <div class="all-star-team__inner">
+                <div class="all-star-team__name">Виктория Боня</div>
+                <div class="all-star-team__post">Ведущая 3-го сезона</div>
+                <div class="all-star-team__text">Телеведущая, актриса, модель</div>
+              </div>
             </div>
             <div class="all-star-team__item"><img src="../content/all-star-team-img-3.png" class="all-star-team__img">
-              <div class="all-star-team__name">Юрий Спасокукоцкий</div>
-              <div class="all-star-team__post">Ведущий тренер и наставник</div>
-              <div class="all-star-team__text">Первый российский фитнес-блогер/<br> чемпион мира</div>
+              <div class="all-star-team__inner">
+                <div class="all-star-team__name">Юрий Спасокукоцкий</div>
+                <div class="all-star-team__post">Ведущий тренер и наставник</div>
+                <div class="all-star-team__text">Первый российский фитнес-блогер/<br> чемпион мира</div>
+              </div>
             </div>
           </div>
           <div class="all-star-team__question">А кто войдет в звездный состав нового сезона? Может быть ты?</div>
@@ -977,6 +1053,290 @@
               </div>
             </div>
           </div>
+          <div class="rates rates--mobile is-mobile">
+            <div class="rates__inner">
+              <div class="rates__row">
+                <div class="rates__hover">
+                  <div class="rates__top">
+                    <div class="rates__title">Pro Спорт</div>
+                    <div class="rates__number">1 участник</div>
+                    <div class="rates__img rates__img--1"></div>
+                    <div class="rates__content">
+                      <div class="rates__icon-group">
+                        <div class="rates-icon">
+                          <div class="rates-icon__item rates-icon__item--1"></div>
+                          <div class="rates-icon__item rates-icon__item--2 rates-icon__item--no"></div>
+                          <div class="rates-icon__item rates-icon__item--3 rates-icon__item--no"></div>
+                          <div class="rates-icon__item rates-icon__item--4 rates-icon__item--no"></div>
+                        </div>
+                      </div>
+                      <div class="rates__price">999 руб.</div>
+                      <div class="rates__button">
+                        <div class="button button--small">
+                          <div class="button_inner">Оформить</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="rates__bottom">
+                    <div class="rates__bottom_cell">
+                      <div class="rates__item">
+                        <div class="rates__text">Тренировки 8 программ</div>
+                      </div>
+                      <div class="rates__item">
+                        <div class="rates__text">Блок контроля калорий</div>
+                      </div>
+                      <div class="rates__item">
+                        <div class="rates__text">Прогресс</div>
+                      </div>
+                      <div class="rates__item">
+                        <div class="rates__text">Графики</div>
+                      </div>
+                    </div>
+                    <div class="rates__bottom_cell">
+                      <div class="rates__item">
+                        <div class="rates__icon rates__icon--yes"></div>
+                      </div>
+                      <div class="rates__item">
+                        <div class="rates__icon rates__icon--yes"></div>
+                      </div>
+                      <div class="rates__item">
+                        <div class="rates__icon rates__icon--yes"></div>
+                      </div>
+                      <div class="rates__item">
+                        <div class="rates__icon rates__icon--yes"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="rates__more">Подробнее о тарифе</div>
+                </div>
+              </div>
+              <div class="rates__row">
+                <div class="rates__hover">
+                  <div class="rates__top">
+                    <div class="rates__title">Pro Стандарт</div>
+                    <div class="rates__number">1 участник</div>
+                    <div class="rates__img rates__img--2"></div>
+                    <div class="rates__content">
+                      <div class="rates__icon-group">
+                        <div class="rates-icon">
+                          <div class="rates-icon__item rates-icon__item--1"></div>
+                          <div class="rates-icon__item rates-icon__item--2"></div>
+                          <div class="rates-icon__item rates-icon__item--3 rates-icon__item--no"></div>
+                          <div class="rates-icon__item rates-icon__item--4"></div>
+                        </div>
+                      </div>
+                      <div class="rates__price">2 500 руб.</div>
+                      <div class="rates__button">
+                        <div class="button button--small">
+                          <div class="button_inner">Оформить</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="rates__bottom">
+                    <div class="rates__bottom_cell">
+                      <div class="rates__item">
+                        <div class="rates__text">Тренировки 8 программ</div>
+                      </div>
+                      <div class="rates__item">
+                        <div class="rates__text">Блок контроля калорий</div>
+                      </div>
+                      <div class="rates__item">
+                        <div class="rates__text">Прогресс</div>
+                      </div>
+                      <div class="rates__item">
+                        <div class="rates__text">Графики</div>
+                      </div>
+                    </div>
+                    <div class="rates__bottom_cell">
+                      <div class="rates__item">
+                        <div class="rates__icon rates__icon--yes"></div>
+                      </div>
+                      <div class="rates__item">
+                        <div class="rates__icon rates__icon--yes"></div>
+                      </div>
+                      <div class="rates__item">
+                        <div class="rates__icon rates__icon--yes"></div>
+                      </div>
+                      <div class="rates__item">
+                        <div class="rates__icon rates__icon--yes"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="rates__more">Подробнее о тарифе</div>
+                </div>
+              </div>
+              <div class="rates__row">
+                <div class="rates__hover">
+                  <div class="rates__top">
+                    <div class="rates__title">Pro Максимум</div>
+                    <div class="rates__number">1 участник</div>
+                    <div class="rates__img rates__img--3"></div>
+                    <div class="rates__content">
+                      <div class="rates__icon-group">
+                        <div class="rates-icon">
+                          <div class="rates-icon__item rates-icon__item--1"></div>
+                          <div class="rates-icon__item rates-icon__item--2"></div>
+                          <div class="rates-icon__item rates-icon__item--3"></div>
+                          <div class="rates-icon__item rates-icon__item--4"></div>
+                        </div>
+                      </div>
+                      <div class="rates__price">5 000 руб.</div>
+                      <div class="rates__button">
+                        <div class="button button--small">
+                          <div class="button_inner">Оформить</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="rates__bottom">
+                    <div class="rates__bottom_cell">
+                      <div class="rates__item">
+                        <div class="rates__text">Тренировки 8 программ</div>
+                      </div>
+                      <div class="rates__item">
+                        <div class="rates__text">Блок контроля калорий</div>
+                      </div>
+                      <div class="rates__item">
+                        <div class="rates__text">Прогресс</div>
+                      </div>
+                      <div class="rates__item">
+                        <div class="rates__text">Графики</div>
+                      </div>
+                    </div>
+                    <div class="rates__bottom_cell">
+                      <div class="rates__item">
+                        <div class="rates__icon rates__icon--yes"></div>
+                      </div>
+                      <div class="rates__item">
+                        <div class="rates__icon rates__icon--yes"></div>
+                      </div>
+                      <div class="rates__item">
+                        <div class="rates__icon rates__icon--yes"></div>
+                      </div>
+                      <div class="rates__item">
+                        <div class="rates__icon rates__icon--yes"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="rates__more">Подробнее о тарифе</div>
+                </div>
+              </div>
+              <div class="rates__row">
+                <div class="rates__hover">
+                  <div class="rates__top">
+                    <div class="rates__title">Pro Дубль</div>
+                    <div class="rates__number">2 участника</div>
+                    <div class="rates__img rates__img--4"></div>
+                    <div class="rates__content">
+                      <div class="rates__icon-group">
+                        <div class="rates-icon">
+                          <div class="rates-icon__item rates-icon__item--1"></div>
+                          <div class="rates-icon__item rates-icon__item--2"></div>
+                          <div class="rates-icon__item rates-icon__item--3 rates-icon__item--no"></div>
+                          <div class="rates-icon__item rates-icon__item--4"></div>
+                        </div>
+                      </div>
+                      <div class="rates__price">4 000 руб.</div>
+                      <div class="rates__button">
+                        <div class="button button--small">
+                          <div class="button_inner">Оформить</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="rates__bottom">
+                    <div class="rates__bottom_cell">
+                      <div class="rates__item">
+                        <div class="rates__text">Тренировки 8 программ</div>
+                      </div>
+                      <div class="rates__item">
+                        <div class="rates__text">Блок контроля калорий</div>
+                      </div>
+                      <div class="rates__item">
+                        <div class="rates__text">Прогресс</div>
+                      </div>
+                      <div class="rates__item">
+                        <div class="rates__text">Графики</div>
+                      </div>
+                    </div>
+                    <div class="rates__bottom_cell">
+                      <div class="rates__item">
+                        <div class="rates__icon rates__icon--yes"></div>
+                      </div>
+                      <div class="rates__item">
+                        <div class="rates__icon rates__icon--yes"></div>
+                      </div>
+                      <div class="rates__item">
+                        <div class="rates__icon rates__icon--yes"></div>
+                      </div>
+                      <div class="rates__item">
+                        <div class="rates__icon rates__icon--yes"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="rates__more">Подробнее о тарифе</div>
+                </div>
+              </div>
+              <div class="rates__row">
+                <div class="rates__hover">
+                  <div class="rates__top">
+                    <div class="rates__title">Pro Клуб</div>
+                    <div class="rates__number">5 участников</div>
+                    <div class="rates__img rates__img--5"></div>
+                    <div class="rates__content">
+                      <div class="rates__icon-group">
+                        <div class="rates-icon">
+                          <div class="rates-icon__item rates-icon__item--1"></div>
+                          <div class="rates-icon__item rates-icon__item--2"></div>
+                          <div class="rates-icon__item rates-icon__item--3 rates-icon__item--no"></div>
+                          <div class="rates-icon__item rates-icon__item--4"></div>
+                        </div>
+                      </div>
+                      <div class="rates__price">9 000 руб.</div>
+                      <div class="rates__button">
+                        <div class="button button--small">
+                          <div class="button_inner">Оформить</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="rates__bottom">
+                    <div class="rates__bottom_cell">
+                      <div class="rates__item">
+                        <div class="rates__text">Тренировки 8 программ</div>
+                      </div>
+                      <div class="rates__item">
+                        <div class="rates__text">Блок контроля калорий</div>
+                      </div>
+                      <div class="rates__item">
+                        <div class="rates__text">Прогресс</div>
+                      </div>
+                      <div class="rates__item">
+                        <div class="rates__text">Графики</div>
+                      </div>
+                    </div>
+                    <div class="rates__bottom_cell">
+                      <div class="rates__item">
+                        <div class="rates__icon rates__icon--yes"></div>
+                      </div>
+                      <div class="rates__item">
+                        <div class="rates__icon rates__icon--yes"></div>
+                      </div>
+                      <div class="rates__item">
+                        <div class="rates__icon rates__icon--yes"></div>
+                      </div>
+                      <div class="rates__item">
+                        <div class="rates__icon rates__icon--yes"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="rates__more">Подробнее о тарифе</div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
       <div class="questions-and-answers">
@@ -1110,39 +1470,37 @@
         </div>
       </div>
       <div class="footer">
-        <div class="backbone__inner">
-          <div class="footer-payment"><a href="" class="footer-payment__item footer-payment__item--1"></a><a href="" class="footer-payment__item footer-payment__item--2"></a><a href="" class="footer-payment__item footer-payment__item--3"></a><a href="" class="footer-payment__item footer-payment__item--4"></a></div>
-          <div class="footer-content">
-            <div class="footer-content__cell">
-              <div class="footer-address">
-                <div class="footer-address__logo"></div>
-                <div class="footer-address__content">
-                  <div class="footer-address__text">ООО «ПроСушка»<br> ИНН: 4703145046, КПП: 470301001<br> Адрес: 188644 г. Всеволожск<br> пер. Олениных дом 2 к.1 пом. 24</div>
-                  <div class="footer-address__link-wrap"><a href="#" class="footer-address__link">Договор оферты</a><a href="#" class="footer-address__link">Правила</a></div>
-                </div>
-              </div>
-            </div>
-            <div class="footer-content__cell">
-              <div class="footer-link">
-                <div class="footer-link__title">Контактная информация:</div><a href="#" class="footer-link__item">
-                  <div class="footer-link__cell footer-link__cell--icon-1"></div>
-                  <div class="footer-link__cell footer-link__cell--text">+7 (499) 322-89-41</div></a><a href="#" class="footer-link__item">
-                  <div class="footer-link__cell footer-link__cell--icon-2"></div>
-                  <div class="footer-link__cell footer-link__cell--text">info@prosushka.pro</div></a>
-              </div>
-            </div>
-            <div class="footer-content__cell">
-              <div class="footer-link">
-                <div class="footer-link__title">Присоединяйтесь:</div><a href="#" class="footer-link__item">
-                  <div class="footer-link__cell footer-link__cell--icon-3"></div>
-                  <div class="footer-link__cell footer-link__cell--text">Instagram.com/prosushka</div></a><a href="#" class="footer-link__item">
-                  <div class="footer-link__cell footer-link__cell--icon-4"></div>
-                  <div class="footer-link__cell footer-link__cell--text">vk.com/prosushka</div></a>
+        <div class="footer-payment"><a href="" class="footer-payment__item footer-payment__item--1"></a><a href="" class="footer-payment__item footer-payment__item--2"></a><a href="" class="footer-payment__item footer-payment__item--3"></a><a href="" class="footer-payment__item footer-payment__item--4"></a></div>
+        <div class="footer-content">
+          <div class="footer-content__cell">
+            <div class="footer-address">
+              <div class="footer-address__logo"></div>
+              <div class="footer-address__content">
+                <div class="footer-address__text">ООО «ПроСушка»<br> ИНН: 4703145046, КПП: 470301001<br> Адрес: 188644 г. Всеволожск<br> пер. Олениных дом 2 к.1 пом. 24</div>
+                <div class="footer-address__link-wrap"><a href="#" class="footer-address__link">Договор оферты</a><a href="#" class="footer-address__link">Правила</a></div>
               </div>
             </div>
           </div>
-          <div class="footer__copy">©ProСушка 2016</div>
+          <div class="footer-content__cell">
+            <div class="footer-link">
+              <div class="footer-link__title">Контактная информация:</div><a href="#" class="footer-link__item">
+                <div class="footer-link__cell footer-link__cell--icon-1"></div>
+                <div class="footer-link__cell footer-link__cell--text">+7 (499) 322-89-41</div></a><a href="#" class="footer-link__item">
+                <div class="footer-link__cell footer-link__cell--icon-2"></div>
+                <div class="footer-link__cell footer-link__cell--text">info@prosushka.pro</div></a>
+            </div>
+          </div>
+          <div class="footer-content__cell">
+            <div class="footer-link">
+              <div class="footer-link__title">Присоединяйтесь:</div><a href="#" class="footer-link__item">
+                <div class="footer-link__cell footer-link__cell--icon-3"></div>
+                <div class="footer-link__cell footer-link__cell--text">Instagram.com/prosushka</div></a><a href="#" class="footer-link__item">
+                <div class="footer-link__cell footer-link__cell--icon-4"></div>
+                <div class="footer-link__cell footer-link__cell--text">vk.com/prosushka</div></a>
+            </div>
+          </div>
         </div>
+        <div class="footer__copy">©ProСушка 2016</div>
       </div>
     </div>
     <script src="../f/js/all-js.js"></script>
