@@ -28,7 +28,28 @@ sliders = {
 			initialSlide: 2,
 			//loop: true,
 			nextButton: '.swiper-button-next',
-			prevButton: '.swiper-button-prev'
+			prevButton: '.swiper-button-prev',
+			onSlideChangeStart: function(swiper){
+				var translate = swiper.translate + '';
+				echo('onSlideChangeStart--->', translate);
+				
+			},
+			onSlideChangeEnd: function(swiper){
+
+			},
+			onSetTranslate: function(swiper, translate){
+				var sTranslate = translate + '';
+				// echo('onSetTranslate--->', sTranslate);
+				// if(sTranslate[0] == '-'){
+				// 	$('.yourself-box-lk__over').css({
+				// 		'transform': 'translate3d(' + sTranslate.replace('-', '') + 'px, 0px, 0px)'
+				// 	});
+				// }else{
+				// 	$('.yourself-box-lk__over').css({
+				// 		'transform': 'translate3d(-' + sTranslate + 'px, 0px, 0px)'
+				// 	});
+				// }
+			}
 		},
 		sliderTraining: {
 			centeredSlides: true,
@@ -65,8 +86,8 @@ sliders = {
 			spaceBetween: 0,
 			pagination: '.swiper-pagination',
 			paginationClickable: true,
-			nextButton: '.swiper-button-next',
-			prevButton: '.swiper-button-prev',
+			nextButton: '.swiper-button-next-box-buy',
+			prevButton: '.swiper-button-prev-box-buy',
 			onSlideChangeEnd: function(swiper){
 				var activeIndex = swiper.activeIndex;
 				$('.personal-account-block-content__item').removeClass('is-active');
@@ -76,12 +97,16 @@ sliders = {
 		sliderBoxBuy: {
 			centeredSlides: true,
 			slidesPerView: 'auto',
-			spaceBetween: 14,
+			spaceBetween: 20,
 			initialSlide: 2,
 			simulateTouch: false,
 			//loop: true,
 			nextButton: '.swiper-button-next',
-			prevButton: '.swiper-button-prev'
+			prevButton: '.swiper-button-prev',
+			breakpoints: {
+				initialSlide: 2,
+				simulateTouch: true
+			}
 		},
 	},
 	slider: {
@@ -134,8 +159,13 @@ allEvents = {
 		var self = $(this);
 		var sData = self.data('scroll');
 		var topTo = $('[data-scroll-to=' + sData + ']').offset().top;
+		if(sData == 'page-top'){
+			$('html, body').animate({
+				scrollTop: topTo
+			});
+		}
 		$('html, body').animate({
-			scrollTop: topTo
+			scrollTop: topTo - $('.menu-fixed').outerHeight(true)
 		});
 	},
 	menuFixed: function(){
@@ -156,11 +186,6 @@ allEvents = {
 		var sData = self.data('switch');
 		allEvents.addRemoveClass($('[data-switch-to]'), $('[data-switch-to=' + sData + ']'), 'is-active');
 		allEvents.addRemoveClass($('[data-switch]'), self, 'is-active');
-
-		// $('[data-switch]').removeClass('is-active');
-		// $('[data-switch-to=' + sData + ']').addClass('is-active');
-		// $('[data-switch]').removeClass('is-active');
-		// self.addClass('is-active');
 	},
 	init: function(){
 		this.handler();

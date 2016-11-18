@@ -16,22 +16,40 @@
               <div class="input-lk__item input-lk__item--text">Личный кабинет</div></a></div>
           <div class="menu">
             <div class="menu__part menu__part--link">
-              <div data-scroll="project-description" class="menu__item">о проекте</div><a href="#" data-scroll="" class="menu__item">условия</a><a href="#" data-scroll="" class="menu__item">призы</a><a href="#" data-scroll="" class="menu__item">наставники</a>
+              <div data-scroll="project-description" class="menu__item">о проекте</div>
+              <div data-scroll="test-yourself" class="menu__item">условия</div>
+              <div data-scroll="main-prize" class="menu__item">призы</div>
+              <div data-scroll="all-star-team" class="menu__item">наставники</div>
             </div>
-            <div class="menu__part menu__part--logo"><a href="" class="logo"></a></div>
-            <div class="menu__part menu__part--link"><a href="#" data-scroll="" class="menu__item">стоимость</a><a href="#" data-scroll="" class="menu__item">Вопросы</a><a href="#" data-scroll="" class="menu__item">новости</a></div>
+            <div class="menu__part menu__part--logo">
+              <div data-scroll="page-top" class="logo"></div>
+            </div>
+            <div class="menu__part menu__part--link">
+              <div data-scroll="choose-your-rate" class="menu__item">стоимость</div>
+              <div data-scroll="questions-and-answers" class="menu__item">Вопросы</div>
+              <div data-scroll="latest-news" class="menu__item">новости</div>
+            </div>
           </div>
         </div>
       </div>
-      <div class="start-block">
+      <div data-scroll-to="page-top" class="start-block">
         <div class="backbone__inner">
           <div class="lk"><a href="#" class="input-lk">
               <div class="input-lk__item input-lk__item--icon"></div>
               <div class="input-lk__item input-lk__item--text">Личный кабинет</div></a></div>
           <div class="menu">
-            <div class="menu__part menu__part--link"><a href="#" class="menu__item">о проекте</a><a href="#" class="menu__item">условия</a><a href="#" class="menu__item">призы</a><a href="#" class="menu__item">наставники</a></div>
+            <div class="menu__part menu__part--link">
+              <div data-scroll="project-description" class="menu__item">о проекте</div>
+              <div data-scroll="test-yourself" class="menu__item">условия</div>
+              <div data-scroll="main-prize" class="menu__item">призы</div>
+              <div data-scroll="all-star-team" class="menu__item">наставники</div>
+            </div>
             <div class="menu__part menu__part--logo"><a href="" class="logo"></a></div>
-            <div class="menu__part menu__part--link"><a href="#" class="menu__item">стоимость</a><a href="#" class="menu__item">Вопросы</a><a href="#" class="menu__item">новости</a></div>
+            <div class="menu__part menu__part--link">
+              <div data-scroll="choose-your-rate" class="menu__item">стоимость</div>
+              <div data-scroll="questions-and-answers" class="menu__item">Вопросы</div>
+              <div data-scroll="latest-news" class="menu__item">новости</div>
+            </div>
           </div>
           <div class="start-block__content">
             <div class="start-block-content">
@@ -190,7 +208,7 @@
               <div class="button_inner">Участвовать</div></a></div>
         </div>
       </div>
-      <div class="test-yourself">
+      <div data-scroll-to="test-yourself" class="test-yourself">
         <div class="backbone__inner">
           <div class="test-yourself__title">Испытай себя за 30 дней тренировок!</div>
           <div class="test-yourself__content">
@@ -337,14 +355,14 @@
                           </div>
                         </div>
                       </div>
+                      <div class="swiper-button-next"></div>
+                      <div class="swiper-button-prev"></div>
                     </div>
                   </div>
                 </div>
                 <div data-switch-to="test-yourself-2" class="test-yourself-box__item">
                   <div class="yourself-box-lk swiper-container js-yourself-box-lk">
-                    <div class="yourself-box-lk__inner swiper-wrapper">
-                      <div class="yourself-box-lk__over"></div><img src="../content/yourself-box-lk/yourself-box-lk-1.jpg" class="yourself-box-lk__item swiper-slide"><img src="../content/yourself-box-lk/yourself-box-lk-2.jpg" class="yourself-box-lk__item swiper-slide"><img src="../content/yourself-box-lk/yourself-box-lk-3.jpg" class="yourself-box-lk__item swiper-slide"><img src="../content/yourself-box-lk/yourself-box-lk-4.jpg" class="yourself-box-lk__item swiper-slide"><img src="../content/yourself-box-lk/yourself-box-lk-5.jpg" class="yourself-box-lk__item swiper-slide">
-                    </div>
+                    <div class="yourself-box-lk__inner swiper-wrapper"><img src="../content/yourself-box-lk/yourself-box-lk-1.jpg" class="yourself-box-lk__item swiper-slide"><img src="../content/yourself-box-lk/yourself-box-lk-2.jpg" class="yourself-box-lk__item swiper-slide"><img src="../content/yourself-box-lk/yourself-box-lk-3.jpg" class="yourself-box-lk__item swiper-slide"><img src="../content/yourself-box-lk/yourself-box-lk-4.jpg" class="yourself-box-lk__item swiper-slide"><img src="../content/yourself-box-lk/yourself-box-lk-5.jpg" class="yourself-box-lk__item swiper-slide"></div>
                     <div class="swiper-button-next"></div>
                     <div class="swiper-button-prev"></div>
                   </div>
@@ -352,10 +370,14 @@
                 <div data-switch-to="test-yourself-3" class="test-yourself-box__item">
                   <div class="yourself-box-training swiper-container js-yourself-box-training">
                     <div class="yourself-box-training__over"></div>
+                    <div class="yourself-box-training__title">Видео-примеры:</div>
                     <div class="yourself-box-training__inner swiper-wrapper">
-                      <div class="yourself-box-training__item swiper-slide"><a href="#" class="yourself-box-training__link"><img src="../content/yourself-box-training/yourself-box-training-1.png" class="yourself-box-training__img"></a></div>
-                      <div class="yourself-box-training__item swiper-slide"><a href="#" class="yourself-box-training__link"><img src="../content/yourself-box-training/yourself-box-training-1.png" class="yourself-box-training__img"></a></div>
-                      <div class="yourself-box-training__item swiper-slide"><a href="#" class="yourself-box-training__link"><img src="../content/yourself-box-training/yourself-box-training-1.png" class="yourself-box-training__img"></a></div>
+                      <div class="yourself-box-training__item swiper-slide"><a href="#" class="yourself-box-training__link"><img src="../content/yourself-box-training/yourself-box-training-1.png" class="yourself-box-training__img">
+                          <div class="yourself-box-training__name">Боковые скручивания</div></a></div>
+                      <div class="yourself-box-training__item swiper-slide"><a href="#" class="yourself-box-training__link"><img src="../content/yourself-box-training/yourself-box-training-1.png" class="yourself-box-training__img">
+                          <div class="yourself-box-training__name">Боковые скручивания</div></a></div>
+                      <div class="yourself-box-training__item swiper-slide"><a href="#" class="yourself-box-training__link"><img src="../content/yourself-box-training/yourself-box-training-1.png" class="yourself-box-training__img">
+                          <div class="yourself-box-training__name">Боковые скручивания</div></a></div>
                     </div>
                     <div class="swiper-button-next"></div>
                     <div class="swiper-button-prev"></div>
@@ -460,7 +482,7 @@
               <div class="button_inner">Участвовать</div></a></div>
         </div>
       </div>
-      <div class="main-prize">
+      <div data-scroll-to="main-prize" class="main-prize">
         <div class="backbone__inner">
           <div class="main-prize__title">Главный приз<br> Квартира в Москве</div>
           <div class="main-prize__text">Если ты стал частью нашей команды, если ты смог преодолеть себя и пройти испытания, ты станешь участником супер-финала, приз — квартира в Москве.<br><br> Мы готовы сделать этот подарок тому, кто в честной борьбе сможет доказать, что невозможное возможно и все в этой жизни зависит только от тебя.</div>
@@ -554,6 +576,8 @@
               <div class="personal-account-block-slider__inner swiper-wrapper"><img src="../content/landing-lk/landing-lk-1.jpg" class="personal-account-block-slider__item swiper-slide"><img src="../content/landing-lk/landing-lk-2.jpg" class="personal-account-block-slider__item swiper-slide"><img src="../content/landing-lk/landing-lk-3.jpg" class="personal-account-block-slider__item swiper-slide"><img src="../content/landing-lk/landing-lk-4.jpg" class="personal-account-block-slider__item swiper-slide"><img src="../content/landing-lk/landing-lk-5.jpg" class="personal-account-block-slider__item swiper-slide"></div>
               <div class="swiper-pagination"></div>
             </div>
+            <div class="swiper-button-next-box-buy"></div>
+            <div class="swiper-button-prev-box-buy"></div>
             <div class="personal-account-block-content">
               <div class="personal-account-block-content__item is-active">
                 <div class="personal-account-block-content__img personal-account-block-content__img--1"></div>
@@ -584,7 +608,7 @@
           </div>
         </div>
       </div>
-      <div class="all-star-team">
+      <div data-scroll-to="all-star-team" class="all-star-team">
         <div class="backbone__inner">
           <div class="all-star-team__title">Звездная команда ждет тебя!</div>
           <div class="all-star-team__content">
@@ -616,7 +640,7 @@
               <div class="button_inner">Участвовать</div></a></div>
         </div>
       </div>
-      <div class="choose-your-rate">
+      <div data-scroll-to="choose-your-rate" class="choose-your-rate">
         <div class="backbone__inner">
           <div class="choose-your-rate__title">Выбери свой тариф</div>
           <div class="rates">
@@ -825,6 +849,9 @@
               </div>
               <div class="rates__row">
                 <div class="rates__hover">
+                  <div class="rates__popular">
+                    <div class="rates__popular_text">Популярный</div>
+                  </div>
                   <div class="rates__top">
                     <div class="rates__title">Pro Максимум</div>
                     <div class="rates__number">1 участник</div>
@@ -901,6 +928,7 @@
               </div>
               <div class="rates__row">
                 <div class="rates__hover">
+                  <div class="rates__group">Групповая экономия</div>
                   <div class="rates__top">
                     <div class="rates__title">Pro Дубль</div>
                     <div class="rates__number">2 участника</div>
@@ -1339,25 +1367,25 @@
           </div>
         </div>
       </div>
-      <div class="questions-and-answers">
+      <div data-scroll-to="questions-and-answers" class="questions-and-answers">
         <div class="backbone__inner">
           <div class="questions-and-answers__title">Вопросы и ответы</div>
           <div class="questions-and-answers__inner">
             <div class="questions-and-answers-switch">
               <div class="questions-and-answers-switch__control">
                 <div class="questions-and-answers-control">
-                  <div class="questions-and-answers-control__item is-active">Проект</div>
-                  <div class="questions-and-answers-control__item">Время</div>
-                  <div class="questions-and-answers-control__item">Задания</div>
-                  <div class="questions-and-answers-control__item">Питание</div>
-                  <div class="questions-and-answers-control__item">Фото</div>
-                  <div class="questions-and-answers-control__item">Здоровье</div>
-                  <div class="questions-and-answers-control__item">Призы</div>
-                  <div class="questions-and-answers-control__item">Суперфинал</div>
+                  <div data-switch="questions-and-answers-control-1" class="questions-and-answers-control__item is-active">Проект</div>
+                  <div data-switch="questions-and-answers-control-2" class="questions-and-answers-control__item">Время</div>
+                  <div data-switch="questions-and-answers-control-3" class="questions-and-answers-control__item">Задания</div>
+                  <div data-switch="questions-and-answers-control-4" class="questions-and-answers-control__item">Питание</div>
+                  <div data-switch="questions-and-answers-control-5" class="questions-and-answers-control__item">Фото</div>
+                  <div data-switch="questions-and-answers-control-6" class="questions-and-answers-control__item">Здоровье</div>
+                  <div data-switch="questions-and-answers-control-7" class="questions-and-answers-control__item">Призы</div>
+                  <div data-switch="questions-and-answers-control-8" class="questions-and-answers-control__item">Суперфинал</div>
                 </div>
               </div>
               <div class="questions-and-answers-switch__body">
-                <div class="questions-and-answers-answer">
+                <div data-switch-to="questions-and-answers-control-1" class="questions-and-answers-answer is-active">
                   <div class="questions-and-answers-answer__row">
                     <div class="questions-and-answers-answer__item">
                       <div class="questions-and-answers-answer__question"><span class="questions-and-answers-answer__question_red">01. </span>Когда стартует проект?</div>
@@ -1407,12 +1435,110 @@
                     </div>
                   </div>
                 </div>
+                <div data-switch-to="questions-and-answers-control-2" class="questions-and-answers-answer">
+                  <div class="questions-and-answers-answer__row">
+                    <div class="questions-and-answers-answer__item">
+                      <div class="questions-and-answers-answer__question"><span class="questions-and-answers-answer__question_red">01. </span>Когда стартует проект?22</div>
+                      <div class="questions-and-answers-answer__answer">21 ноября</div>
+                    </div>
+                  </div>
+                  <div class="questions-and-answers-answer__row">
+                    <div class="questions-and-answers-answer__item">
+                      <div class="questions-and-answers-answer__question"><span class="questions-and-answers-answer__question_red">07. </span>Я спортсменка, мне стоит участвовать?</div>
+                      <div class="questions-and-answers-answer__answer">Конечно, даже мировые звезды спорта имеют личного тренера и персональную программу питания, а у нас есть еще Личный кабинет в котором ты сможешь фиксировать все достижения. Про призы тоже не забывайте :)</div>
+                    </div>
+                  </div>
+                </div>
+                <div data-switch-to="questions-and-answers-control-3" class="questions-and-answers-answer">
+                  <div class="questions-and-answers-answer__row">
+                    <div class="questions-and-answers-answer__item">
+                      <div class="questions-and-answers-answer__question"><span class="questions-and-answers-answer__question_red">01. </span>Когда стартует проект?33</div>
+                      <div class="questions-and-answers-answer__answer">21 ноября</div>
+                    </div>
+                  </div>
+                  <div class="questions-and-answers-answer__row">
+                    <div class="questions-and-answers-answer__item">
+                      <div class="questions-and-answers-answer__question"><span class="questions-and-answers-answer__question_red">07. </span>Я спортсменка, мне стоит участвовать?</div>
+                      <div class="questions-and-answers-answer__answer">Конечно, даже мировые звезды спорта имеют личного тренера и персональную программу питания, а у нас есть еще Личный кабинет в котором ты сможешь фиксировать все достижения. Про призы тоже не забывайте :)</div>
+                    </div>
+                  </div>
+                </div>
+                <div data-switch-to="questions-and-answers-control-4" class="questions-and-answers-answer">
+                  <div class="questions-and-answers-answer__row">
+                    <div class="questions-and-answers-answer__item">
+                      <div class="questions-and-answers-answer__question"><span class="questions-and-answers-answer__question_red">01. </span>Когда стартует проект?44</div>
+                      <div class="questions-and-answers-answer__answer">21 ноября</div>
+                    </div>
+                  </div>
+                  <div class="questions-and-answers-answer__row">
+                    <div class="questions-and-answers-answer__item">
+                      <div class="questions-and-answers-answer__question"><span class="questions-and-answers-answer__question_red">07. </span>Я спортсменка, мне стоит участвовать?</div>
+                      <div class="questions-and-answers-answer__answer">Конечно, даже мировые звезды спорта имеют личного тренера и персональную программу питания, а у нас есть еще Личный кабинет в котором ты сможешь фиксировать все достижения. Про призы тоже не забывайте :)</div>
+                    </div>
+                  </div>
+                </div>
+                <div data-switch-to="questions-and-answers-control-5" class="questions-and-answers-answer">
+                  <div class="questions-and-answers-answer__row">
+                    <div class="questions-and-answers-answer__item">
+                      <div class="questions-and-answers-answer__question"><span class="questions-and-answers-answer__question_red">01. </span>Когда стартует проект?55</div>
+                      <div class="questions-and-answers-answer__answer">21 ноября</div>
+                    </div>
+                  </div>
+                  <div class="questions-and-answers-answer__row">
+                    <div class="questions-and-answers-answer__item">
+                      <div class="questions-and-answers-answer__question"><span class="questions-and-answers-answer__question_red">07. </span>Я спортсменка, мне стоит участвовать?</div>
+                      <div class="questions-and-answers-answer__answer">Конечно, даже мировые звезды спорта имеют личного тренера и персональную программу питания, а у нас есть еще Личный кабинет в котором ты сможешь фиксировать все достижения. Про призы тоже не забывайте :)</div>
+                    </div>
+                  </div>
+                </div>
+                <div data-switch-to="questions-and-answers-control-6" class="questions-and-answers-answer">
+                  <div class="questions-and-answers-answer__row">
+                    <div class="questions-and-answers-answer__item">
+                      <div class="questions-and-answers-answer__question"><span class="questions-and-answers-answer__question_red">01. </span>Когда стартует проект?66</div>
+                      <div class="questions-and-answers-answer__answer">21 ноября</div>
+                    </div>
+                  </div>
+                  <div class="questions-and-answers-answer__row">
+                    <div class="questions-and-answers-answer__item">
+                      <div class="questions-and-answers-answer__question"><span class="questions-and-answers-answer__question_red">07. </span>Я спортсменка, мне стоит участвовать?</div>
+                      <div class="questions-and-answers-answer__answer">Конечно, даже мировые звезды спорта имеют личного тренера и персональную программу питания, а у нас есть еще Личный кабинет в котором ты сможешь фиксировать все достижения. Про призы тоже не забывайте :)</div>
+                    </div>
+                  </div>
+                </div>
+                <div data-switch-to="questions-and-answers-control-7" class="questions-and-answers-answer">
+                  <div class="questions-and-answers-answer__row">
+                    <div class="questions-and-answers-answer__item">
+                      <div class="questions-and-answers-answer__question"><span class="questions-and-answers-answer__question_red">01. </span>Когда стартует проект?77</div>
+                      <div class="questions-and-answers-answer__answer">21 ноября</div>
+                    </div>
+                  </div>
+                  <div class="questions-and-answers-answer__row">
+                    <div class="questions-and-answers-answer__item">
+                      <div class="questions-and-answers-answer__question"><span class="questions-and-answers-answer__question_red">07. </span>Я спортсменка, мне стоит участвовать?</div>
+                      <div class="questions-and-answers-answer__answer">Конечно, даже мировые звезды спорта имеют личного тренера и персональную программу питания, а у нас есть еще Личный кабинет в котором ты сможешь фиксировать все достижения. Про призы тоже не забывайте :)</div>
+                    </div>
+                  </div>
+                </div>
+                <div data-switch-to="questions-and-answers-control-8" class="questions-and-answers-answer">
+                  <div class="questions-and-answers-answer__row">
+                    <div class="questions-and-answers-answer__item">
+                      <div class="questions-and-answers-answer__question"><span class="questions-and-answers-answer__question_red">01. </span>Когда стартует проект?88</div>
+                      <div class="questions-and-answers-answer__answer">21 ноября</div>
+                    </div>
+                  </div>
+                  <div class="questions-and-answers-answer__row">
+                    <div class="questions-and-answers-answer__item">
+                      <div class="questions-and-answers-answer__question"><span class="questions-and-answers-answer__question_red">07. </span>Я спортсменка, мне стоит участвовать?</div>
+                      <div class="questions-and-answers-answer__answer">Конечно, даже мировые звезды спорта имеют личного тренера и персональную программу питания, а у нас есть еще Личный кабинет в котором ты сможешь фиксировать все достижения. Про призы тоже не забывайте :)</div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div class="latest-news">
+      <div data-scroll-to="latest-news" class="latest-news">
         <div class="backbone__inner">
           <div class="latest-news__title">Свежие новости</div>
           <div class="latest-news__news">

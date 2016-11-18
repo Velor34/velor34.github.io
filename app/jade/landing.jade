@@ -10,16 +10,16 @@ block content
             .menu
                 .menu__part.menu__part--link
                     .menu__item(data-scroll="project-description") о проекте
-                    a(href="#" data-scroll="").menu__item условия
-                    a(href="#" data-scroll="").menu__item призы
-                    a(href="#" data-scroll="").menu__item наставники
+                    .menu__item(data-scroll="test-yourself") условия
+                    .menu__item(data-scroll="main-prize") призы
+                    .menu__item(data-scroll="all-star-team") наставники
                 .menu__part.menu__part--logo
-                    a(href="").logo
+                    .logo(data-scroll="page-top")
                 .menu__part.menu__part--link
-                    a(href="#" data-scroll="").menu__item стоимость
-                    a(href="#" data-scroll="").menu__item Вопросы
-                    a(href="#" data-scroll="").menu__item новости
-    .start-block
+                    .menu__item(data-scroll="choose-your-rate") стоимость
+                    .menu__item(data-scroll="questions-and-answers") Вопросы
+                    .menu__item(data-scroll="latest-news") новости
+    .start-block(data-scroll-to="page-top")
         .backbone__inner
             .lk
                 a(href="#").input-lk
@@ -27,16 +27,16 @@ block content
                     .input-lk__item.input-lk__item--text Личный кабинет
             .menu
                 .menu__part.menu__part--link
-                    a(href="#").menu__item о проекте
-                    a(href="#").menu__item условия
-                    a(href="#").menu__item призы
-                    a(href="#").menu__item наставники
+                    .menu__item(data-scroll="project-description") о проекте
+                    .menu__item(data-scroll="test-yourself") условия
+                    .menu__item(data-scroll="main-prize") призы
+                    .menu__item(data-scroll="all-star-team") наставники
                 .menu__part.menu__part--logo
                     a(href="").logo
                 .menu__part.menu__part--link
-                    a(href="#").menu__item стоимость
-                    a(href="#").menu__item Вопросы
-                    a(href="#").menu__item новости
+                    .menu__item(data-scroll="choose-your-rate") стоимость
+                    .menu__item(data-scroll="questions-and-answers") Вопросы
+                    .menu__item(data-scroll="latest-news") новости
             .start-block__content
                 .start-block-content
                     .start-block-content__season 3 сезон
@@ -164,7 +164,7 @@ block content
             .our-advantages__button
                 a(href="").button
                         .button_inner Участвовать
-    .test-yourself
+    .test-yourself(data-scroll-to="test-yourself")
         .backbone__inner
             .test-yourself__title Испытай себя за 30 дней тренировок!
             .test-yourself__content
@@ -272,10 +272,13 @@ block content
                                                 .rates__button
                                                     .button.button--small
                                                         .button_inner Оформить
+                                    .swiper-button-next
+                                    .swiper-button-prev
                         .test-yourself-box__item(data-switch-to="test-yourself-2")
                             .yourself-box-lk.swiper-container.js-yourself-box-lk
+                                //- .yourself-box-lk__over
                                 .yourself-box-lk__inner.swiper-wrapper
-                                    .yourself-box-lk__over
+                                    
                                     img(src="../content/yourself-box-lk/yourself-box-lk-1.jpg").yourself-box-lk__item.swiper-slide
                                     img(src="../content/yourself-box-lk/yourself-box-lk-2.jpg").yourself-box-lk__item.swiper-slide
                                     img(src="../content/yourself-box-lk/yourself-box-lk-3.jpg").yourself-box-lk__item.swiper-slide
@@ -286,16 +289,20 @@ block content
                         .test-yourself-box__item(data-switch-to="test-yourself-3")
                             .yourself-box-training.swiper-container.js-yourself-box-training
                                 .yourself-box-training__over
+                                .yourself-box-training__title Видео-примеры:
                                 .yourself-box-training__inner.swiper-wrapper
                                     .yourself-box-training__item.swiper-slide
                                         a(href="#").yourself-box-training__link
                                             img(src="../content/yourself-box-training/yourself-box-training-1.png").yourself-box-training__img
+                                            .yourself-box-training__name Боковые скручивания
                                     .yourself-box-training__item.swiper-slide
                                         a(href="#").yourself-box-training__link
                                             img(src="../content/yourself-box-training/yourself-box-training-1.png").yourself-box-training__img
+                                            .yourself-box-training__name Боковые скручивания
                                     .yourself-box-training__item.swiper-slide
                                         a(href="#").yourself-box-training__link
                                             img(src="../content/yourself-box-training/yourself-box-training-1.png").yourself-box-training__img
+                                            .yourself-box-training__name Боковые скручивания
                                 .swiper-button-next
                                 .swiper-button-prev
                         .test-yourself-box__item(data-switch-to="test-yourself-4")
@@ -373,7 +380,7 @@ block content
             .three-groups__button
                 a(href="").button
                     .button_inner Участвовать
-    .main-prize
+    .main-prize(data-scroll-to="main-prize")
         .backbone__inner
             .main-prize__title Главный приз<br> Квартира в Москве
             .main-prize__text Если ты стал частью нашей команды, если ты смог преодолеть себя и пройти испытания, ты станешь участником супер-финала, приз — квартира в Москве.<br><br> Мы готовы сделать этот подарок тому, кто в честной борьбе сможет доказать, что невозможное возможно и все в этой жизни зависит только от тебя.
@@ -452,8 +459,8 @@ block content
                         img(src="../content/landing-lk/landing-lk-4.jpg").personal-account-block-slider__item.swiper-slide
                         img(src="../content/landing-lk/landing-lk-5.jpg").personal-account-block-slider__item.swiper-slide
                     .swiper-pagination
-                //- .swiper-button-next
-                //- .swiper-button-prev
+                .swiper-button-next-box-buy
+                .swiper-button-prev-box-buy
                 .personal-account-block-content
                     .personal-account-block-content__item.is-active
                         .personal-account-block-content__img.personal-account-block-content__img--1
@@ -475,7 +482,7 @@ block content
                         .personal-account-block-content__img.personal-account-block-content__img--5
                         .personal-account-block-content__title Маски на фото
                         .personal-account-block-content__text 150 спосов изменить себя до неузнаваемости. Ни знакомая с работы, ни соседи ни за что не узнают!
-    .all-star-team
+    .all-star-team(data-scroll-to="all-star-team")
         .backbone__inner
             .all-star-team__title Звездная команда ждет тебя!
             .all-star-team__content
@@ -503,7 +510,7 @@ block content
             .all-star-team__button
                 a(href="").button
                     .button_inner Участвовать
-    .choose-your-rate
+    .choose-your-rate(data-scroll-to="choose-your-rate")
         .backbone__inner
             .choose-your-rate__title Выбери свой тариф
             .rates
@@ -647,6 +654,8 @@ block content
                                 .button_inner Оформить
                     .rates__row
                         .rates__hover
+                            .rates__popular
+                                .rates__popular_text Популярный
                             .rates__top
                                 .rates__title Pro Максимум
                                 .rates__number 1 участник
@@ -698,6 +707,7 @@ block content
                                 .button_inner Оформить
                     .rates__row
                         .rates__hover
+                            .rates__group Групповая экономия
                             .rates__top
                                 .rates__title Pro Дубль
                                 .rates__number 2 участника
@@ -985,23 +995,23 @@ block content
                                     .rates__item
                                         .rates__icon.rates__icon--yes
                             .rates__more Подробнее о тарифе
-    .questions-and-answers
+    .questions-and-answers(data-scroll-to="questions-and-answers")
         .backbone__inner
             .questions-and-answers__title Вопросы и ответы
             .questions-and-answers__inner
                 .questions-and-answers-switch
                     .questions-and-answers-switch__control
                         .questions-and-answers-control
-                            .questions-and-answers-control__item.is-active Проект
-                            .questions-and-answers-control__item Время
-                            .questions-and-answers-control__item Задания
-                            .questions-and-answers-control__item Питание
-                            .questions-and-answers-control__item Фото
-                            .questions-and-answers-control__item Здоровье
-                            .questions-and-answers-control__item Призы
-                            .questions-and-answers-control__item Суперфинал
+                            .questions-and-answers-control__item.is-active(data-switch="questions-and-answers-control-1") Проект
+                            .questions-and-answers-control__item(data-switch="questions-and-answers-control-2") Время
+                            .questions-and-answers-control__item(data-switch="questions-and-answers-control-3") Задания
+                            .questions-and-answers-control__item(data-switch="questions-and-answers-control-4") Питание
+                            .questions-and-answers-control__item(data-switch="questions-and-answers-control-5") Фото
+                            .questions-and-answers-control__item(data-switch="questions-and-answers-control-6") Здоровье
+                            .questions-and-answers-control__item(data-switch="questions-and-answers-control-7") Призы
+                            .questions-and-answers-control__item(data-switch="questions-and-answers-control-8") Суперфинал
                     .questions-and-answers-switch__body
-                        .questions-and-answers-answer
+                        .questions-and-answers-answer.is-active(data-switch-to="questions-and-answers-control-1")
                             .questions-and-answers-answer__row
                                 .questions-and-answers-answer__item
                                     .questions-and-answers-answer__question
@@ -1072,7 +1082,98 @@ block content
                                         span.questions-and-answers-answer__question_red 11. 
                                         | Я гражданин другой страны, могу ли я принять участие?
                                     .questions-and-answers-answer__answer Да, принимать участие в проекте могут все, имеющие доступ к интернету и сайту, вне зависимости от города и страны проживания.
-    .latest-news
+                        .questions-and-answers-answer(data-switch-to="questions-and-answers-control-2")
+                            .questions-and-answers-answer__row
+                                .questions-and-answers-answer__item
+                                    .questions-and-answers-answer__question
+                                        span.questions-and-answers-answer__question_red 01. 
+                                        | Когда стартует проект?22
+                                    .questions-and-answers-answer__answer 21 ноября
+                            .questions-and-answers-answer__row
+                                .questions-and-answers-answer__item
+                                    .questions-and-answers-answer__question
+                                        span.questions-and-answers-answer__question_red 07. 
+                                        | Я спортсменка, мне стоит участвовать?
+                                    .questions-and-answers-answer__answer Конечно, даже мировые звезды спорта имеют личного тренера и персональную программу питания, а у нас есть еще Личный кабинет в котором ты сможешь фиксировать все достижения. Про призы тоже не забывайте :)
+                        .questions-and-answers-answer(data-switch-to="questions-and-answers-control-3")
+                            .questions-and-answers-answer__row
+                                .questions-and-answers-answer__item
+                                    .questions-and-answers-answer__question
+                                        span.questions-and-answers-answer__question_red 01. 
+                                        | Когда стартует проект?33
+                                    .questions-and-answers-answer__answer 21 ноября
+                            .questions-and-answers-answer__row
+                                .questions-and-answers-answer__item
+                                    .questions-and-answers-answer__question
+                                        span.questions-and-answers-answer__question_red 07. 
+                                        | Я спортсменка, мне стоит участвовать?
+                                    .questions-and-answers-answer__answer Конечно, даже мировые звезды спорта имеют личного тренера и персональную программу питания, а у нас есть еще Личный кабинет в котором ты сможешь фиксировать все достижения. Про призы тоже не забывайте :)
+                        .questions-and-answers-answer(data-switch-to="questions-and-answers-control-4")
+                            .questions-and-answers-answer__row
+                                .questions-and-answers-answer__item
+                                    .questions-and-answers-answer__question
+                                        span.questions-and-answers-answer__question_red 01. 
+                                        | Когда стартует проект?44
+                                    .questions-and-answers-answer__answer 21 ноября
+                            .questions-and-answers-answer__row
+                                .questions-and-answers-answer__item
+                                    .questions-and-answers-answer__question
+                                        span.questions-and-answers-answer__question_red 07. 
+                                        | Я спортсменка, мне стоит участвовать?
+                                    .questions-and-answers-answer__answer Конечно, даже мировые звезды спорта имеют личного тренера и персональную программу питания, а у нас есть еще Личный кабинет в котором ты сможешь фиксировать все достижения. Про призы тоже не забывайте :)
+                        .questions-and-answers-answer(data-switch-to="questions-and-answers-control-5")
+                            .questions-and-answers-answer__row
+                                .questions-and-answers-answer__item
+                                    .questions-and-answers-answer__question
+                                        span.questions-and-answers-answer__question_red 01. 
+                                        | Когда стартует проект?55
+                                    .questions-and-answers-answer__answer 21 ноября
+                            .questions-and-answers-answer__row
+                                .questions-and-answers-answer__item
+                                    .questions-and-answers-answer__question
+                                        span.questions-and-answers-answer__question_red 07. 
+                                        | Я спортсменка, мне стоит участвовать?
+                                    .questions-and-answers-answer__answer Конечно, даже мировые звезды спорта имеют личного тренера и персональную программу питания, а у нас есть еще Личный кабинет в котором ты сможешь фиксировать все достижения. Про призы тоже не забывайте :)
+                        .questions-and-answers-answer(data-switch-to="questions-and-answers-control-6")
+                            .questions-and-answers-answer__row
+                                .questions-and-answers-answer__item
+                                    .questions-and-answers-answer__question
+                                        span.questions-and-answers-answer__question_red 01. 
+                                        | Когда стартует проект?66
+                                    .questions-and-answers-answer__answer 21 ноября
+                            .questions-and-answers-answer__row
+                                .questions-and-answers-answer__item
+                                    .questions-and-answers-answer__question
+                                        span.questions-and-answers-answer__question_red 07. 
+                                        | Я спортсменка, мне стоит участвовать?
+                                    .questions-and-answers-answer__answer Конечно, даже мировые звезды спорта имеют личного тренера и персональную программу питания, а у нас есть еще Личный кабинет в котором ты сможешь фиксировать все достижения. Про призы тоже не забывайте :)
+                        .questions-and-answers-answer(data-switch-to="questions-and-answers-control-7")
+                            .questions-and-answers-answer__row
+                                .questions-and-answers-answer__item
+                                    .questions-and-answers-answer__question
+                                        span.questions-and-answers-answer__question_red 01. 
+                                        | Когда стартует проект?77
+                                    .questions-and-answers-answer__answer 21 ноября
+                            .questions-and-answers-answer__row
+                                .questions-and-answers-answer__item
+                                    .questions-and-answers-answer__question
+                                        span.questions-and-answers-answer__question_red 07. 
+                                        | Я спортсменка, мне стоит участвовать?
+                                    .questions-and-answers-answer__answer Конечно, даже мировые звезды спорта имеют личного тренера и персональную программу питания, а у нас есть еще Личный кабинет в котором ты сможешь фиксировать все достижения. Про призы тоже не забывайте :)
+                        .questions-and-answers-answer(data-switch-to="questions-and-answers-control-8")
+                            .questions-and-answers-answer__row
+                                .questions-and-answers-answer__item
+                                    .questions-and-answers-answer__question
+                                        span.questions-and-answers-answer__question_red 01. 
+                                        | Когда стартует проект?88
+                                    .questions-and-answers-answer__answer 21 ноября
+                            .questions-and-answers-answer__row
+                                .questions-and-answers-answer__item
+                                    .questions-and-answers-answer__question
+                                        span.questions-and-answers-answer__question_red 07. 
+                                        | Я спортсменка, мне стоит участвовать?
+                                    .questions-and-answers-answer__answer Конечно, даже мировые звезды спорта имеют личного тренера и персональную программу питания, а у нас есть еще Личный кабинет в котором ты сможешь фиксировать все достижения. Про призы тоже не забывайте :)
+    .latest-news(data-scroll-to="latest-news")
         .backbone__inner
             .latest-news__title Свежие новости
             .latest-news__news

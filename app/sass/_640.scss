@@ -18,6 +18,9 @@
 	.logo{
 		@include sprite($s-logo-mobile);
 	}
+	.menu-fixed{
+		display: none;
+	}
 	.start-block{
 		background: #000 url(../i/start-block-bg-mobile.png) no-repeat center 44px;
 		height: auto;
@@ -223,6 +226,125 @@
 		line-height: 1.2;
 	}
 
+	.yourself-box-buy{
+		.rates{
+			display: block;
+		}
+		.swiper-button-next,
+		.swiper-button-prev{
+			display: block;
+		}
+	}
+	.yourself-box-training__title{
+		display: block;
+		font-family: 'roboto-condensed-bold';
+		font-size: 2rem;
+		text-align: center;
+		margin: 40px 0 44px;
+		color: #fff;
+	}
+	.yourself-box-training__name{
+		display: block;
+		font-size: 1.8rem;
+		font-family: 'roboto-condensed-regular';
+		margin-top: 46px;
+		text-align: center;
+		color: #fff;
+	}
+	.yourself-box-three__img{
+		width: 270px;
+		height: 188px;
+	}
+
+	.swiper-button-next{
+		right: 4px;
+	}
+	.swiper-button-prev{
+		left: 4px;
+	}
+	.yourself-box-training .swiper-slide{
+		width: 278px;
+		height: 228px;
+		img{
+			max-width: 100%;
+			max-height: 100%;
+		}
+	}
+	.yourself-box-training__link:after{
+		top: 18px;
+	}
+
+
+	.personal-account-block{
+		height: 700px;
+		background: #fff url(../i/personal-account-block-bg-mobile.jpg) no-repeat center top;
+		padding-top: 36px;
+		
+	}
+	.personal-account-block__title{
+		font-size: 2.6rem;
+		margin-bottom: 62px;
+	}
+	.personal-account-block__content{
+		padding: 0;
+	}
+	.personal-account-block-slider{
+		margin: 0 auto;
+		display: block;
+		padding-bottom: 254px;
+	}
+	.personal-account-block__content .swiper-pagination{
+		top: 550px;
+	}
+	.personal-account-block-content{
+		width: 320px;
+	}
+	.personal-account-block-content__img{
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+	.personal-account-block-content__img--1{
+		@include sprite($s-landing-lk-1-mobile);
+	}
+	.personal-account-block-content__img--2{
+		@include sprite($s-landing-lk-2-mobile);
+	}
+	.personal-account-block-content__img--3{
+		@include sprite($s-landing-lk-3-mobile);
+	}
+	.personal-account-block-content__img--4{
+		@include sprite($s-landing-lk-4-mobile);
+	}
+	.personal-account-block-content__img--5{
+		@include sprite($s-landing-lk-5-mobile);
+	}
+	.personal-account-block__content .swiper-button-prev-box-buy{
+		left: -4px;
+	}
+	.personal-account-block__content .swiper-button-next-box-buy{
+		left: 252px;
+	}
+	.personal-account-block-content{
+		top: 380px;
+		left: 50%;
+		transform: translateX(-50%);
+		width: 300px;
+	}
+	.personal-account-block-content__title,
+	.personal-account-block-content__text{
+		padding-left: 100px;
+	}
+	.personal-account-block-content__title{
+		font-size: 1.8rem;
+	}
+	.personal-account-block-content__text{
+		font-size: 1.4rem;
+	}
+	.personal-account-block-content__item{
+		width: 100%;
+	}
+
 	.test-yourself-control{
 		position: relative;
 		margin: 0 -14px 60px;
@@ -346,7 +468,7 @@
 		margin-top: 0;
 	}
 	.three-groups__button{
-		margin-top: 168px;
+		margin-top: 136px;
 	}
 	.main-prize{
 		height: 660px;
@@ -460,7 +582,7 @@
 	.additional-prizes-prizes__img{
 		position: absolute;
 		top: 4px;
-		left: 0;
+		left: 4px;
 	}
 	.additional-prizes-prizes__img--1{
 		@include sprite($s-additional-prizes-prizes-1-mobile);
