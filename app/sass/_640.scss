@@ -319,11 +319,15 @@
 	.personal-account-block-content__img--5{
 		@include sprite($s-landing-lk-5-mobile);
 	}
+	.personal-account-block__content .swiper-button-prev-box-buy,
+	.personal-account-block__content .swiper-button-next-box-buy{
+		left: 50%;
+	}
 	.personal-account-block__content .swiper-button-prev-box-buy{
-		left: -4px;
+		margin-left: -156px;
 	}
 	.personal-account-block__content .swiper-button-next-box-buy{
-		left: 252px;
+		margin-left: 110px;
 	}
 	.personal-account-block-content{
 		top: 380px;
