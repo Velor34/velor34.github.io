@@ -1001,15 +1001,16 @@ block content
             .questions-and-answers__inner
                 .questions-and-answers-switch
                     .questions-and-answers-switch__control
-                        .questions-and-answers-control
-                            .questions-and-answers-control__item.is-active(data-switch="questions-and-answers-control-1") Проект
-                            .questions-and-answers-control__item(data-switch="questions-and-answers-control-2") Время
-                            .questions-and-answers-control__item(data-switch="questions-and-answers-control-3") Задания
-                            .questions-and-answers-control__item(data-switch="questions-and-answers-control-4") Питание
-                            .questions-and-answers-control__item(data-switch="questions-and-answers-control-5") Фото
-                            .questions-and-answers-control__item(data-switch="questions-and-answers-control-6") Здоровье
-                            .questions-and-answers-control__item(data-switch="questions-and-answers-control-7") Призы
-                            .questions-and-answers-control__item(data-switch="questions-and-answers-control-8") Суперфинал
+                        .questions-and-answers-control.swiper-container.js-questions-control
+                            .questions-and-answers-control__inner.swiper-wrapper
+                                .questions-and-answers-control__item.swiper-slide.is-active(data-switch="questions-and-answers-control-1") Проект
+                                .questions-and-answers-control__item.swiper-slide(data-switch="questions-and-answers-control-2") Время
+                                .questions-and-answers-control__item.swiper-slide(data-switch="questions-and-answers-control-3") Задания
+                                .questions-and-answers-control__item.swiper-slide(data-switch="questions-and-answers-control-4") Питание
+                                .questions-and-answers-control__item.swiper-slide(data-switch="questions-and-answers-control-5") Фото
+                                .questions-and-answers-control__item.swiper-slide(data-switch="questions-and-answers-control-6") Здоровье
+                                .questions-and-answers-control__item.swiper-slide(data-switch="questions-and-answers-control-7") Призы
+                                .questions-and-answers-control__item.swiper-slide(data-switch="questions-and-answers-control-8") Суперфинал
                     .questions-and-answers-switch__body
                         .questions-and-answers-answer.is-active(data-switch-to="questions-and-answers-control-1")
                             .questions-and-answers-answer__row
@@ -1082,6 +1083,8 @@ block content
                                         span.questions-and-answers-answer__question_red 11. 
                                         | Я гражданин другой страны, могу ли я принять участие?
                                     .questions-and-answers-answer__answer Да, принимать участие в проекте могут все, имеющие доступ к интернету и сайту, вне зависимости от города и страны проживания.
+                            .questions-and-answers-answer__more.js-more-text
+                                .questions-and-answers-answer__more_text Больше вопросов и ответов
                         .questions-and-answers-answer(data-switch-to="questions-and-answers-control-2")
                             .questions-and-answers-answer__row
                                 .questions-and-answers-answer__item
@@ -1095,6 +1098,8 @@ block content
                                         span.questions-and-answers-answer__question_red 07. 
                                         | Я спортсменка, мне стоит участвовать?
                                     .questions-and-answers-answer__answer Конечно, даже мировые звезды спорта имеют личного тренера и персональную программу питания, а у нас есть еще Личный кабинет в котором ты сможешь фиксировать все достижения. Про призы тоже не забывайте :)
+                            .questions-and-answers-answer__more.js-more-text
+                                .questions-and-answers-answer__more_text Больше вопросов и ответов
                         .questions-and-answers-answer(data-switch-to="questions-and-answers-control-3")
                             .questions-and-answers-answer__row
                                 .questions-and-answers-answer__item
@@ -1108,6 +1113,8 @@ block content
                                         span.questions-and-answers-answer__question_red 07. 
                                         | Я спортсменка, мне стоит участвовать?
                                     .questions-and-answers-answer__answer Конечно, даже мировые звезды спорта имеют личного тренера и персональную программу питания, а у нас есть еще Личный кабинет в котором ты сможешь фиксировать все достижения. Про призы тоже не забывайте :)
+                            .questions-and-answers-answer__more.js-more-text
+                                .questions-and-answers-answer__more_text Больше вопросов и ответов
                         .questions-and-answers-answer(data-switch-to="questions-and-answers-control-4")
                             .questions-and-answers-answer__row
                                 .questions-and-answers-answer__item
@@ -1121,6 +1128,8 @@ block content
                                         span.questions-and-answers-answer__question_red 07. 
                                         | Я спортсменка, мне стоит участвовать?
                                     .questions-and-answers-answer__answer Конечно, даже мировые звезды спорта имеют личного тренера и персональную программу питания, а у нас есть еще Личный кабинет в котором ты сможешь фиксировать все достижения. Про призы тоже не забывайте :)
+                            .questions-and-answers-answer__more.js-more-text
+                                .questions-and-answers-answer__more_text Больше вопросов и ответов
                         .questions-and-answers-answer(data-switch-to="questions-and-answers-control-5")
                             .questions-and-answers-answer__row
                                 .questions-and-answers-answer__item
@@ -1134,6 +1143,8 @@ block content
                                         span.questions-and-answers-answer__question_red 07. 
                                         | Я спортсменка, мне стоит участвовать?
                                     .questions-and-answers-answer__answer Конечно, даже мировые звезды спорта имеют личного тренера и персональную программу питания, а у нас есть еще Личный кабинет в котором ты сможешь фиксировать все достижения. Про призы тоже не забывайте :)
+                            .questions-and-answers-answer__more.js-more-text
+                                .questions-and-answers-answer__more_text Больше вопросов и ответов
                         .questions-and-answers-answer(data-switch-to="questions-and-answers-control-6")
                             .questions-and-answers-answer__row
                                 .questions-and-answers-answer__item
@@ -1147,6 +1158,8 @@ block content
                                         span.questions-and-answers-answer__question_red 07. 
                                         | Я спортсменка, мне стоит участвовать?
                                     .questions-and-answers-answer__answer Конечно, даже мировые звезды спорта имеют личного тренера и персональную программу питания, а у нас есть еще Личный кабинет в котором ты сможешь фиксировать все достижения. Про призы тоже не забывайте :)
+                            .questions-and-answers-answer__more.js-more-text
+                                .questions-and-answers-answer__more_text Больше вопросов и ответов
                         .questions-and-answers-answer(data-switch-to="questions-and-answers-control-7")
                             .questions-and-answers-answer__row
                                 .questions-and-answers-answer__item
@@ -1160,6 +1173,8 @@ block content
                                         span.questions-and-answers-answer__question_red 07. 
                                         | Я спортсменка, мне стоит участвовать?
                                     .questions-and-answers-answer__answer Конечно, даже мировые звезды спорта имеют личного тренера и персональную программу питания, а у нас есть еще Личный кабинет в котором ты сможешь фиксировать все достижения. Про призы тоже не забывайте :)
+                            .questions-and-answers-answer__more.js-more-text
+                                .questions-and-answers-answer__more_text Больше вопросов и ответов
                         .questions-and-answers-answer(data-switch-to="questions-and-answers-control-8")
                             .questions-and-answers-answer__row
                                 .questions-and-answers-answer__item
@@ -1173,6 +1188,8 @@ block content
                                         span.questions-and-answers-answer__question_red 07. 
                                         | Я спортсменка, мне стоит участвовать?
                                     .questions-and-answers-answer__answer Конечно, даже мировые звезды спорта имеют личного тренера и персональную программу питания, а у нас есть еще Личный кабинет в котором ты сможешь фиксировать все достижения. Про призы тоже не забывайте :)
+                            .questions-and-answers-answer__more.js-more-text
+                                .questions-and-answers-answer__more_text Больше вопросов и ответов
     .latest-news(data-scroll-to="latest-news")
         .backbone__inner
             .latest-news__title Свежие новости

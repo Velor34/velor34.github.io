@@ -82,6 +82,19 @@ sliders = {
 				simulateTouch: true
 			}
 		},
+		questionsControl: {
+			slidesPerView: 'auto',
+			spaceBetween: 48,
+			simulateTouch: false,
+			breakpoints: {
+				939: {
+					simulateTouch: true,
+					scrollbarHide: true,
+					slidesPerView: 'auto',
+					spaceBetween: 20,
+				}
+			}
+		}
 	},
 	slider: {
 		sliderBoxLk: null,
@@ -89,7 +102,8 @@ sliders = {
 		sliderProperNutrition: null,
 		sliderParticipantsProject: null,
 		sliderPersonalAccountBlockSlider: null,
-		sliderBoxBuy: null
+		sliderBoxBuy: null,
+		questionsControl: null
 	},
 	call: {
 		sliderBoxLk: function(){
@@ -110,6 +124,9 @@ sliders = {
 		sliderBoxBuy: function(){
 			sliders.slider.sliderBoxBuy = new Swiper('.js-yourself-box-buy', sliders.settings.sliderBoxBuy);
 		},
+		questionsControl: function(){
+			sliders.slider.questionsControl = new Swiper('.js-questions-control', sliders.settings.questionsControl);
+		},
 		init: function(){
 			this.sliderBoxLk();
 			this.sliderTraining();
@@ -117,6 +134,7 @@ sliders = {
 			this.sliderParticipantsProject();
 			this.sliderPersonalAccountBlockSlider();
 			this.sliderBoxBuy();
+			this.questionsControl();
 		}
 	},
 	init: function(){
@@ -130,6 +148,7 @@ allEvents = {
 		$('[data-switch]').on('click', allEvents.switcher);
 		$('.js-burger').on('click', allEvents.mobileMenu);
 		$('[data-rates]').on('click', allEvents.popUpRates);
+		$('.js-more-text').on('click', allEvents.more)
 	},
 	scrooTo: function(){
 		var self = $(this);
@@ -200,6 +219,18 @@ allEvents = {
 		$('[data-rates-to=' + sData + ']').show();
 		allEvents.openPopUp();
 		$('.pop-up__inner').scrollTop(0);
+	},
+	more: function(){
+		var self = $(this);
+		var parents = self.parents('.questions-and-answers-answer');
+		var pTop = parents.offset().top;
+		$('html, body').animate({
+			scrollTop: pTop
+		});
+		parents.css({
+			'max-height': 'none'
+		});
+		self.hide();
 	},
 	init: function(){
 		this.handler();

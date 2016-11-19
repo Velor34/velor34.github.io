@@ -1740,19 +1740,22 @@ a {
 }
 	.questions-and-answers-switch__control{
 		margin-bottom: 34px;
+		border-top: 1px solid #e6e7e8;
+		border-bottom: 1px solid #e6e7e8;
 	}
 	.questions-and-answers-switch__body{
 
 	}
 
 .questions-and-answers-control{
-	padding: 24px 70px;
-	border-top: 1px solid #e6e7e8;
-	border-bottom: 1px solid #e6e7e8;
-	width: 100%;
-	display: flex;
-	justify-content: space-between;
+	
 }
+	.questions-and-answers-control__inner{
+		padding: 24px 70px;
+		width: 100%;
+		// display: flex;
+		// justify-content: space-between;
+	}
 	.questions-and-answers-control__item{
 		font-family: 'roboto-condensed-bold';
 		cursor: pointer;
@@ -1760,6 +1763,7 @@ a {
 		color: #000;
 		border-bottom: 1px dotted #000;
 		position: relative;
+		width: auto;
 		&.is-active{
 			color: #ff0000;
 			border-bottom-color: transparent;
@@ -1786,7 +1790,7 @@ a {
 		display: inline-block;
 		vertical-align: top;
 		width: 462px;
-		&:last-child{
+		&:nth-child(2){
 			margin-left: 16px;
 		}
 	}
@@ -1816,6 +1820,9 @@ a {
 	}
 	.questions-and-answers-answer__answer_bold{
 		font-family: 'roboto-condensed-bold';
+	}
+	.questions-and-answers-answer__more{
+		display: none;
 	}
 
 .latest-news{

@@ -26,7 +26,7 @@ var path = {
 var js = [
 	path.js + 'com/jquery-2.2.4.min.js',
 	path.js + 'com/swiper.min.js',
-	path.js + 'com/chosen.jquery.min.js',
+	path.js + 'com/chosen.jquery.js',
 	path.js + 'main.js',
 ]
 
