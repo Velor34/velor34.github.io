@@ -2486,7 +2486,7 @@ a {
 	.news-prev-big--without-image{
 		display: block;
 		.news-prev-big__item--text{
-			width: 500px;
+			max-width: 500px;
 			margin: 0 auto;
 		}
 		.news-prev-big__data,
