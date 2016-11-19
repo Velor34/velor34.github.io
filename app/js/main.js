@@ -244,5 +244,13 @@ $(function(){
 	sliders.init();
 	allEvents.init();
 	$(".chosen-select").chosen({no_results_text: "Не найдено"});
-	$('.chosen-search input').attr('placeholder', 'Моментальный поиск')
+	$('.chosen-search input').attr('placeholder', 'Моментальный поиск');
+
+	if ($('.chosen-container').length > 0) {
+      $('.chosen-container').on('touchstart', function(e){
+        e.stopPropagation(); e.preventDefault();
+        // Trigger the mousedown event.
+        $(this).trigger('mousedown');
+      });
+    }
 });
