@@ -1,4 +1,68 @@
 extends layout.jade
 
 block content
-    
+    .news-page
+        .news-page__head
+            .backbone__inner
+                .news-page-menu
+                    .news-page-menu__item
+                        a(href="#").news-page-menu__link На сайт Просушка.рф
+                    .news-page-menu__item
+                        .logo
+                    .news-page-menu__item
+                        .lk
+                            a(href="#").input-lk
+                                .input-lk__item.input-lk__item--icon
+                                .input-lk__item.input-lk__item--text Личный кабинет
+                .news-prev-big.news-prev-big--without-image
+                    .news-prev-big__item.news-prev-big__item--text
+                        .news-prev-big__data 08 ноября 2016, 12:30
+                        .news-prev-big__title Как правильно выбрать «Режим&nbsp;питания?»
+                        .news-prev-big__text Мы постоянно слышим от вас:<br> — Я привела мужа<br> — Мы пойдем в сезон с подругами<br> — Моя мама смотрит на меня и тоже хочет…
+                        .news-prev-big__text Заниматься вдвоем и веселее, и интереснее.<br> В трудную минуту можно поплакаться, обратиться за помощью, или наоборот, самому помочь другу или близкому человеку.
+                        .news-prev-big__text До сих пор в нашем проекте мы никак не поощряли это явление.
+                        .news-prev-big__text Исправляемся!
+                        .news-prev-big__link Читать полностью
+        .news-page__body
+            .backbone__inner
+                .news-list.news-list--news-page
+                    .news-list__inner
+                        a(href="#").news-list__item
+                            img(src="../content/news-list/news-list-1.jpg").news-list__img
+                            .news-list__date 08 ноября 2016, 12:30
+                            .news-list__name Розыгрыш путевок в Сочи!
+                        a(href="#").news-list__item
+                            img(src="../content/news-list/news-list-2.jpg").news-list__img
+                            .news-list__date 07 ноября 2016, 11:45
+                            .news-list__name Чат 3-го сезона открыт!
+                        a(href="#").news-list__item
+                            img(src="../content/news-list/news-list-3.jpg").news-list__img
+                            .news-list__date 06 ноября 2016, 15:30
+                            .news-list__name Второй сезон подошёл к концу.
+                        a(href="#").news-list__item
+                            img(src="../content/news-list/news-list-1.jpg").news-list__img
+                            .news-list__date 08 ноября 2016, 12:30
+                            .news-list__name Розыгрыш путевок в Сочи!
+                        a(href="#").news-list__item
+                            img(src="../content/news-list/news-list-2.jpg").news-list__img
+                            .news-list__date 07 ноября 2016, 11:45
+                            .news-list__name Чат 3-го сезона открыт!
+                        a(href="#").news-list__item
+                            img(src="../content/news-list/news-list-3.jpg").news-list__img
+                            .news-list__date 06 ноября 2016, 15:30
+                            .news-list__name Второй сезон подошёл к концу.
+                        a(href="#").news-list__item
+                            img(src="../content/news-list/news-list-1.jpg").news-list__img
+                            .news-list__date 08 ноября 2016, 12:30
+                            .news-list__name Розыгрыш путевок в Сочи!
+                        a(href="#").news-list__item
+                            img(src="../content/news-list/news-list-2.jpg").news-list__img
+                            .news-list__date 07 ноября 2016, 11:45
+                            .news-list__name Чат 3-го сезона открыт!
+                        a(href="#").news-list__item
+                            img(src="../content/news-list/news-list-3.jpg").news-list__img
+                            .news-list__date 06 ноября 2016, 15:30
+                            .news-list__name Второй сезон подошёл к концу.
+                .news-page__more
+                    a(href="#").news-page__more-text Больше новостей
+    include include/footer.jade

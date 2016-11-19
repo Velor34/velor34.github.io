@@ -1,4 +1,73 @@
 extends layout.jade
 
 block content
+    .news-page.news-page--page
+        .news-page__head
+            .backbone__inner
+                .news-page-menu
+                    .news-page-menu__item
+                        a(href="#").news-page-menu__link На сайт Просушка.рф
+                    .news-page-menu__item
+                        .logo
+                    .news-page-menu__item
+                        .lk
+                            a(href="#").input-lk
+                                .input-lk__item.input-lk__item--icon
+                                .input-lk__item.input-lk__item--text Личный кабинет
+        .news-page__body
+            .backbone__inner
+                .new
+                    a(href="#").new__back Все новости
+                    .new__data 08 ноября 2016, 12:30
+                    .new__title Как правильно выбрать<br> «Режим&nbsp;питания?»
+                    .new__content
+                        .new__item
+                            .new__pre-title Привет друзья!
+                            .new__text Мы постоянно слышим от вас:<br> — Я привела мужа<br> — Мы пойдем в сезон с подругами<br> — Моя мама смотрит на меня и тоже хочет…
+                            .new__text Заниматься вдвоем и веселее, и интереснее. В трудную минуту можно поплакаться, обратиться за помощью, или наоборот, самому помочь другу или близкому человеку. До сих пор в нашем проекте мы никак не поощряли это явление.
+                            .new__text Исправляемся!
+                            .new__text
+                                .new__text_bold Вместе с нашими партнерами «Роза Хутор» мы запускаем акцию:
+                                a(href="").new__text_link.new__text_big «Для всех семейных и не очень, возьми PRO2 — поедешь в Сочи!»<br>
+                                | У нас спортивный проект, а Сочи — спортивная столица России!<br> Почему бы не объединить приятное с полезным? -)
+                        .new__item
+                            .new__pre-title Условия:
+                            .new__text До 21 ноября 
+                                a(href="").new__text_link покупаете тариф PRO2
+                                | и становитесь участником розыгрыша ТРЕХ парных путевок в Сочи на выходные! Мы выберем три пары (6 человек), которые в первые выходные 3-го сезона полетят в Сочи.<br> Выбор счастливчиков состоится 22 ноября с помощью сайта — random.or
+                        .new__item
+                            .new__pre-title Путевка включает:
+                            .new__text •  Перелет из Москвы в Сочи и обратно.<br> •  Трансфер, проживание и питание.
+                            .new__text Кто знает, может быть мы даже все вместе увидим экзамен на фоне сочинских видов.
+                            .new__text
+                                .new__text_bold Есть нюанс!
+                                | Чем ближе сезон, тем дороже стоимость 
+                                a(href="").new__text_link пакета PRO2.
+                                | Не откладывайте свой отдых! -)
+                    .new__button
+                        .button.button--no-shadow
+                            .button_inner Участвовать
+                .tell-your-friends
+                    .tell-your-friends__title Расскажите друзьям
+                    .tell-your-friends__social
+                        img(src="../content/like.png")
+        .other-news
+            .backbone__inner
+                .other-news__title Другие новости
+                .other-news__inner
+                    .news-list.news-list--news-page
+                        .news-list__inner
+                            a(href="#").news-list__item
+                                img(src="../content/news-list/news-list-1.jpg").news-list__img
+                                .news-list__date 08 ноября 2016, 12:30
+                                .news-list__name Розыгрыш путевок в Сочи!
+                            a(href="#").news-list__item
+                                img(src="../content/news-list/news-list-2.jpg").news-list__img
+                                .news-list__date 07 ноября 2016, 11:45
+                                .news-list__name Чат 3-го сезона открыт!
+                            a(href="#").news-list__item
+                                img(src="../content/news-list/news-list-3.jpg").news-list__img
+                                .news-list__date 06 ноября 2016, 15:30
+                                .news-list__name Второй сезон подошёл к концу.
+    include include/footer.jade
     

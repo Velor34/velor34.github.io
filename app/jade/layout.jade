@@ -12,28 +12,8 @@ html(lang="ru")
         link(rel="stylesheet", href="../f/css/main.css")
         block sh
     body
-        .burger.js-burger
-            .burger__item
-            .burger__item
-            .burger__item
-        .mobile-menu.js-mobile-menu
-            .mobile-menu__inner
-                .mobile-menu__logo
-                    .logo(data-scroll="page-top")
-                .mobile-menu__lk
-                    .lk
-                        a(href="#").input-lk
-                            .input-lk__item.input-lk__item--icon
-                            .input-lk__item.input-lk__item--text Личный кабинет
-                .mobile-menu__item-wrap
-                    .mobile-menu__item(data-scroll="project-description") о проекте
-                    .mobile-menu__item(data-scroll="test-yourself") условия
-                    .mobile-menu__item(data-scroll="main-prize") призы
-                    .mobile-menu__item(data-scroll="all-star-team") наставники
-                    .mobile-menu__item(data-scroll="choose-your-rate") стоимость
-                    .mobile-menu__item(data-scroll="questions-and-answers") Вопросы
-                    .mobile-menu__item(data-scroll="latest-news") новости
-        include include/pop-up-tarrifs.jade
+        block mobile-menu
+        block pop-up
         .backbone
             block content
         script(src="../f/js/all-js.js")
