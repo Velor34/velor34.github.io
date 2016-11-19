@@ -796,7 +796,7 @@
 	.latest-news{
 		padding: 34px 0 46px 0;
 		height: auto;
-		background-size: cover;
+		background-image: url(../i/choose-your-rate-bg-mobile.jpg);
 	}
 	.latest-news__title{
 		font-size: 2.6rem;
@@ -1001,6 +1001,92 @@
 		br{
 			display: none;
 		}
+	}
+
+	.news-page-menu{
+		display: block;
+	}
+		.news-page-menu__item{
+			&:first-child,
+			&:last-child{
+				display: none;
+			}
+			.logo{
+				margin: 0 auto;
+			}
+		}
+	.news-page__head{
+		height: auto;
+		padding-bottom: 54px;
+		background-size: cover;
+	}
+
+	.news-prev-big{
+		display: block;
+	}
+	.news-prev-big__item--img,
+	.news-prev-big__item--text{
+		width: auto;
+	}
+	.news-prev-big__item--img{
+		margin-bottom: 14px;
+	}
+	.news-prev-big__item--text{
+		width: 300px;
+		margin: 0 auto;
+	}
+	.news-prev-big__img{
+		max-width: 100%;
+		height: auto;
+		display: block;
+		margin: 0 auto;
+	}
+	.news-prev-big__data{
+		font-size: 1.4rem;
+	}
+	.news-prev-big__title{
+		font-size: 3rem
+	}
+	.news-prev-big__link{
+		text-align: center;
+	}
+	.news-list--news-page{
+		text-align: center;
+	}
+
+	.news-page--page{
+		.news-page__head{
+			height: auto;
+			padding-bottom: 0;
+		}
+		.news-page-menu{
+			margin-top: -40px;
+		}
+		.logo{
+			position: relative;
+			top: 30px;
+		}
+	}
+	.new__back{
+		margin-bottom: 26px;
+	}
+	.new__data{
+		font-size: 1.4rem;
+	}
+	.new__title{
+		font-size: 3rem;
+	}
+	.new__pre-title{
+		font-size: 2.6rem;
+	}
+	.new__text{
+		font-size: 1.6rem;
+	}
+	.new__text_link{
+		font-size: 1.8rem;
+	}
+	.other-news__title{
+		font-size: 2.6rem
 	}
 
 

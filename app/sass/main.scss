@@ -2396,6 +2396,7 @@ a {
 		font-size: 1.6rem;
 		color: #fff;
 		text-transform: uppercase;
+		display: block;
 	}
 
 .pop-up{
@@ -2597,7 +2598,7 @@ a {
 	}
 	.new__content{
 		color: #000;
-		width: 596px;
+		max-width: 596px;
 		margin: 0 auto;
 	}
 	.new__item{
