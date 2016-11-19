@@ -14,7 +14,7 @@ html{
 }
 
 html{
-    height: 100%;
+    min-height: 100%;
 }
 body{
     height: 100%;
@@ -34,6 +34,10 @@ a {
 
 .is-mobile{
 	display: none;
+}
+
+.is-hidden{
+	overflow: hidden;
 }
 
 .backbone{
@@ -2274,11 +2278,137 @@ a {
 		text-decoration: underline;
 	}
 
-.checkbox{
-
+.burger{
+	position: fixed;
+	top: 20px;
+	right: 10px;
+	background: #ff0000;
+	border-radius: 100%;
+	width: 38px;
+	height: 38px;
+	padding-top: 12px;
+	z-index: 33;
+	cursor: pointer;
+	display: none;
+	&.is-active{
+		.burger__item{
+			&:nth-child(1){
+				transform: rotate(40deg);
+				top: 6px;
+				transition: transform 0.2s linear;
+			}
+			&:nth-child(2){
+				opacity: 0;
+			}
+			&:nth-child(3){
+				transform: rotate(-40deg);
+				top: -6px;
+				transition: transform 0.2s linear;
+			}
+		}
+	}
 }
+	.burger__item{
+		width: 16px;
+		height: 2px;
+		background: #fff;
+		margin: 0 auto 4px auto;
+		position: relative;
+		transition: transform 0.2s linear;
+		&:last-child{
+			margin-bottom: 0;
+		}
+	}
+
+.mobile-menu{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 32;
+	background: rgba(0, 0, 0, 0.6);
+	display: none;
+}
+	.mobile-menu__inner{
+		overflow: auto;
+		padding: 18px 0 20px 0;
+		position: relative;
+		z-index: 2;
+		height: inherit;
+	}
+	.mobile-menu__logo{
+		margin-bottom: 16px;
+		.logo{
+			margin: 0 auto;
+		}
+	}
+	.mobile-menu__lk{
+		text-align: center;
+		padding: 4px 0;
+		margin: 0 10px;
+		border-top: 1px solid rgba(255, 255, 255, 0.2);
+		border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+		.lk{
+			display: block;
+		}
+		.input-lk{
+			display: inline-block;
+			vertical-align: top;
+			padding: 10px;
+		}
+	}
+	
+	.mobile-menu__item-wrap{
+		margin-top: 28px;
+	}
+	.mobile-menu__item{
+		padding: 14px 0;
+		text-align: center;
+		font-family: 'roboto-condensed-regular';
+		font-size: 1.6rem;
+		color: #fff;
+		text-transform: uppercase;
+	}
+
+.pop-up{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 32;
+	background: rgba(0, 0, 0, 1);
+	display: none;
+}
+	.pop-up__inner{
+		overflow: auto;
+		padding: 18px 0 20px 0;
+		position: relative;
+		z-index: 2;
+		height: inherit;
+	}
+	.pop-up__logo{
+		margin-bottom: 16px;
+		.logo{
+			margin: 0 auto;
+		}
+	}
+	.pop-up__tarrif{
+		text-align: center;
+		.rates__button{
+			.button{
+				margin: 0 auto;
+			}
+		}
+	}
 
 
+.is-menu-open{
+	.backbone{
+		filter: blur(8px);
+	}
+}
 
 
 @import "_640.scss";

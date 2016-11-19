@@ -8,6 +8,701 @@
     <link rel="stylesheet" href="../f/css/main.css">
   </head>
   <body>
+    <div class="burger js-burger">
+      <div class="burger__item"></div>
+      <div class="burger__item"></div>
+      <div class="burger__item"></div>
+    </div>
+    <div class="mobile-menu js-mobile-menu">
+      <div class="mobile-menu__inner">
+        <div class="mobile-menu__logo">
+          <div data-scroll="page-top" class="logo"></div>
+        </div>
+        <div class="mobile-menu__lk">
+          <div class="lk"><a href="#" class="input-lk">
+              <div class="input-lk__item input-lk__item--icon"></div>
+              <div class="input-lk__item input-lk__item--text">Личный кабинет</div></a></div>
+        </div>
+        <div class="mobile-menu__item-wrap">
+          <div data-scroll="project-description" class="mobile-menu__item">о проекте</div>
+          <div data-scroll="test-yourself" class="mobile-menu__item">условия</div>
+          <div data-scroll="main-prize" class="mobile-menu__item">призы</div>
+          <div data-scroll="all-star-team" class="mobile-menu__item">наставники</div>
+          <div data-scroll="choose-your-rate" class="mobile-menu__item">стоимость</div>
+          <div data-scroll="questions-and-answers" class="mobile-menu__item">Вопросы</div>
+          <div data-scroll="latest-news" class="mobile-menu__item">новости</div>
+        </div>
+      </div>
+    </div>
+    <div class="pop-up">
+      <div class="pop-up__inner">
+        <div class="pop-up__logo">
+          <div class="logo"></div>
+        </div>
+        <div class="pop-up__tarrif">
+          <div data-rates-to="rates-1" class="rates rates--mobile">
+            <div class="rates__inner">
+              <div class="rates__row">
+                <div class="rates__hover">
+                  <div class="rates__top">
+                    <div class="rates__title">Pro Спорт</div>
+                    <div class="rates__number">1 участник</div>
+                    <div class="rates__img rates__img--1"></div>
+                    <div class="rates__content">
+                      <div class="rates__icon-group">
+                        <div class="rates-icon">
+                          <div class="rates-icon__item rates-icon__item--1"></div>
+                          <div class="rates-icon__item rates-icon__item--2 rates-icon__item--no"></div>
+                          <div class="rates-icon__item rates-icon__item--3 rates-icon__item--no"></div>
+                          <div class="rates-icon__item rates-icon__item--4 rates-icon__item--no"></div>
+                        </div>
+                      </div>
+                      <div class="rates__price">999 руб.</div>
+                      <div class="rates__button">
+                        <div class="button button--small">
+                          <div class="button_inner">Оформить</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="rates__bottom">
+                    <div class="rates__bottom_cell">
+                      <div class="rates__item">
+                        <div class="rates__text">Тренировки 8 программ</div>
+                      </div>
+                      <div class="rates__item">
+                        <div class="rates__text">Блок контроля калорий</div>
+                      </div>
+                      <div class="rates__item">
+                        <div class="rates__text">Прогресс</div>
+                      </div>
+                      <div class="rates__item">
+                        <div class="rates__text">Графики</div>
+                      </div>
+                      <div class="rates__item">
+                        <div class="rates__text">Новости</div>
+                      </div>
+                      <div class="rates__item">
+                        <div class="rates__text">Борьба за призы</div>
+                      </div>
+                      <div class="rates__item">
+                        <div class="rates__text">Чемпионаты</div>
+                      </div>
+                      <div class="rates__item">
+                        <div class="rates__text">Конкурсы</div>
+                      </div>
+                      <div class="rates__item">
+                        <div class="rates__text">Курсы и статьи в ЛК</div>
+                      </div>
+                      <div class="rates__item">
+                        <div class="rates__text">Меню питания (30 меню)</div>
+                      </div>
+                      <div class="rates__item">
+                        <div class="rates__text">Мобильный помощник</div>
+                      </div>
+                      <div class="rates__item">
+                        <div class="rates__text">Отчеты</div>
+                      </div>
+                      <div class="rates__item">
+                        <div class="rates__text">Общий чат<span class="rates__text_icon rates__text_icon_question"></span></div>
+                      </div>
+                      <div class="rates__item">
+                        <div class="rates__text">Личные чаты<span class="rates__text_icon rates__text_icon_question"></span></div>
+                      </div>
+                      <div class="rates__item">
+                        <div class="rates__text">Сушки в подарок</div>
+                      </div>
+                    </div>
+                    <div class="rates__bottom_cell">
+                      <div class="rates__item">
+                        <div class="rates__icon rates__icon--yes"></div>
+                      </div>
+                      <div class="rates__item">
+                        <div class="rates__icon rates__icon--yes"></div>
+                      </div>
+                      <div class="rates__item">
+                        <div class="rates__icon rates__icon--yes"></div>
+                      </div>
+                      <div class="rates__item">
+                        <div class="rates__icon rates__icon--yes"></div>
+                      </div>
+                      <div class="rates__item">
+                        <div class="rates__icon rates__icon--yes"></div>
+                      </div>
+                      <div class="rates__item">
+                        <div class="rates__icon rates__icon--no"></div>
+                      </div>
+                      <div class="rates__item">
+                        <div class="rates__icon rates__icon--no"></div>
+                      </div>
+                      <div class="rates__item">
+                        <div class="rates__icon rates__icon--no"></div>
+                      </div>
+                      <div class="rates__item">
+                        <div class="rates__icon rates__icon--no"></div>
+                      </div>
+                      <div class="rates__item">
+                        <div class="rates__icon rates__icon--no"></div>
+                      </div>
+                      <div class="rates__item">
+                        <div class="rates__icon rates__icon--no"></div>
+                      </div>
+                      <div class="rates__item">
+                        <div class="rates__icon rates__icon--no"></div>
+                      </div>
+                      <div class="rates__item">
+                        <div class="rates__icon rates__icon--no"></div>
+                      </div>
+                      <div class="rates__item">
+                        <div class="rates__icon rates__icon--no"></div>
+                      </div>
+                      <div class="rates__item">
+                        <div class="rates__icon rates__icon--no"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="rates__price">999 руб.
+                    <div class="rates__button">
+                      <div class="button button--small">
+                        <div class="button_inner">Оформить</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div data-rates-to="rates-2" class="rates rates--mobile">
+            <div class="rates__inner">
+              <div class="rates__row">
+                <div class="rates__hover">
+                  <div class="rates__top">
+                    <div class="rates__title">Pro Стандарт</div>
+                    <div class="rates__number">1 участник</div>
+                    <div class="rates__img rates__img--2"></div>
+                    <div class="rates__content">
+                      <div class="rates__icon-group">
+                        <div class="rates-icon">
+                          <div class="rates-icon__item rates-icon__item--1"></div>
+                          <div class="rates-icon__item rates-icon__item--2"></div>
+                          <div class="rates-icon__item rates-icon__item--3 rates-icon__item--no"></div>
+                          <div class="rates-icon__item rates-icon__item--4"></div>
+                        </div>
+                      </div>
+                      <div class="rates__price">2 500 руб.</div>
+                      <div class="rates__button">
+                        <div class="button button--small">
+                          <div class="button_inner">Оформить</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="rates__bottom">
+                    <div class="rates__bottom_cell">
+                      <div class="rates__item">
+                        <div class="rates__text">Тренировки 8 программ</div>
+                      </div>
+                      <div class="rates__item">
+                        <div class="rates__text">Блок контроля калорий</div>
+                      </div>
+                      <div class="rates__item">
+                        <div class="rates__text">Прогресс</div>
+                      </div>
+                      <div class="rates__item">
+                        <div class="rates__text">Графики</div>
+                      </div>
+                      <div class="rates__item">
+                        <div class="rates__text">Новости</div>
+                      </div>
+                      <div class="rates__item">
+                        <div class="rates__text">Борьба за призы</div>
+                      </div>
+                      <div class="rates__item">
+                        <div class="rates__text">Чемпионаты</div>
+                      </div>
+                      <div class="rates__item">
+                        <div class="rates__text">Конкурсы</div>
+                      </div>
+                      <div class="rates__item">
+                        <div class="rates__text">Курсы и статьи в ЛК</div>
+                      </div>
+                      <div class="rates__item">
+                        <div class="rates__text">Меню питания (30 меню)</div>
+                      </div>
+                      <div class="rates__item">
+                        <div class="rates__text">Мобильный помощник</div>
+                      </div>
+                      <div class="rates__item">
+                        <div class="rates__text">Отчеты</div>
+                      </div>
+                      <div class="rates__item">
+                        <div class="rates__text">Общий чат<span class="rates__text_icon rates__text_icon_question"></span></div>
+                      </div>
+                      <div class="rates__item">
+                        <div class="rates__text">Личные чаты<span class="rates__text_icon rates__text_icon_question"></span></div>
+                      </div>
+                      <div class="rates__item">
+                        <div class="rates__text">Сушки в подарок</div>
+                      </div>
+                    </div>
+                    <div class="rates__bottom_cell">
+                      <div class="rates__item">
+                        <div class="rates__icon rates__icon--yes"></div>
+                      </div>
+                      <div class="rates__item">
+                        <div class="rates__icon rates__icon--yes"></div>
+                      </div>
+                      <div class="rates__item">
+                        <div class="rates__icon rates__icon--yes"></div>
+                      </div>
+                      <div class="rates__item">
+                        <div class="rates__icon rates__icon--yes"></div>
+                      </div>
+                      <div class="rates__item">
+                        <div class="rates__icon rates__icon--yes"></div>
+                      </div>
+                      <div class="rates__item">
+                        <div class="rates__icon rates__icon--yes"></div>
+                      </div>
+                      <div class="rates__item">
+                        <div class="rates__icon rates__icon--yes"></div>
+                      </div>
+                      <div class="rates__item">
+                        <div class="rates__icon rates__icon--yes"></div>
+                      </div>
+                      <div class="rates__item">
+                        <div class="rates__icon rates__icon--yes"></div>
+                      </div>
+                      <div class="rates__item">
+                        <div class="rates__icon rates__icon--yes"></div>
+                      </div>
+                      <div class="rates__item">
+                        <div class="rates__icon rates__icon--yes"></div>
+                      </div>
+                      <div class="rates__item">
+                        <div class="rates__icon rates__icon--yes"></div>
+                      </div>
+                      <div class="rates__item">
+                        <div class="rates__icon rates__icon--yes"></div>
+                      </div>
+                      <div class="rates__item">
+                        <div class="rates__icon rates__icon--no"></div>
+                      </div>
+                      <div class="rates__item">
+                        <div class="rates__text rates__text--green rates__text--center">5</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="rates__price">2 500 руб.
+                    <div class="rates__button">
+                      <div class="button button--small">
+                        <div class="button_inner">Оформить</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div data-rates-to="rates-3" class="rates rates--mobile">
+            <div class="rates__inner">
+              <div class="rates__row">
+                <div class="rates__hover">
+                  <div class="rates__top">
+                    <div class="rates__title">Pro Максимум</div>
+                    <div class="rates__number">1 участник</div>
+                    <div class="rates__img rates__img--3"></div>
+                    <div class="rates__content">
+                      <div class="rates__icon-group">
+                        <div class="rates-icon">
+                          <div class="rates-icon__item rates-icon__item--1"></div>
+                          <div class="rates-icon__item rates-icon__item--2"></div>
+                          <div class="rates-icon__item rates-icon__item--3"></div>
+                          <div class="rates-icon__item rates-icon__item--4"></div>
+                        </div>
+                      </div>
+                      <div class="rates__price">5 000 руб.</div>
+                      <div class="rates__button">
+                        <div class="button button--small">
+                          <div class="button_inner">Оформить</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="rates__bottom">
+                    <div class="rates__bottom_cell">
+                      <div class="rates__item">
+                        <div class="rates__text">Тренировки 8 программ</div>
+                      </div>
+                      <div class="rates__item">
+                        <div class="rates__text">Блок контроля калорий</div>
+                      </div>
+                      <div class="rates__item">
+                        <div class="rates__text">Прогресс</div>
+                      </div>
+                      <div class="rates__item">
+                        <div class="rates__text">Графики</div>
+                      </div>
+                      <div class="rates__item">
+                        <div class="rates__text">Новости</div>
+                      </div>
+                      <div class="rates__item">
+                        <div class="rates__text">Борьба за призы</div>
+                      </div>
+                      <div class="rates__item">
+                        <div class="rates__text">Чемпионаты</div>
+                      </div>
+                      <div class="rates__item">
+                        <div class="rates__text">Конкурсы</div>
+                      </div>
+                      <div class="rates__item">
+                        <div class="rates__text">Курсы и статьи в ЛК</div>
+                      </div>
+                      <div class="rates__item">
+                        <div class="rates__text">Меню питания (30 меню)</div>
+                      </div>
+                      <div class="rates__item">
+                        <div class="rates__text">Мобильный помощник</div>
+                      </div>
+                      <div class="rates__item">
+                        <div class="rates__text">Отчеты</div>
+                      </div>
+                      <div class="rates__item">
+                        <div class="rates__text">Общий чат<span class="rates__text_icon rates__text_icon_question"></span></div>
+                      </div>
+                      <div class="rates__item">
+                        <div class="rates__text">Личные чаты<span class="rates__text_icon rates__text_icon_question"></span></div>
+                      </div>
+                      <div class="rates__item">
+                        <div class="rates__text">Сушки в подарок</div>
+                      </div>
+                    </div>
+                    <div class="rates__bottom_cell">
+                      <div class="rates__item">
+                        <div class="rates__icon rates__icon--yes"></div>
+                      </div>
+                      <div class="rates__item">
+                        <div class="rates__icon rates__icon--yes"></div>
+                      </div>
+                      <div class="rates__item">
+                        <div class="rates__icon rates__icon--yes"></div>
+                      </div>
+                      <div class="rates__item">
+                        <div class="rates__icon rates__icon--yes"></div>
+                      </div>
+                      <div class="rates__item">
+                        <div class="rates__icon rates__icon--yes"></div>
+                      </div>
+                      <div class="rates__item">
+                        <div class="rates__icon rates__icon--yes"></div>
+                      </div>
+                      <div class="rates__item">
+                        <div class="rates__icon rates__icon--yes"></div>
+                      </div>
+                      <div class="rates__item">
+                        <div class="rates__icon rates__icon--yes"></div>
+                      </div>
+                      <div class="rates__item">
+                        <div class="rates__icon rates__icon--yes"></div>
+                      </div>
+                      <div class="rates__item">
+                        <div class="rates__icon rates__icon--yes"></div>
+                      </div>
+                      <div class="rates__item">
+                        <div class="rates__icon rates__icon--yes"></div>
+                      </div>
+                      <div class="rates__item">
+                        <div class="rates__icon rates__icon--yes"></div>
+                      </div>
+                      <div class="rates__item">
+                        <div class="rates__icon rates__icon--yes"></div>
+                      </div>
+                      <div class="rates__item">
+                        <div class="rates__icon rates__icon--yes"></div>
+                      </div>
+                      <div class="rates__item">
+                        <div class="rates__text rates__text--green rates__text--center">10</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="rates__price">5 000 руб.
+                    <div class="rates__button">
+                      <div class="button button--small">
+                        <div class="button_inner">Оформить</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div data-rates-to="rates-4" class="rates rates--mobile">
+            <div class="rates__inner">
+              <div class="rates__row">
+                <div class="rates__hover">
+                  <div class="rates__top">
+                    <div class="rates__title">Pro Дубль</div>
+                    <div class="rates__number">2 участника</div>
+                    <div class="rates__img rates__img--4"></div>
+                    <div class="rates__content">
+                      <div class="rates__icon-group">
+                        <div class="rates-icon">
+                          <div class="rates-icon__item rates-icon__item--1"></div>
+                          <div class="rates-icon__item rates-icon__item--2"></div>
+                          <div class="rates-icon__item rates-icon__item--3 rates-icon__item--no"></div>
+                          <div class="rates-icon__item rates-icon__item--4"></div>
+                        </div>
+                      </div>
+                      <div class="rates__price">4 000 руб.</div>
+                      <div class="rates__button">
+                        <div class="button button--small">
+                          <div class="button_inner">Оформить</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="rates__bottom">
+                    <div class="rates__bottom_cell">
+                      <div class="rates__item">
+                        <div class="rates__text">Тренировки 8 программ</div>
+                      </div>
+                      <div class="rates__item">
+                        <div class="rates__text">Блок контроля калорий</div>
+                      </div>
+                      <div class="rates__item">
+                        <div class="rates__text">Прогресс</div>
+                      </div>
+                      <div class="rates__item">
+                        <div class="rates__text">Графики</div>
+                      </div>
+                      <div class="rates__item">
+                        <div class="rates__text">Новости</div>
+                      </div>
+                      <div class="rates__item">
+                        <div class="rates__text">Борьба за призы</div>
+                      </div>
+                      <div class="rates__item">
+                        <div class="rates__text">Чемпионаты</div>
+                      </div>
+                      <div class="rates__item">
+                        <div class="rates__text">Конкурсы</div>
+                      </div>
+                      <div class="rates__item">
+                        <div class="rates__text">Курсы и статьи в ЛК</div>
+                      </div>
+                      <div class="rates__item">
+                        <div class="rates__text">Меню питания (30 меню)</div>
+                      </div>
+                      <div class="rates__item">
+                        <div class="rates__text">Мобильный помощник</div>
+                      </div>
+                      <div class="rates__item">
+                        <div class="rates__text">Отчеты</div>
+                      </div>
+                      <div class="rates__item">
+                        <div class="rates__text">Общий чат<span class="rates__text_icon rates__text_icon_question"></span></div>
+                      </div>
+                      <div class="rates__item">
+                        <div class="rates__text">Личные чаты<span class="rates__text_icon rates__text_icon_question"></span></div>
+                      </div>
+                      <div class="rates__item">
+                        <div class="rates__text">Сушки в подарок</div>
+                      </div>
+                    </div>
+                    <div class="rates__bottom_cell">
+                      <div class="rates__item">
+                        <div class="rates__icon rates__icon--yes"></div>
+                      </div>
+                      <div class="rates__item">
+                        <div class="rates__icon rates__icon--yes"></div>
+                      </div>
+                      <div class="rates__item">
+                        <div class="rates__icon rates__icon--yes"></div>
+                      </div>
+                      <div class="rates__item">
+                        <div class="rates__icon rates__icon--yes"></div>
+                      </div>
+                      <div class="rates__item">
+                        <div class="rates__icon rates__icon--yes"></div>
+                      </div>
+                      <div class="rates__item">
+                        <div class="rates__icon rates__icon--yes"></div>
+                      </div>
+                      <div class="rates__item">
+                        <div class="rates__icon rates__icon--yes"></div>
+                      </div>
+                      <div class="rates__item">
+                        <div class="rates__icon rates__icon--yes"></div>
+                      </div>
+                      <div class="rates__item">
+                        <div class="rates__icon rates__icon--yes"></div>
+                      </div>
+                      <div class="rates__item">
+                        <div class="rates__icon rates__icon--yes"></div>
+                      </div>
+                      <div class="rates__item">
+                        <div class="rates__icon rates__icon--yes"></div>
+                      </div>
+                      <div class="rates__item">
+                        <div class="rates__icon rates__icon--yes"></div>
+                      </div>
+                      <div class="rates__item">
+                        <div class="rates__icon rates__icon--yes"></div>
+                      </div>
+                      <div class="rates__item">
+                        <div class="rates__icon rates__icon--no"></div>
+                      </div>
+                      <div class="rates__item">
+                        <div class="rates__text rates__text--green rates__text--center">по 5</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="rates__price">4 000 руб.
+                    <div class="rates__button">
+                      <div class="button button--small">
+                        <div class="button_inner">Оформить</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div data-rates-to="rates-5" class="rates rates--mobile">
+            <div class="rates__inner">
+              <div class="rates__row">
+                <div class="rates__hover">
+                  <div class="rates__top">
+                    <div class="rates__title">Pro Клуб</div>
+                    <div class="rates__number">5 участников</div>
+                    <div class="rates__img rates__img--5"></div>
+                    <div class="rates__content">
+                      <div class="rates__icon-group">
+                        <div class="rates-icon">
+                          <div class="rates-icon__item rates-icon__item--1"></div>
+                          <div class="rates-icon__item rates-icon__item--2"></div>
+                          <div class="rates-icon__item rates-icon__item--3 rates-icon__item--no"></div>
+                          <div class="rates-icon__item rates-icon__item--4"></div>
+                        </div>
+                      </div>
+                      <div class="rates__price">9 000 руб.</div>
+                      <div class="rates__button">
+                        <div class="button button--small">
+                          <div class="button_inner">Оформить</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="rates__bottom">
+                    <div class="rates__bottom_cell">
+                      <div class="rates__item">
+                        <div class="rates__text">Тренировки 8 программ</div>
+                      </div>
+                      <div class="rates__item">
+                        <div class="rates__text">Блок контроля калорий</div>
+                      </div>
+                      <div class="rates__item">
+                        <div class="rates__text">Прогресс</div>
+                      </div>
+                      <div class="rates__item">
+                        <div class="rates__text">Графики</div>
+                      </div>
+                      <div class="rates__item">
+                        <div class="rates__text">Новости</div>
+                      </div>
+                      <div class="rates__item">
+                        <div class="rates__text">Борьба за призы</div>
+                      </div>
+                      <div class="rates__item">
+                        <div class="rates__text">Чемпионаты</div>
+                      </div>
+                      <div class="rates__item">
+                        <div class="rates__text">Конкурсы</div>
+                      </div>
+                      <div class="rates__item">
+                        <div class="rates__text">Курсы и статьи в ЛК</div>
+                      </div>
+                      <div class="rates__item">
+                        <div class="rates__text">Меню питания (30 меню)</div>
+                      </div>
+                      <div class="rates__item">
+                        <div class="rates__text">Мобильный помощник</div>
+                      </div>
+                      <div class="rates__item">
+                        <div class="rates__text">Отчеты</div>
+                      </div>
+                      <div class="rates__item">
+                        <div class="rates__text">Общий чат<span class="rates__text_icon rates__text_icon_question"></span></div>
+                      </div>
+                      <div class="rates__item">
+                        <div class="rates__text">Личные чаты<span class="rates__text_icon rates__text_icon_question"></span></div>
+                      </div>
+                      <div class="rates__item">
+                        <div class="rates__text">Сушки в подарок</div>
+                      </div>
+                    </div>
+                    <div class="rates__bottom_cell">
+                      <div class="rates__item">
+                        <div class="rates__icon rates__icon--yes"></div>
+                      </div>
+                      <div class="rates__item">
+                        <div class="rates__icon rates__icon--yes"></div>
+                      </div>
+                      <div class="rates__item">
+                        <div class="rates__icon rates__icon--yes"></div>
+                      </div>
+                      <div class="rates__item">
+                        <div class="rates__icon rates__icon--yes"></div>
+                      </div>
+                      <div class="rates__item">
+                        <div class="rates__icon rates__icon--yes"></div>
+                      </div>
+                      <div class="rates__item">
+                        <div class="rates__icon rates__icon--yes"></div>
+                      </div>
+                      <div class="rates__item">
+                        <div class="rates__icon rates__icon--yes"></div>
+                      </div>
+                      <div class="rates__item">
+                        <div class="rates__icon rates__icon--yes"></div>
+                      </div>
+                      <div class="rates__item">
+                        <div class="rates__icon rates__icon--yes"></div>
+                      </div>
+                      <div class="rates__item">
+                        <div class="rates__icon rates__icon--yes"></div>
+                      </div>
+                      <div class="rates__item">
+                        <div class="rates__icon rates__icon--yes"></div>
+                      </div>
+                      <div class="rates__item">
+                        <div class="rates__icon rates__icon--yes"></div>
+                      </div>
+                      <div class="rates__item">
+                        <div class="rates__icon rates__icon--yes"></div>
+                      </div>
+                      <div class="rates__item">
+                        <div class="rates__icon rates__icon--no"></div>
+                      </div>
+                      <div class="rates__item">
+                        <div class="rates__text rates__text--green rates__text--center">по 5</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="rates__price">9 000 руб.
+                    <div class="rates__button">
+                      <div class="button button--small">
+                        <div class="button_inner">Оформить</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <div class="backbone">
       <div class="menu-fixed js-menu-fixed">
         <div class="backbone__inner">
@@ -1136,7 +1831,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="rates__more">Подробнее о тарифе</div>
+                  <div data-rates="rates-1" class="rates__more">Подробнее о тарифе</div>
                 </div>
               </div>
               <div class="rates__row">
@@ -1192,7 +1887,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="rates__more">Подробнее о тарифе</div>
+                  <div data-rates="rates-2" class="rates__more">Подробнее о тарифе</div>
                 </div>
               </div>
               <div class="rates__row">
@@ -1248,7 +1943,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="rates__more">Подробнее о тарифе</div>
+                  <div data-rates="rates-3" class="rates__more">Подробнее о тарифе</div>
                 </div>
               </div>
               <div class="rates__row">
@@ -1304,7 +1999,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="rates__more">Подробнее о тарифе</div>
+                  <div data-rates="rates-4" class="rates__more">Подробнее о тарифе</div>
                 </div>
               </div>
               <div class="rates__row">
@@ -1360,7 +2055,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="rates__more">Подробнее о тарифе</div>
+                  <div data-rates="rates-5" class="rates__more">Подробнее о тарифе</div>
                 </div>
               </div>
             </div>
