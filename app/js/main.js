@@ -148,7 +148,8 @@ allEvents = {
 		$('[data-switch]').on('click', allEvents.switcher);
 		$('.js-burger').on('click', allEvents.mobileMenu);
 		$('[data-rates]').on('click', allEvents.popUpRates);
-		$('.js-more-text').on('click', allEvents.more)
+		$('.js-more-text').on('click', allEvents.more);
+		$('.js-landing-player').on('click', allEvents.playVideo)
 	},
 	scrooTo: function(){
 		var self = $(this);
@@ -174,6 +175,13 @@ allEvents = {
 				$('.js-menu-fixed').removeClass('is-active');
 			}
 		});
+	},
+	playVideo: function(){
+		var self = $(this);
+		var sFind = self.next().find('.player__frame');
+		var sData = sFind.data('video');
+		self.hide();
+		sFind.attr('src', sData);
 	},
 	addRemoveClass: function(remove, add, name){
 		remove.removeClass(name);
@@ -238,19 +246,15 @@ allEvents = {
 	}
 }
 
-// (data-rates="rates-1") (data-rates-to="rates-1")
-
 $(function(){
 	sliders.init();
 	allEvents.init();
-	$(".chosen-select").chosen({no_results_text: "Не найдено"});
-	$('.chosen-search input').attr('placeholder', 'Моментальный поиск');
+	$(".js-select").select2({
+		placeholder: "Способ оплаты:",
+	});
 
-	if ($('.chosen-container').length > 0) {
-      $('.chosen-container').on('touchstart', function(e){
-        e.stopPropagation(); e.preventDefault();
-        // Trigger the mousedown event.
-        $(this).trigger('mousedown');
-      });
-    }
+	$(".js-select").on('select2:open', function (evt) {
+		$('.select2-results__message').text('Не найдено');
+		$('.select2-search__field').attr('placeholder', 'Моментальный поиск');
+	});
 });

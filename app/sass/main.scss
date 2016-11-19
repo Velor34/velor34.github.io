@@ -2,7 +2,7 @@
 @import "_sprite.scss";
 @import "_mixin.scss";
 @import "_swiper.min.scss";
-@import "_chosen.scss";
+@import "_select2.scss";
 
 * {
     box-sizing: border-box;
@@ -363,6 +363,12 @@ a {
 	.player__video{
 		position: relative;
 		z-index: 1;
+		width: 100%;
+		height: 100%;
+	}
+	.player__frame{
+		width: 100%;
+		height: 100%;
 	}
 
 .project-description{
@@ -1884,6 +1890,7 @@ a {
 	}
 	.news-list__img{
 		vertical-align: top;
+		max-width: 100%;
 	}
 	.news-list__date{
 		margin-top: 24px;
@@ -2150,125 +2157,6 @@ a {
 	}
 }
 
-.chosen-select{
-	width: 100%;
-}
-.chosen-container{
-	width: 100%;
-}
-.chosen-container-single .chosen-drop{
-	margin-top: 2px;
-}
-.chosen-container-single .chosen-search{
-	margin-bottom: 2px;
-	background: #e5e5e5;
-}
-.chosen-container .chosen-drop{
-	background: transparent;
-	border: 0;
-}
-.chosen-container .chosen-results{
-	background: #cacaca;
-	padding: 0;
-	margin: 0;
-	max-height: 310px;
-	border-radius: 5px;
-}
-.chosen-container-single .chosen-single div{
-	@include sprite($s-select-arrow-down);
-	top: 16px;
-	right: 25px;
-}
-.chosen-container-active.chosen-with-drop .chosen-single div{
-	@include sprite($s-select-arrow);
-}
-.chosen-container-single .chosen-search{
-	&:after{
-		content: '';
-		position: absolute;
-		top: 14px;
-		left: 10px;
-		@include sprite($s-select-search);
-	}
-}
-
-.chosen-container .chosen-results li.highlighted{
-	background: #ff0000;
-}
-.chosen-drop .result-selected{
-	position: relative;
-	color: #ff0909;
-	&:hover{
-		color: #fff;
-		&:after{
-			@include sprite($s-select-chosen-white);
-		}
-	}
-	&:after{
-		content: '';
-		position: absolute;
-		top: 18px;
-		right: 25px;
-		@include sprite($s-select-chosen);
-	}
-}
-
-.chosen-container-single .chosen-default,
-.chosen-container-single .chosen-single{
-	color: #000;
-	text-align: center;
-	font-size: 2rem;
-	font-family: 'roboto-condensed-regular';
-	background: #e5e5e5;
-	outline: 0;
-	border: 0;
-	padding: 10px 12px 12px 12px;
-	line-height: 1;
-	height: auto;
-}
-
-.chosen-container-active.chosen-with-drop .chosen-single{
-	border-radius: 5px;
-	border: 0;
-	background: #e5e5e5;
-}
-.chosen-container-single .chosen-search input[type=text]{
-	padding: 10px;
-	margin: 0;
-	font-size: 2rem;
-	font-family: 'roboto-condensed-regular';
-	opacity: 0.5;
-	border: 0;
-	line-height: 1;
-	border-radius: 5px;
-	background: transparent;
-}
-.chosen-container-single .chosen-search{
-	width: 100%;
-	padding: 0;
-	padding-left: 52px;
-	border-radius: 5px;
-}
-.chosen-container .chosen-results li.group-result{
-	padding: 14px 12px;
-	line-height: 1;
-	font-size: 1.6rem;
-	color: #000;
-	font-family: 'roboto-condensed-regular';
-}
-.chosen-container .chosen-results li.group-option{
-	padding: 14px 12px;
-	line-height: 1;
-	font-size: 1.6rem;
-	color: #000;
-	font-family: 'roboto-condensed-regular';
-	background: #e5e5e5;
-	border-radius: 5px;
-	&:hover{
-		background: #ff0000;
-		color: #fff;
-	}
-}
 
 .checkbox{
 	position: relative;
@@ -2655,6 +2543,127 @@ a {
 		font-family: 'roboto-condensed-bold';
 		margin-bottom: 18px;
 	}
+
+.select2-container--default.select2-container--open.select2-container--below .select2-selection--multiple,
+.select2-container--default.select2-container--open.select2-container--below .select2-selection--single{
+	color: #000;
+	font-size: 2rem;
+	font-family: 'roboto-condensed-regular';
+	height: 50px;
+	background: #e5e5e5;
+	text-align: center;
+	line-height: 50px;
+	border-radius: 5px;
+}
+.select2-container--default .select2-selection--multiple, .select2-container--default .select2-selection--single{
+	border: 0;
+	background: #e5e5e5;
+	border-radius: 5px;
+	height: 50px;
+	text-align: center;
+	font-size: 2rem;
+	font-family: 'roboto-condensed-regular';
+}
+.select2-container--default .select2-selection--single .select2-selection__placeholder{
+	color: #000;
+}
+.select2-container--default .select2-selection--single .select2-selection__rendered{
+	line-height: 50px;
+}
+.select2-container--classic.select2-container--open .select2-selection--single .select2-selection__arrow b,
+.select2-container--default.select2-container--open .select2-selection--single .select2-selection__arrow b{
+	border: 0;
+	@include sprite($s-select-arrow);
+	margin-top: 0;
+	margin-left: 0;
+	top: 20px;
+	left: auto;
+	right: 10px;
+}
+.select2-container--classic .select2-selection--single .select2-selection__arrow b, .select2-container--default .select2-selection--single .select2-selection__arrow b{
+	border: 0;
+	@include sprite($s-select-arrow-down);
+	margin-top: 0;
+	margin-left: 0;
+	top: 20px;
+	left: auto;
+	right: 10px;
+}
+.select2-dropdown{
+	background: transparent;
+	border: 0;
+}
+.select2-search--dropdown{
+	margin-bottom: 1px;
+}
+.select2-container--open .select2-dropdown--below{
+	margin-top: 1px;
+}
+.select2-results{
+	background: #cacaca;
+	border-radius: 5px;
+}
+.select2-container--default .select2-results__group{
+	padding: 12px;
+	font-size: 1.6rem;
+	font-family: 'roboto-condensed-regular';
+}
+.select2-container--default .select2-results__option .select2-results__option{
+	background: #fff;
+	padding: 12px;
+	border-radius: 5px;
+	font-size: 2rem;
+	font-family: 'roboto-condensed-regular';
+	&:hover{
+		color: #fff;
+		background: #ff0000;
+	}
+}
+.select2-container--default .select2-results__option--highlighted[aria-selected]{
+	color: #ff0000;
+	font-size: 2rem;
+	font-family: 'roboto-condensed-regular';
+	position: relative;
+	&:after{
+		content: '';
+		position: absolute;
+		top: 20px;
+		right: 26px;
+		@include sprite($s-select-chosen);
+	}
+	&:hover{
+		color: #fff;
+		&:after{
+			@include sprite($s-select-chosen-white);
+		}
+	}
+}
+.select2-container--default .select2-results>.select2-results__options{
+	max-height: 300px;
+}
+.select2-search--dropdown{
+	background: #e5e5e5;
+}
+.select2-container--default .select2-search--dropdown .select2-search__field{
+	border: 0;
+	outline: 0;
+	background: transparent;
+	font-size: 2rem;
+	color: #000;
+	opacity: 0.8;
+}
+.select2-search--dropdown{
+	padding: 10px 10px 10px 50px;
+	position: relative;
+	border-radius: 5px;
+	&:after{
+		content: '';
+		position: absolute;
+		top: 16px;
+		left: 16px;
+		@include sprite($s-select-search);
+	}
+}
 
 .is-menu-open{
 	.backbone{

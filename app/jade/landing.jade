@@ -70,8 +70,9 @@ block content
         .backbone__inner
             .video-block__player
                 .player
-                    .player__img
+                    .player__img.js-landing-player(style="background-image: url(../content/yourself-box-training/yourself-box-training-1.png)")
                     .player__video
+                        iframe(src="" data-video="http://www.youtube.com/embed/M7lc1UVf-VE?autoplay=1&origin=http://example.com" frameborder="0" allowfullscreen).player__frame
             .video-block__button
                 a(href="").button
                     .button_inner Участвовать 
@@ -216,7 +217,7 @@ block content
                                                         .rates-icon__item.rates-icon__item--4.rates-icon__item--no
                                                 .rates__price 999 руб.
                                                 .rates__button
-                                                    .button.button--small
+                                                    a(href='#').button.button--small
                                                         .button_inner Оформить
                                         .rates__row.swiper-slide
                                             .rates__top
@@ -231,7 +232,7 @@ block content
                                                         .rates-icon__item.rates-icon__item--4
                                                 .rates__price 2 500 руб.
                                                 .rates__button
-                                                    .button.button--small
+                                                    a(href='#').button.button--small
                                                         .button_inner Оформить
                                         .rates__row.swiper-slide
                                             .rates__top
@@ -246,7 +247,7 @@ block content
                                                         .rates-icon__item.rates-icon__item--4
                                                 .rates__price 5 000 руб.
                                                 .rates__button
-                                                    .button.button--small
+                                                    a(href='#').button.button--small
                                                         .button_inner Оформить
                                         .rates__row.swiper-slide
                                             .rates__top
@@ -261,7 +262,7 @@ block content
                                                         .rates-icon__item.rates-icon__item--4
                                                 .rates__price 4 000 руб.
                                                 .rates__button
-                                                    .button.button--small
+                                                    a(href='#').button.button--small
                                                         .button_inner Оформить
                                         .rates__row.swiper-slide
                                             .rates__top
@@ -570,7 +571,7 @@ block content
                                         .rates-icon__item.rates-icon__item--4.rates-icon__item--no
                                 .rates__price 999 руб.
                                 .rates__button
-                                    .button.button--small
+                                    a(href="#").button.button--small
                                         .button_inner Оформить
                             .rates__bottom
                                 .rates__item
@@ -605,7 +606,7 @@ block content
                                     .rates__icon.rates__icon--no
                         .rates__price 999 руб.
                         .rates__button
-                            .button.button--small
+                            a(href="#").button.button--small
                                 .button_inner Оформить
                     .rates__row
                         .rates__hover
@@ -621,7 +622,7 @@ block content
                                         .rates-icon__item.rates-icon__item--4
                                 .rates__price 2 500 руб.
                                 .rates__button
-                                    .button.button--small
+                                    a(href="#").button.button--small
                                         .button_inner Оформить
                             .rates__bottom
                                 .rates__item
@@ -656,7 +657,7 @@ block content
                                     .rates__text.rates__text--green.rates__text--center 5
                         .rates__price 2 500 руб.
                         .rates__button
-                            .button.button--small
+                            a(href="#").button.button--small
                                 .button_inner Оформить
                     .rates__row
                         .rates__hover
@@ -674,7 +675,7 @@ block content
                                         .rates-icon__item.rates-icon__item--4
                                 .rates__price 5 000 руб.
                                 .rates__button
-                                    .button.button--small
+                                    a(href="#").button.button--small
                                         .button_inner Оформить
                             .rates__bottom
                                 .rates__item
@@ -709,7 +710,7 @@ block content
                                     .rates__text.rates__text--green.rates__text--center 10
                         .rates__price 5 000 руб.
                         .rates__button
-                            .button.button--small
+                            a(href="#").button.button--small
                                 .button_inner Оформить
                     .rates__row
                         .rates__hover
@@ -726,7 +727,7 @@ block content
                                         .rates-icon__item.rates-icon__item--4
                                 .rates__price 4 000 руб.
                                 .rates__button
-                                    .button.button--small
+                                    a(href="#").button.button--small
                                         .button_inner Оформить
                             .rates__bottom
                                 .rates__item
@@ -761,7 +762,7 @@ block content
                                     .rates__text.rates__text--green.rates__text--center по 5
                         .rates__price 4 000 руб.
                         .rates__button
-                            .button.button--small
+                            a(href="#").button.button--small
                                 .button_inner Оформить
                     .rates__row
                         .rates__hover
@@ -777,7 +778,7 @@ block content
                                         .rates-icon__item.rates-icon__item--4
                                 .rates__price 9 000 руб.
                                 .rates__button
-                                    .button.button--small
+                                    a(href="#").button.button--small
                                         .button_inner Оформить
                             .rates__bottom
                                 .rates__item
@@ -812,7 +813,7 @@ block content
                                     .rates__text.rates__text--green.rates__text--center по 5
                         .rates__price 9 000 руб.
                         .rates__button
-                            .button.button--small
+                            a(href="#").button.button--small
                                 .button_inner Оформить
             .rates.rates--mobile.is-mobile
                 .rates__inner
@@ -831,7 +832,7 @@ block content
                                             .rates-icon__item.rates-icon__item--4.rates-icon__item--no
                                     .rates__price 999 руб.
                                     .rates__button
-                                        .button.button--small
+                                        a(href="#").button.button--small
                                             .button_inner Оформить
                             .rates__bottom
                                 .rates__bottom_cell
@@ -868,7 +869,7 @@ block content
                                             .rates-icon__item.rates-icon__item--4
                                     .rates__price 2 500 руб.
                                     .rates__button
-                                        .button.button--small
+                                        a(href="#").button.button--small
                                             .button_inner Оформить
                             .rates__bottom
                                 .rates__bottom_cell
@@ -905,7 +906,7 @@ block content
                                             .rates-icon__item.rates-icon__item--4
                                     .rates__price 5 000 руб.
                                     .rates__button
-                                        .button.button--small
+                                        a(href="#").button.button--small
                                             .button_inner Оформить
                             .rates__bottom
                                 .rates__bottom_cell
@@ -942,7 +943,7 @@ block content
                                             .rates-icon__item.rates-icon__item--4
                                     .rates__price 4 000 руб.
                                     .rates__button
-                                        .button.button--small
+                                        a(href="#").button.button--small
                                             .button_inner Оформить
                             .rates__bottom
                                 .rates__bottom_cell
@@ -979,7 +980,7 @@ block content
                                             .rates-icon__item.rates-icon__item--4
                                     .rates__price 9 000 руб.
                                     .rates__button
-                                        .button.button--small
+                                        a(href="#").button.button--small
                                             .button_inner Оформить
                             .rates__bottom
                                 .rates__bottom_cell

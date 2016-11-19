@@ -668,6 +668,9 @@
 		padding-bottom: 10px;
 	}
 	.rates--mobile{
+		.rates__row:hover .rates__hover{
+			border-radius: 20px;
+		}
 		.rates__row{
 			width: 300px;
 			margin: 0 8px;
@@ -971,9 +974,6 @@
 	.input{
 		padding: 8px;
 	}
-	.chosen-container-single .chosen-search{
-		padding-left: 42px
-	}
 	.checkbox{
 		text-align: left;
 	}
@@ -1087,6 +1087,18 @@
 	}
 	.other-news__title{
 		font-size: 2.6rem
+	}
+
+	.select2-search--dropdown{
+		padding-left: 34px;
+	}
+	.select2-search--dropdown:after{
+		left: 8px;
+	}
+	.pop-up__tarrif{
+		.rates__button{
+			padding-bottom: 14px;
+		}
 	}
 
 
