@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <title>pro-drying</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../f/css/font.css">
+    <link rel="stylesheet" href="../f/css/main.css">
+  </head>
+  <body>
+    <div class="backbone">
+      <div class="form-page">
+        <div class="form-page__inner">
+          <div class="form-page__logo"><a href="#" class="logo"></a></div>
+          <div class="form-page__title">Тарифный план «PRO Максимум»</div>
+          <div class="form-page__description">1 участник</div>
+          <div class="form-page__input-group">
+            <div class="input-group">
+              <div class="input-group__item">
+                <div class="input-group__name">Ваше имя:</div>
+                <div class="input-group__input">
+                  <input type="text" class="input">
+                </div>
+              </div>
+              <div class="input-group__item is-error">
+                <div class="input-group__name">Электронная почта:</div>
+                <div class="input-group__input">
+                  <input type="text" class="input">
+                </div>
+                <div class="error">Проверьте правильность введенной электронной почты</div>
+              </div>
+              <div class="input-group__item">
+                <div class="input-group__name">Выберите способ оплаты:</div>
+                <div class="input-group__input">
+                  <select data-placeholder="Способ оплаты" style="width:100%;" tabindex="5" class="chosen-select">
+                    <option value=""></option>
+                    <optgroup label="Популярные">
+                      <option>Visa/MasterCard</option>
+                      <option>Яндекс Деньги</option>
+                      <option>Робокасса — MasterCard</option>
+                      <option>Qiwi</option>
+                    </optgroup>
+                    <optgroup label="Электронные кошельки">
+                      <option>Visa/MasterCard</option>
+                    </optgroup>
+                  </select>
+                </div>
+              </div>
+              <div class="checkbox">
+                <input id="agree" type="checkbox" name="agree" value="male" class="checkbox__input">
+                <label for="agree" class="checkbox__label">Я ознакомился с <a href="#" class="checkbox__link">договором оферты</a> и <a href="#" class="checkbox__link">правилами конкурса </a></label>
+              </div>
+            </div>
+          </div>
+          <div class="form-page__price">5 000 руб.</div>
+          <div class="form-page__button">
+            <div class="button is-waiting">
+              <div class="button_inner">Оплатить</div>
+            </div>
+          </div>
+          <div style="display: block" class="error error--center">Проверьте заполненные данные.<br> Вы сможете оплатить тариф после исправления введенных данных.</div>
+        </div>
+      </div>
+    </div>
+    <script src="../f/js/all-js.js"></script>
+    <script id="__bs_script__">//<![CDATA[document.write("<script async src='http://HOST:3000/browser-sync/browser-sync-client.2.12.10.js'><\/script>".replace("HOST", location.hostname));//]]></script>
+  </body>
+</html>

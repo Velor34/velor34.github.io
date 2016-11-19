@@ -1,0 +1,43 @@
+extends layout.jade
+
+block content
+    .form-page
+        .form-page__inner
+            .form-page__logo
+                a(href="#").logo
+            .form-page__title Тарифный план «PRO Максимум»
+            .form-page__description 1 участник
+            .form-page__input-group
+                .input-group
+                    .input-group__item
+                        .input-group__name Ваше имя:
+                        .input-group__input
+                            input(type="text").input
+                    .input-group__item.is-error
+                        .input-group__name Электронная почта:
+                        .input-group__input
+                            input(type="text").input
+                        .error Проверьте правильность введенной электронной почты
+                    .input-group__item
+                        .input-group__name Выберите способ оплаты:
+                        .input-group__input
+                            select(data-placeholder="Способ оплаты" style="width:100%;" class="chosen-select" tabindex="5")
+                                option(value="")
+                                optgroup(label="Популярные")
+                                    option Visa/MasterCard
+                                    option Яндекс Деньги
+                                    option Робокасса — MasterCard
+                                    option Qiwi
+                                optgroup(label="Электронные кошельки")
+                                    option Visa/MasterCard
+                    .checkbox
+                        input(id="agree" type="checkbox" name="agree" value="male").checkbox__input
+                        label(for="agree").checkbox__label Я ознакомился с 
+                            a(href="#").checkbox__link договором оферты
+                            |  и 
+                            a(href="#").checkbox__link правилами конкурса 
+            .form-page__price 5 000 руб.
+            .form-page__button
+                .button.is-waiting
+                    .button_inner Оплатить
+            .error.error--center(style="display: block") Проверьте заполненные данные.<br> Вы сможете оплатить тариф после исправления введенных данных.

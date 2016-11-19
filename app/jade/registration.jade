@@ -1,0 +1,23 @@
+extends layout.jade
+
+block content
+    .form-page
+        .form-page__inner
+            .form-page__logo
+                a(href="#").logo
+            .form-page__title Регистрация
+            .form-page__input-group.form-page__input-group--reg
+                .input-group
+                    .input-group__item
+                        .input-group__name Электронная почта:
+                        .input-group__input
+                            input(type="text").input
+                    .input-group__item
+                        .input-group__name Ваше имя:
+                        .input-group__input
+                            input(type="text").input
+                    .form-page__button
+                        .button
+                            .button_inner Зарегистрироваться
+            .form-page__botom-text Уже зарегистрированы?
+            a(href="#").form-page__link.form-page__link--m-top Войти в Личный кабинет

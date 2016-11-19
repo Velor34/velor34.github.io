@@ -26,37 +26,14 @@ sliders = {
 			slidesPerView: 'auto',
 			spaceBetween: 12,
 			initialSlide: 2,
-			//loop: true,
 			nextButton: '.swiper-button-next',
 			prevButton: '.swiper-button-prev',
-			onSlideChangeStart: function(swiper){
-				var translate = swiper.translate + '';
-				echo('onSlideChangeStart--->', translate);
-				
-			},
-			onSlideChangeEnd: function(swiper){
-
-			},
-			onSetTranslate: function(swiper, translate){
-				var sTranslate = translate + '';
-				// echo('onSetTranslate--->', sTranslate);
-				// if(sTranslate[0] == '-'){
-				// 	$('.yourself-box-lk__over').css({
-				// 		'transform': 'translate3d(' + sTranslate.replace('-', '') + 'px, 0px, 0px)'
-				// 	});
-				// }else{
-				// 	$('.yourself-box-lk__over').css({
-				// 		'transform': 'translate3d(-' + sTranslate + 'px, 0px, 0px)'
-				// 	});
-				// }
-			}
 		},
 		sliderTraining: {
 			centeredSlides: true,
 			slidesPerView: 'auto',
 			spaceBetween: 14,
 			initialSlide: 1,
-			//loop: true,
 			nextButton: '.swiper-button-next',
 			prevButton: '.swiper-button-prev'
 		},
@@ -65,7 +42,6 @@ sliders = {
 			slidesPerView: 'auto',
 			spaceBetween: 36,
 			initialSlide: 1,
-			//loop: true,
 			pagination: '.swiper-pagination',
 			paginationClickable: true,
 			nextButton: '.swiper-button-next',
@@ -76,7 +52,6 @@ sliders = {
 			slidesPerView: 'auto',
 			spaceBetween: 36,
 			initialSlide: 1,
-			//loop: true,
 			pagination: '.swiper-pagination',
 			paginationClickable: true,
 			nextButton: '.swiper-button-next',
@@ -100,7 +75,6 @@ sliders = {
 			spaceBetween: 20,
 			initialSlide: 2,
 			simulateTouch: false,
-			//loop: true,
 			nextButton: '.swiper-button-next',
 			prevButton: '.swiper-button-prev',
 			breakpoints: {
@@ -196,4 +170,6 @@ allEvents = {
 $(function(){
 	sliders.init();
 	allEvents.init();
+	$(".chosen-select").chosen({no_results_text: "Не найдено"});
+	$('.chosen-search input').attr('placeholder', 'Моментальный поиск')
 });
