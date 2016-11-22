@@ -27,7 +27,7 @@ var js = [
 	path.js + 'com/jquery-2.2.4.min.js',
 	path.js + 'com/swiper.min.js',
 	path.js + 'com/select2.full.min.js',
-	path.js + 'main.js',
+	//path.js + 'main.js',
 ]
 
 gulp.task('sass', function () {
