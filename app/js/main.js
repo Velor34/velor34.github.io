@@ -149,7 +149,10 @@ allEvents = {
 		$('.js-burger').on('click', allEvents.mobileMenu);
 		$('[data-rates]').on('click', allEvents.popUpRates);
 		$('.js-more-text').on('click', allEvents.more);
-		$('.js-landing-player').on('click', allEvents.playVideo)
+		$('.js-landing-player').on('click', allEvents.playVideo);
+		$('.js-hint').on('click', function(){
+			echo('бляя')
+		});
 	},
 	scrooTo: function(){
 		var self = $(this);
@@ -239,6 +242,11 @@ allEvents = {
 			'max-height': 'none'
 		});
 		self.hide();
+	},
+	hint: function(){
+		var self = $(this);
+		echo('hint');
+
 	},
 	init: function(){
 		this.handler();

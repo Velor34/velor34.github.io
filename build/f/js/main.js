@@ -149,7 +149,8 @@ allEvents = {
 		$('.js-burger').on('click', allEvents.mobileMenu);
 		$('[data-rates]').on('click', allEvents.popUpRates);
 		$('.js-more-text').on('click', allEvents.more);
-		$('.js-landing-player').on('click', allEvents.playVideo)
+		$('.js-landing-player').on('click', allEvents.playVideo);
+		$('.js-hint').on('click', allEvents.hint);
 	},
 	scrooTo: function(){
 		var self = $(this);
@@ -240,9 +241,32 @@ allEvents = {
 		});
 		self.hide();
 	},
+	hint: function(){
+		var self = $(this);
+		if(self.hasClass('is-active')){
+			$('.rates__text_icon').removeClass('is-active');
+			$('.rates__hint').hide();
+		}else{
+			$('.rates__text_icon').removeClass('is-active');
+			$('.rates__hint').hide();
+			self.addClass('is-active');
+			self.find('.rates__hint').show();
+		}
+	},
+	documentClick: function(){
+		$(document).on('click', function(e){
+			if($(e.target).hasClass('js-hint') || $(e.target).parents('.js-hint').length){
+				return true;
+			}
+			$('.rates__text_icon').removeClass('is-active');
+			$('.rates__hint').hide();
+		});
+		
+	},
 	init: function(){
 		this.handler();
 		this.menuFixed();
+		this.documentClick();
 	}
 }
 
